@@ -189,6 +189,7 @@ nav{
         justify-content:end;
         align-items: center;
         width: 20%;
+        padding-top: 1.6rem;
     }
     .header-list{
         width: 35%;
@@ -227,5 +228,7 @@ nav{
         display: flex;
         justify-content:end;
         align-items: center;
+        padding-top: 2rem;
     }
+    
 }
