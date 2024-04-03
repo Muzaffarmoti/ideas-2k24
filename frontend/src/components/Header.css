@@ -1,0 +1,231 @@
+nav{
+    width: calc(100% - 2rem); /* Adjust width to account for margins */
+    display: flex;
+    height: 10vh;
+    padding: 2rem 0 0 0;
+    position: relative;
+    background-color: #323232; /* Change to your desired shade of grey */
+    border-radius: 10px; /* Add border radius */
+    margin: 1rem; /* Add margin */
+}
+
+.header-icons-container{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    /* padding-top: 1rem; */
+    padding-bottom: 0.3rem; /*image padding*/
+}
+
+.header-hamburger{
+    width: 40%;
+    padding-bottom: 2rem;
+}
+.header-icon{
+    width: 8%;
+    height: 70%;
+}
+
+.header-icon img{
+    cursor: pointer;
+    width: 110%;
+    height: 110%;
+}
+
+.header-hamburger{
+    color: rgb(216, 222, 226);
+    font-size: 4rem;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+}
+
+.header-hamburger {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.header-links {
+    text-decoration: none;
+    color: rgb(249, 249, 250);
+} 
+
+
+.header-list {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    animation: slideIn 1.5s forwards; /* Use slideIn animation */
+    width: 20%;
+    height: 85vh;
+    align-items: flex-start;
+    right: 0%;
+    font-size: 20px;
+    background-color:black !important;
+    z-index: 1;
+    padding-left: 0px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+   
+
+  .header-link ul{
+    margin:0;
+  }
+  .header-list li{
+    display: block;
+    background: none;
+    /* height: 30%; */
+    /* margin: auto; */
+    margin-top: 0%;
+    width: 100%;
+    /* width: 100px; */
+    flex-flow: column nowrap;
+    padding: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    /* border: 0.1px solid black; */
+    box-sizing: border-box;
+    transition: background-color ease-in-out 350ms;
+
+  
+    /* margin-left: auto;
+    padding-right:80px; */
+  }
+
+  .header-list a {
+    background: none;
+  }
+  .header-list li:hover {
+    background-color: #222222;
+    /* color: rgb(242, 241, 244); */
+    animation: glow 0.5s infinite alternate; /* Add glow animation */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
+    }
+    100% {
+        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white, 0 0 200px white;
+    }
+}
+
+
+
+.header-list li:hover a{
+    background:none;
+    color: whitesmoke;
+}
+  .header-list-close {
+    display: none;
+    /* top: -100%; */
+    /* -webkit-animation: bar-close 0.9s ease-in-out; */
+
+    
+    /* right: -100%; */
+    /* transition: all 0.3s ease-in-out; */
+    /* overflow: hidden; */
+
+}
+
+
+@keyframes appear {
+    0% {
+    opacity: 0;
+    translate: -10px 0;
+    }
+    
+    100% {
+    opacity: 1;
+    }
+
+    
+    
+}
+
+@media  only screen and (max-width: 480px) and (min-width: 320px){
+    nav{
+        width: 100%;
+        display: flex;
+        height: 7vh;
+        padding: 0 !important;
+        position: relative;
+    }
+    
+
+    .header-icons-container{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 !important;
+        /* padding-top: 1.5rem; */
+    }
+    .header-icon{
+        width: 10%;
+        height: 50%;
+        padding: 0 0.5rem;
+        /* background-color: aqua; */
+    }
+    
+    .header-icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .header-hamburger{
+        color: rgb(216, 222, 226);
+        font-size: 1.8rem;
+        display: flex;
+        justify-content:end;
+        align-items: center;
+        width: 20%;
+    }
+    .header-list{
+        width: 35%;
+    }
+}
+
+@media only screen  and (max-device-width: 768px)and (min-device-width: 481px)  {
+    nav{
+        width: 100%;
+        display: flex;
+        height: 10vh;
+        padding: 2rem 0;
+        position: relative;
+    }
+    .header-icon{
+        width: 10%;
+        height: 50%;
+    }
+    
+    .header-icon img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-icons-container{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* padding-top: 2rem; */
+    }
+
+    .header-hamburger{
+        color: rgb(216, 222, 226);
+        font-size: 2rem;
+        display: flex;
+        justify-content:end;
+        align-items: center;
+    }
+}
