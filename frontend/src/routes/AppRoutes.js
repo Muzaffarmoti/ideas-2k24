@@ -8,7 +8,7 @@ function AppRoutes() {
         <div>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/contactus" element={<ContactUs/>}/>
+                <Route path="/contactUs" element={<ContactUs/>}/>
             </Routes>
         </div>
     )

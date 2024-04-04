@@ -68,7 +68,7 @@ function Header(props) {
         <ul className={clicked ? 'header-list' : 'header-list-close'}>
           <li> <Link className='header-links' exact to="/" activeClassName="active">Home</Link> </li>
           <li> <Link className='header-links' exact to="/about" activeClassName="active">About </Link> </li>
-          <li> <Link className='header-links' exact to="/contact" activeClassName="active">Contact</Link> </li>
+          <li> <Link className='header-links' exact to="/contactUs" activeClassName="active">Contact</Link> </li>
 
         </ul>
       </div>
