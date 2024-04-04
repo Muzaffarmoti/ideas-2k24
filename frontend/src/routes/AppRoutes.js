@@ -1,5 +1,6 @@
 import React from 'react'
 import Home from '../pages/Home'
+import ContactUs from '../pages/ContactUs';
 import { Route, Routes } from "react-router-dom";
 
 function AppRoutes() {
@@ -7,7 +8,7 @@ function AppRoutes() {
         <div>
             <Routes>
                 <Route path="/" element={<Home />} />
-                
+                <Route path="/contactus" element={<ContactUs/>}/>
             </Routes>
         </div>
     )
