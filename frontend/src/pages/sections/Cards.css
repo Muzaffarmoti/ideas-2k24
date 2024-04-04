@@ -32,6 +32,7 @@
     object-fit: cover;
     object-position: center;
     filter: grayscale(100%);
+    /* -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5)); */
 }
 
 .honeycomb-cell_title {
@@ -78,7 +79,8 @@
 }
 
 .honeycomb-cell::before {
-    background: #fff;
+    /* background: #fff; */
+    
     transform: scale(1.055);
 }
 
