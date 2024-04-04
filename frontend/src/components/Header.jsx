@@ -46,6 +46,7 @@ function Header(props) {
   
   return (
     <>
+    <div className="outernav">
       <nav>
         <div className='header-icons-container' >
           <div className='header-icon' onClick={() => handleIconClick("sit")}> <img src={sitLogo} /></div>
@@ -71,6 +72,7 @@ function Header(props) {
 
         </ul>
       </div>
+    </div>
     </>
   )
 }
