@@ -1,12 +1,17 @@
-nav{
-    width: calc(100% - 2rem); /* Adjust width to account for margins */
+nav {
+    width: calc(100% - 3.5rem); /* Adjust width to account for margins */
     display: flex;
-    height: 10vh;
-    padding: 2rem 0 0 0;
+    height: 8vh; /* Decrease height */
+    padding: 0.5rem 0 0 0;
     position: relative;
     background-color: #323232; /* Change to your desired shade of grey */
     border-radius: 10px; /* Add border radius */
-    margin: 1rem; /* Add margin */
+    margin: 1.5rem; /* Add margin */
+}
+
+.outernav{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .header-icons-container{
@@ -33,8 +38,8 @@ nav{
 }
 
 .header-hamburger{
-    color: rgb(216, 222, 226);
-    font-size: 4rem;
+    color: white;
+    font-size: 2.5rem;
     display: flex;
     justify-content:end;
     align-items: center;
@@ -42,6 +47,7 @@ nav{
 
 .header-hamburger {
     padding-right: 2rem;
+    padding-top: 1.2rem;
     cursor: pointer;
 }
 
@@ -97,8 +103,7 @@ nav{
     box-sizing: border-box;
     transition: background-color ease-in-out 350ms;
 
-  
-    /* margin-left: auto;
+      /* margin-left: auto;
     padding-right:80px; */
   }
 
@@ -113,14 +118,12 @@ nav{
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white;
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white;
     }
     100% {
-        text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 70px white, 0 0 80px white, 0 0 100px white, 0 0 150px white, 0 0 200px white;
+        text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white, 0 0 100px white;
     }
 }
-
-
 
 .header-list li:hover a{
     background:none;
@@ -153,82 +156,93 @@ nav{
     
 }
 
-@media  only screen and (max-width: 480px) and (min-width: 320px){
-    nav{
-        width: 100%;
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    nav {
+        width: calc(100% - 2rem); /* Adjust width to account for margins */
         display: flex;
-        height: 7vh;
+        height: 6vh;
         padding: 0 !important;
         position: relative;
+        margin: 1.5rem; /* Add margin for spacing */
     }
-    
+    .outernav{
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
 
-    .header-icons-container{
+    .header-icons-container {
         width: 90%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 0 !important;
-        /* padding-top: 1.5rem; */
     }
-    .header-icon{
+
+    .header-icon {
         width: 10%;
         height: 50%;
         padding: 0 0.5rem;
-        /* background-color: aqua; */
     }
-    
-    .header-icon img{
-        width: 100%;
-        height: 100%;
+
+    .header-icon img {
+        width: 90%;
+        height: 90%;
     }
-    .header-hamburger{
-        color: rgb(216, 222, 226);
+
+    .header-hamburger {
+        color: white;
         font-size: 1.8rem;
         display: flex;
-        justify-content:end;
+        justify-content: end;
         align-items: center;
         width: 20%;
         padding-top: 1.6rem;
     }
-    .header-list{
+
+    .header-list {
         width: 35%;
     }
 }
 
-@media only screen  and (max-device-width: 768px)and (min-device-width: 481px)  {
-    nav{
-        width: 100%;
+
+@media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
+    nav {
+        width: calc(100% - 2.7rem); /* Adjust width to account for margins */
         display: flex;
-        height: 10vh;
-        padding: 2rem 0;
+        height: 7vh;
+        padding: 2rem 0.3;
         position: relative;
+        margin: 1rem; /* Add margin for spacing */
     }
-    .header-icon{
+
+    .outernav{
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+    }
+
+    .header-icon {
         width: 10%;
         height: 50%;
     }
-    
-    .header-icon img{
+
+    .header-icon img {
         width: 100%;
         height: 100%;
     }
 
-    .header-icons-container{
+    .header-icons-container {
         width: 90%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        /* padding-top: 2rem; */
     }
 
-    .header-hamburger{
-        color: rgb(216, 222, 226);
+    .header-hamburger {
+        color: white;
         font-size: 2rem;
         display: flex;
-        justify-content:end;
+        justify-content: end;
         align-items: center;
         padding-top: 2rem;
     }
-    
 }
