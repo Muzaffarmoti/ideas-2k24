@@ -5,7 +5,8 @@ import Hero from './sections/Hero'
 function Home() {
     return (
         <div>
-            <h1>home</h1>
+            <Header />
+            <Hero />
         </div>
     )
 }

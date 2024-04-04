@@ -4,12 +4,10 @@
 
 .background-video video {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    max-width: 100%;
     position: relative;
-}
-
-.hero-text{
-    position: absolute;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -19,7 +17,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    z-index: 1; /* Ensure text appears above video */
+    z-index: 1; 
 }
 
 .hero-text-ideeeas h1 {
