@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
+import Hero from './sections/Hero'
 
 function Home() {
     return (
         <div>
-            <Header/>
-            {/* <h1>home</h1> */}
+            <Header />
+            <Hero />
         </div>
     )
 }
