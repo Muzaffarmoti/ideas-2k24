@@ -1,7 +1,7 @@
-nav{
+nav {
     width: calc(100% - 3.5rem); /* Adjust width to account for margins */
     display: flex;
-    height: 10vh;
+    height: 8vh; /* Decrease height */
     padding: 0.5rem 0 0 0;
     position: relative;
     background-color: #323232; /* Change to your desired shade of grey */
@@ -47,7 +47,7 @@ nav{
 
 .header-hamburger {
     padding-right: 2rem;
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     cursor: pointer;
 }
 
@@ -81,8 +81,6 @@ nav{
     }
 }
 
-
-   
 
   .header-link ul{
     margin:0;

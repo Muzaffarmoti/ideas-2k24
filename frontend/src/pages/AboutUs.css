@@ -1,0 +1,102 @@
+
+#sit-details {
+    padding-top: 10.2rem;
+    padding-bottom: 9rem;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    position: relative;
+    padding-bottom: 2.1rem;
+    position: relative;
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.ieee-details .s-about {
+     padding-top: 10.2rem;
+     padding-bottom: 9rem;
+     background-color: rgb(50, 48, 48);
+     color: rgb(250, 248, 248);
+     position: relative;
+}
+
+ .ieee-details .section-header.has-bottom-sep {
+    padding-bottom: 2.1rem;
+    position: relative;
+}
+
+ .ieee-details .section-header {
+    max-width: 700px;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+
+.col-full {
+    width: 100%;
+}
+
+
+h3{
+    padding-top: 0%;
+}
+
+.display-1 {
+    font-size: 4rem;
+   line-height: 1.25px;
+   margin-top: 4px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+   color: rgb(149, 194, 149);
+}
+
+
+h1 {
+    letter-spacing: auto;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+.row {
+    width: 90%;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0%;
+    margin-left: auto;
+}
+
+.p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    line-height: 1.5em;
+    margin: 14px 0 10px 0;
+    padding-top: auto;
+    text-align: center;
+}
+
+.s-sit {
+    padding-top: 10.2rem;
+    padding-bottom: 10.2rem;
+    background-color: rgb(32, 32, 32);
+    color: rgb(3, 101, 187);
+    position: relative;
+
+}
+
+.section {
+    display: block;
+}
+
+.display-2 {
+    margin-top: 0.6rem;
+    font-size: 4.2rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+    color: rgb(130, 159, 130);
+}
+
+.sit-2 {
+    text-align: justify;
+}
