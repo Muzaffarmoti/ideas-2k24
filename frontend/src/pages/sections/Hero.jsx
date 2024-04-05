@@ -20,7 +20,7 @@ function Hero() {
                     </h1>
                 </div>
                 <div className='hero-text-org'>
-                    <p>ORGANIZED BY    IEEE SIT SB</p>
+                    <p>Organised by IEEE SIT SB</p>
                 </div>
             </div>
         </div>
