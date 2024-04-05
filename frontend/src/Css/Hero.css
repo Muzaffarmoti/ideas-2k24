@@ -1,5 +1,6 @@
 .hero-container {
     position: relative;
+    background-image: url();
 }
 
 .background-video video {
@@ -19,57 +20,80 @@
     color: white;
     z-index: 1; 
 }
+
 .hero-text-ideeeas {
+    
     position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .hero-text-ideeeas h1 {
+    font-weight: 400;
     font-size: 5rem;
     letter-spacing: 0.6rem;
     position: relative;
-    z-index: 1;
-    animation: fadeIn 1s ease-out forwards;
+    white-space: nowrap;
 }
-
 
 .hero-text-org p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.rem;
 }
- 
-/* Keyframes for the initial letters fadeIn animation */
-@keyframes initialLettersFadeIn {
+
+/* Keyframes for moving the letter left */
+@keyframes moveLeft {
     0% {
-        opacity: 0; /* Start with opacity 0 */
+        transform: translateX(0);
     }
     100% {
-        opacity: 1; /* Show the initial letters gradually */
+        transform: translateX(-70px); /* Adjust the value as needed */
     }
 }
 
-/* Keyframes for the remaining letters fadeIn animation */
-@keyframes remainingLettersFadeIn {
+/* Keyframes for inserting new letters */
+@keyframes insertLetters {
     0% {
-        opacity: 0; /* Start with opacity 0 */
-        transform: translateX(-20px); /* Start slightly to the left */
+        opacity: 0;
+        transform: scale(0); /* Start small */
     }
     100% {
-        opacity: 1; /* Show the remaining letters gradually */
-        transform: translateX(0); /* Move to original position */
+        opacity: 1;
+        transform: scale(1); /* Full size */
     }
 }
 
-/* Apply the initial letters fadeIn animation to each initial letter */
-.hero-text-ideeeas h1 span.initial-letter {
-    opacity: 0; /* Initially hide all initial letters */
-    animation: initialLettersFadeIn 1s ease forwards; /* Apply the initialLettersFadeIn animation with 1 second duration and ease timing function */
+/* Apply the animations */
+.hero-text-ideeeas h1 span.move-left {
+    display: inline-block; /* Ensures span takes up space */
+    animation: moveLeft 1s forwards;
+    animation-delay: 1s; /* Delay the animation for one second */
+    
 }
 
-/* Apply the remaining letters fadeIn animation to each remaining letter with a delay */
-.hero-text-ideeeas h1 span.remaining-letter {
-    opacity: 0; /* Initially hide all remaining letters */
-    animation: remainingLettersFadeIn 1s ease forwards; /* Apply the remainingLettersFadeIn animation with 1 second duration and ease timing function */
-    animation-delay: 1s; /* Delay the animation for 1 second */
+.inserted-letter {
+    opacity: 0;
+    animation: insertLetters 1s forwards;
+    animation-delay: 2s; /* Delay the animation for 2 seconds */
+}
+
+/* Keyframes for showing the final word */
+@keyframes showFinalWord {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation for the final word */
+.final-word {
+    opacity: 0;
+    animation: showFinalWord 1s forwards;
+    animation-delay: 2s; /* Delay the animation for 2 seconds */
 }
 
 /* Keyframes for the fade-in animation for the text below */
@@ -84,7 +108,35 @@
 
 /* Apply the fade-in animation to the text below */
 .hero-text-org {
+    margin-top:20px;
     opacity: 0; /* Initially hide the text */
     animation: fadeIn 1s ease forwards; /* Apply the fadeIn animation with 1 second duration and ease timing function */
-    animation-delay: 2s; /* Delay the animation for 2 seconds */
+    animation-delay: 3s; /* Delay the animation for 2 seconds */
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* Adjust styles for screens up to 480px wide */
+    .hero-text-ideeeas h1 {
+        font-size: 2rem;
+    }
+    .move-left{
+        transform: translateX(-40px);
+    }
+
+    .hero-text-ideeeas h1 span.move-left {
+        display: inline-block; 
+        animation: moveLeftmedia 1s forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes moveLeftmedia {
+        0% {
+            transform: translateX(-40px);
+        }
+        100% {
+            transform: translateX(-70px); 
+        }
+    }
+
 }
