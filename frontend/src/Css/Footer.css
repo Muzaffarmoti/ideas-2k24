@@ -7,16 +7,18 @@
     justify-content: center;
 }
 .footer-main-container{
-    background-color: black;;
+    background-color: #010001;
 }
 .heading-primary--sub-skyblue{
     /* margin: 3vh; */
-    color: ivory;
+    color: #F84611;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    letter-spacing: 2.5px;
 }
 
 .contact-icons{

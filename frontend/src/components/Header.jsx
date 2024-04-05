@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { RxHamburgerMenu,RxCross1 } from 'react-icons/rx';
 
-import './Header.css'
+import '../Css/Header.css'
 import sitLogo from '../assets/images/icons/sit.png'
 import wieLogo from '../assets/images/icons/wie.png'
 import ieeeLogo from '../assets/images/icons/IEEE.webp'
