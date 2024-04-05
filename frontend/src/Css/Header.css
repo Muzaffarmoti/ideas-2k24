@@ -1,17 +1,17 @@
 nav {
     width: calc(100% - 3.5rem); /* Adjust width to account for margins */
     display: flex;
-    height: 8vh; /* Decrease height */
+    height: 9vh; /* Decrease height */
     padding: 0.5rem 0 0 0;
     position: relative;
     background-color: #323232; /* Change to your desired shade of grey */
-    border-radius: 10px; /* Add border radius */
+    border-radius: 8px; /* Add border radius */
     margin: 1.5rem; /* Add margin */
 }
 
 .outernav{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
 .header-icons-container{
@@ -33,8 +33,8 @@ nav {
 
 .header-icon img{
     cursor: pointer;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 125%;
 }
 
 .header-hamburger{
@@ -116,12 +116,17 @@ nav {
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white;
+        text-shadow: 0 0 5px #F84611, 0 0 10px #F84611, 0 0 15px #F84611, 0 0 20px #F84611, 0 0 35px #F84611, 0 0 40px #F84611, 0 0 50px #F84611, 0 0 75px #F84611;
     }
     100% {
-        text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white, 0 0 100px white;
+        text-shadow: 0 0 10px #F84611, 0 0 15px #F84611, 0 0 20px #F84611, 0 0 35px #F84611, 0 0 40px #F84611, 0 0 50px #F84611, 0 0 75px #F84611, 0 0 100px #F84611;
     }
 }
+
+/* .your-element {
+    animation: glow 2s infinite alternate;
+} */
+
 
 .header-list li:hover a{
     background:none;
@@ -183,10 +188,10 @@ nav {
     }
 
     .header-icon img {
-        width: 90%;
+        width: 100%;
         height: 90%;
     }
-
+    
     .header-hamburger {
         color: white;
         font-size: 1.8rem;
