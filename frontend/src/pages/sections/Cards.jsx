@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import cardDetails from './CardDetails';
 import './Cards.css';
 import rocket from '../../assets/images/icons/rocket.png';
@@ -9,6 +10,10 @@ function Cards() {
     const secondRow = cardDetails.slice(5, 9);
     const thirdRow = cardDetails.slice(9);
 
+    const navigate = useNavigate()
+    const handleClickEvent = (e) => {
+        navigate(`/${e}`)
+    }
     return (
         <div className="cards-container">
             <ul className="cards-row">
@@ -18,7 +23,7 @@ function Cards() {
                         <div className="card-title">{card.title}</div>
                         <div className='card-after-contents'>
                             <div className='card-desc'>{card.desc}</div>
-                            <button className='card-btn'><img src={rocket} alt="rocket" />EXPLORE</button>
+                            <button className='card-btn' onClick={() => handleClickEvent(card.name)}><img src={rocket} alt="rocket" />EXPLORE</button>
                         </div>
                     </li>
                 ))}
@@ -30,7 +35,7 @@ function Cards() {
                         <div className="card-title">{card.title}</div>
                         <div className='card-after-contents'>
                             <div className='card-desc'>{card.desc}</div>
-                            <button className='card-btn'><img src={rocket} alt="rocket" />EXPLORE</button>
+                            <button className='card-btn' onClick={() => handleClickEvent(card.name)}><img src={rocket} alt="rocket" />EXPLORE</button>
                         </div>
                     </li>
                 ))}
@@ -42,7 +47,7 @@ function Cards() {
                         <div className="card-title">{card.title}</div>
                         <div className='card-after-contents'>
                             <div className='card-desc'>{card.desc}</div>
-                            <button className='card-btn'><img src={rocket} alt="rocket" />EXPLORE</button>
+                            <button className='card-btn' onClick={() => handleClickEvent(card.name)}><img src={rocket} alt="rocket" />EXPLORE</button>
                         </div>
                     </li>
                 ))}

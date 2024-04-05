@@ -18,62 +18,74 @@ const cardDetails = [
     {
         image:Aavishkar,
         title:"AAVISHKAR",
-        desc: 'Project Exhibition'
+        desc: 'Project Exhibition',
+        name:"aavishkar"
     },
     {
         image:Blitz,
         title:"BLITZ",
-        desc: 'Literary Event'
+        desc: 'Literary Event',
+        name:"blitz"
     },
     {
         image:Cnario,
         title:"CNARIO",
-        desc: 'C Programming Contest'
+        desc: 'C Programming Contest',
+        name:"cnario"
     },
     {
         image:IdeasIdol,
         title:"IdEEEas IDOL",
-        desc: 'Personality Test'
+        desc: 'Personality Test',
+        name:"ideasidol"
     },
     {
         image:Pitchothon,
         title:"PITCH-O-THON",
-        desc: 'Ideas pitching Event'
+        desc: 'Ideas pitching Event',
+        name:"pitchothon"
     },
     {
         image:Photographia,
         title:"PHOTOGRAPHIA",
-        desc: 'Mobile Photography Contest'
+        desc: 'Mobile Photography Contest',
+        name:"photographia"
     },
     {
         image:Rectifier,
         title:"RECTIFIER",
-        desc: 'Circuit Debugging Contest'
+        desc: 'Circuit Debugging Contest',
+        name:"rectifier"
     },
     {
         image:Robotics,
         title:"ROBOTICS",
-        desc: 'LFR, Roborace and Cross Road Event'
+        desc: 'LFR, Roborace and Cross Road Event',
+        name:"robotics"
     },
     {
         image:Technocon,
         title:"TECHNOCON",
-        desc: 'Tech Exploration Challenge'
+        desc: 'Tech Exploration Challenge',
+        name:"technocon"
     },
     {
         image:Trademark,
         title:"TRADEMARK",
-        desc: 'Logo Designing Contest'
+        desc: 'Logo Designing Contest',
+        name:"trademark"
     },
     {
         image:Trivea,
         title:"THE trIEEEvia",
-        desc: 'Technical quiz'
+        desc: 'Technical quiz',
+        name:"trivea"
     },
     {
         image:Webify,
         title:"WEBIFY",
-        desc: ' web designing contest'
+        desc: ' web designing contest',
+        name:"webify"
     }
 ]
 
