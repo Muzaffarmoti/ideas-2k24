@@ -1,6 +1,10 @@
 /* Sponsors section */
 .sponsors-section {
+    /* height: auto; */
     padding: 50px 0;
+    display: flex;
+    Flex-direction: column; 
+    justify-content: space-between;
   }
   
   /* Sponsors heading */
@@ -12,8 +16,9 @@
   /* Sponsor list */
   .sponsor-list {
     display: flex;
+    Flex-direction: rows; 
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   
   /* Individual sponsor item */

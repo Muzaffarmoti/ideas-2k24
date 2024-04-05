@@ -6,15 +6,12 @@ import sponsor3 from '../../assets/images/sponsors/SpaaX.png';
 
 function Sponsors() {
     return (
-        <div>
             <section id="sponsors" className="sponsors-section">
-                <div className="row section-header has-bottom-sep">
-                    <div className="col-full">
-                        <h1 className="display-1 display-1--light sponsors-heading">Sponsors</h1>
-                    </div>
+                <div className="col-full">
+                    <h1 className="sponsors-heading">Sponsors</h1>
                 </div>
-                <div className="row sponsor-list">
-                    <div className="col-block sponsor-item">
+                <div className="sponsor-list">
+                    <div className="sponsor-item">
                         <div className="sponsor-card">
                             <div className="sponsor-image">
                                 <img alt="" src={sponsor1} />
@@ -25,7 +22,7 @@ function Sponsors() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-block sponsor-item">
+                    <div className="sponsor-item">
                         <div className="sponsor-card">
                             <div className="sponsor-image">
                                 <img alt="" src={sponsor2} />
@@ -36,7 +33,7 @@ function Sponsors() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-block sponsor-item">
+                    <div className="sponsor-item">
                         <div className="sponsor-card">
                             <div className="sponsor-image">
                                 <img alt="" src={sponsor3} />
@@ -49,7 +46,6 @@ function Sponsors() {
                     </div>
                 </div>
             </section>
-        </div>
     );
 }
 
