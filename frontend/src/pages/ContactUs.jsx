@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Css/ContactUs.css'
 import art_video from '../assets/videos/Art_at_contact.mp4'
+import sinch from '../assets/images/web_team/sinchan.jpeg'
+// E:\Programming\IDEAS 24\ideeeas2k24\frontend\src\assets\images\web team\sinchan.jpeg
 
 function ContactUs() {
     return (
@@ -99,8 +101,68 @@ function ContactUs() {
                 </div>
 
             </div>
+
+            <div className='pic'>
+               <div className='pic_sub1'>
+                <div className='pic_sub2'>
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                </div>
+                <div className='pic_sub2'>
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                </div>
+                
+               </div>
+            </div>
         </div>
+
     )
 }
 
 export default ContactUs
+
