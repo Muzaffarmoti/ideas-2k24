@@ -1,0 +1,39 @@
+.cd-main-div {
+    display: flex;
+    height: 200vh;
+    flex-direction: column;
+    background-image: url('../../src/assets/images/posters/idee.jpg');
+    
+    background-size:contain; /* Fit the entire image within the container */
+    
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+  }
+  
+  .poster-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+  }
+  
+  .poster-div {
+    width: 50%;
+    height: 70%;
+  }
+  .details-div{
+    width: 50%;
+    
+  }
+
+  .poster-div img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .button-div {
+    width: 100%;
+    height: 10%;
+    
+  }
+  

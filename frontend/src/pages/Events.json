@@ -1,0 +1,32 @@
+{
+    "aavishkar": {
+        "id": 1,
+        "name": "Aavishkar",
+        "description": "As a part of IdEEEas, tech enthusiasts are given a chance to show off their hard work and dedication. Be it application-oriented projects or just basic projects in either hardware or software, students are encouraged to come up with their ‘invention’ and win the big bucks for the same.",
+        "teamsize":" Max.4",
+        "Eligibility" : "Open to all branches of BE and diploma students.",
+        "location":" IEM 101/102",
+        "entryfee":"200",
+        "poster":"1.png"
+    },
+    "cnario": {
+        "id": 2,
+        "name": "Cnario",
+        "description": "habibui",
+        "teamsize":" Max.4",
+        "Eligibility" : "Open to all branches of BE and diploma students.",
+        "location":" IEM 101/102",
+        "entryfee":"200",
+        "poster":"3.png"
+    },
+    "Webify": {
+        "id": 3,
+        "name": "Webify",
+        "description": "As a part of IdEEEas, tech enthusiasts are given a chance to show off their hard work and dedication. Be it application-oriented projects or just basic projects in either hardware or software, students are encouraged to come up with their ‘invention’ and win the big bucks for the same.",
+        "teamsize":" Max.4",
+        "Eligibility" : "Open to all branches of BE and diploma students.",
+        "location":" IEM 101/102",
+        "entryfee":"200",
+        "poster":"3.png"
+    }
+}
