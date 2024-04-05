@@ -1,8 +1,13 @@
 .hero-container {
     position: relative;
-    background-image: url();
+    height: 90vh;
 }
 
+.background-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .background-video video {
     width: 100%;
     height: 80vh;
@@ -13,6 +18,11 @@
 
 .hero-text {
     position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -22,25 +32,37 @@
 }
 
 .hero-text-ideeeas {
-    
+    width: 90%;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    padding-bottom: 90px;
 }
 
 .hero-text-ideeeas h1 {
-    font-weight: 400;
-    font-size: 5rem;
-    letter-spacing: 0.6rem;
+    color:#F84611;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    font-weight: 600;
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
     position: relative;
     white-space: nowrap;
+    -webkit-box-reflect: below -50px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
+
 }
 
 .hero-text-org p {
     font-size: 1.1rem;
     letter-spacing: 0.rem;
+    
+}
+
+.glow{
+    color: white;
+}
+.ieeecolor{
+    color:#F84611;
 }
 
 /* Keyframes for moving the letter left */
@@ -96,22 +118,47 @@
     animation-delay: 2s; /* Delay the animation for 2 seconds */
 }
 
-/* Keyframes for the fade-in animation for the text below */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
 /* Apply the fade-in animation to the text below */
 .hero-text-org {
     margin-top:20px;
-    opacity: 0; /* Initially hide the text */
-    animation: fadeIn 1s ease forwards; /* Apply the fadeIn animation with 1 second duration and ease timing function */
-    animation-delay: 3s; /* Delay the animation for 2 seconds */
+    opacity: 1; /* Initially hide the text */
+
+}
+
+.hero-national-mian{
+    font-weight: 400;
+}
+
+.hero-text-org h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.hero-bottom-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    transform: translateY(-25px);
+    padding-left: 30px;
+    opacity:0;
+    animation: insertLetters 1.5s forwards;
+    animation-delay: 2s; 
+    letter-spacing: 0.2rem;
+}
+
+@keyframes bottomText {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -138,5 +185,16 @@
             transform: translateX(-70px); 
         }
     }
-
+    .hero-text-org h3 {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+    .hero-text-ideeeas h1 {
+        -webkit-box-reflect: below -38px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
+    }
+    .hero-national h2 {
+        font-size:2rem;
+        font-weight: 200;
+    }
+    
 }
