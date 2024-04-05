@@ -4,13 +4,14 @@
 }
 
 .background-video{
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .background-video video {
     width: 100%;
-    height: 80vh;
+    height: 100%;
     max-width: 100%;
     position: relative;
     object-fit: cover;
@@ -42,27 +43,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 50px;
+    padding-left: 70px;
     font-weight: 600;
     font-size: 6rem;
     letter-spacing: 0.5rem;
     position: relative;
     white-space: nowrap;
-    -webkit-box-reflect: below -50px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
+    -webkit-box-reflect: below -50px linear-gradient(transparent, rgb(155, 159, 233, 0.23)); 
 
 }
 
-.hero-text-org p {
-    font-size: 1.1rem;
-    letter-spacing: 0.rem;
-    
-}
 
 .glow{
     color: white;
 }
 .ieeecolor{
     color:#F84611;
+}
+
+/* Apply the animations */
+.hero-text-ideeeas h1 span.move-left {
+    display: inline-block; /* Ensures span takes up space */
+    animation: moveLeft 1s forwards;
+    animation-delay: 1s; /* Delay the animation for one second */
+    
+}
+
+/* .inserted-letter {
+    opacity: 0;
+    animation: insertLetters 1s forwards;
+    animation-delay: 2s; 
+} */
+
+/* Apply the animation for the final word */
+.final-word {
+    opacity: 0;
+    text-shadow: 0 0 15px rgba(255, 255, 240, 0.5);
+    animation: showFinalWord 1s forwards;
+    animation-delay: 2s; /* Delay the animation for 2 seconds */
 }
 
 /* Keyframes for moving the letter left */
@@ -76,30 +94,16 @@
 }
 
 /* Keyframes for inserting new letters */
-@keyframes insertLetters {
+/* @keyframes insertLetters {
     0% {
         opacity: 0;
-        transform: scale(0); /* Start small */
+        transform: scale(0); 
     }
     100% {
         opacity: 1;
-        transform: scale(1); /* Full size */
+        transform: scale(1); 
     }
-}
-
-/* Apply the animations */
-.hero-text-ideeeas h1 span.move-left {
-    display: inline-block; /* Ensures span takes up space */
-    animation: moveLeft 1s forwards;
-    animation-delay: 1s; /* Delay the animation for one second */
-    
-}
-
-.inserted-letter {
-    opacity: 0;
-    animation: insertLetters 1s forwards;
-    animation-delay: 2s; /* Delay the animation for 2 seconds */
-}
+} */
 
 /* Keyframes for showing the final word */
 @keyframes showFinalWord {
@@ -111,53 +115,36 @@
     }
 }
 
-/* Apply the animation for the final word */
-.final-word {
-    opacity: 0;
-    animation: showFinalWord 1s forwards;
-    animation-delay: 2s; /* Delay the animation for 2 seconds */
-}
-
-
-/* Apply the fade-in animation to the text below */
-.hero-text-org {
-    margin-top:20px;
-    opacity: 1; /* Initially hide the text */
-
-}
-
 .hero-national-mian{
     font-weight: 400;
 }
-
 .hero-text-org h3{
+    margin-top:20px;
     font-size: 2rem;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.8); /* Set text color with some transparency */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow to the text */
+    
 }
 
 .hero-bottom-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    text-align: center;
     transform: translateY(-25px);
-    padding-left: 30px;
     opacity:0;
-    animation: insertLetters 1.5s forwards;
-    animation-delay: 2s; 
+    animation: bottomText 1.5s forwards;
+    animation-delay: 3s; 
     letter-spacing: 0.2rem;
 }
 
 @keyframes bottomText {
     0% {
+        transform: translateY(-10%);
         opacity: 0;
     }
-    50%{
-        opacity: 0.5;
-    }
     100% {
+        transform: translateY(0);
         opacity: 1;
+    
     }
 }
 
@@ -198,3 +185,71 @@
     }
     
 }
+/* 
+.colorcolor{
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    animation-delay: 3s;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+        text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+    }
+    99% {
+        text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+    }
+    100% {
+        text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
+    }
+} */
+/* .hero-container {
+    position: relative;
+}
+
+.background-video {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.bgg {
+    width: 50%; 
+}
+
+.left-gif {
+    position: absolute;
+    left: -27%;
+    opacity: 0.3;
+}
+
+.right-gif {
+    position: absolute;
+    right: -27%;
+    opacity: 0.3;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+ */
