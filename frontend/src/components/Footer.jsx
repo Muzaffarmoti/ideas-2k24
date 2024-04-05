@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Footer.css";
+import "../Css/Footer.css"; 
 import instagram from '../assets/images/icons/instagram.webp'
 import youtube from '../assets/images/icons/youtube.webp'
 import email from '../assets/images/icons/email.webp'

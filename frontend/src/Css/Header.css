@@ -1,17 +1,17 @@
 nav {
     width: calc(100% - 3.5rem); /* Adjust width to account for margins */
     display: flex;
-    height: 8vh; /* Decrease height */
+    height: 9vh; /* Decrease height */
     padding: 0.5rem 0 0 0;
     position: relative;
     background-color: #323232; /* Change to your desired shade of grey */
-    border-radius: 10px; /* Add border radius */
+    border-radius: 8px; /* Add border radius */
     margin: 1.5rem; /* Add margin */
 }
 
 .outernav{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
 .header-icons-container{
@@ -116,12 +116,16 @@ nav {
 
 @keyframes glow {
     0% {
-        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white;
+        text-shadow: 0 0 5px #5E89EA, 0 0 10px #5E89EA, 0 0 15px #5E89EA, 0 0 20px #5E89EA, 0 0 35px #5E89EA, 0 0 40px #5E89EA, 0 0 50px #5E89EA, 0 0 75px #5E89EA;
     }
     100% {
-        text-shadow: 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 35px white, 0 0 40px white, 0 0 50px white, 0 0 75px white, 0 0 100px white;
+        text-shadow: 0 0 10px #5E89EA, 0 0 15px #5E89EA, 0 0 20px #5E89EA, 0 0 35px #5E89EA, 0 0 40px #5E89EA, 0 0 50px #5E89EA, 0 0 75px #5E89EA, 0 0 100px #5E89EA;
     }
 }
+/* .your-element {
+    animation: glow 2s infinite alternate;
+} */
+
 
 .header-list li:hover a{
     background:none;

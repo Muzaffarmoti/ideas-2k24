@@ -1,19 +1,19 @@
 .footer-p{
     height: 5vh;
     background-color: black;
-    color: ivory;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .footer-main-container{
-    background-color: black;;
+    background-color: #010001;
 }
 .heading-primary--sub-skyblue{
     /* margin: 3vh; */
-    color: ivory;
+    color: #F84611;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
