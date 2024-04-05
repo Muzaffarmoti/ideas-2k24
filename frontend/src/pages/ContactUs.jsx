@@ -2,11 +2,13 @@ import React from 'react'
 import '../Css/ContactUs.css'
 import art_video from '../assets/videos/Art_at_contact.mp4'
 import sinch from '../assets/images/web_team/sinchan.jpeg'
-// E:\Programming\IDEAS 24\ideeeas2k24\frontend\src\assets\images\web team\sinchan.jpeg
+
+import Header from '../components/Header'
 
 function ContactUs() {
     return (
         <div className='contact_main_container'>
+            <Header/>
             <h3 className='contact_header'>Contact us </h3>
             <div className='contact_container1' >
                 <div className="container_map" ><iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"

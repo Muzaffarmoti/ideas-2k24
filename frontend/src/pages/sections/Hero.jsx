@@ -16,7 +16,7 @@ function Hero() {
                         <span className="move-left" style={{ marginRight: '-70px' }}>I</span>
                         <span className="final-word glow">D</span>
                         <span>EEE</span>
-                        <span className="final-word glow">AS  2K24</span>
+                        <span className="final-word glow">AS  <span className='colorcolor'> 2K24</span></span>
                     </h1>
                 </div>
                 <div className='hero-bottom-text'>
