@@ -4,14 +4,17 @@ import Header from '../components/Header'
 import Sponsors from './sections/Sponsors'
 import Cards from './sections/Cards'
 import Footer from '../components/Footer'
-
+import '../Css/Home.css'
 function Home() {
     return (
         <div>
             <Header/>
             <Hero/>
             <Sponsors/>
-            <Cards/>
+            <div className='events-section'>
+                <h2>OUR EVENTS</h2> 
+                <Cards/>
+            </div>
             <Footer/>
         </div>
     )

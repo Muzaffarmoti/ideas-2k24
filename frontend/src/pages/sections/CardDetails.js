@@ -17,51 +17,63 @@ import Webify from '../../assets/images/eventLogos/webify.png'
 const cardDetails = [
     {
         image:Aavishkar,
-        desc:"AAVISHKAR"
+        title:"AAVISHKAR",
+        desc: 'Project Exhibition'
     },
     {
         image:Blitz,
-        desc:"BLITZ"
+        title:"BLITZ",
+        desc: 'Literary Event'
     },
     {
         image:Cnario,
-        desc:"CNARIO"
+        title:"CNARIO",
+        desc: 'C Programming Contest'
     },
     {
         image:IdeasIdol,
-        desc:"IdEEEas IDOL"
+        title:"IdEEEas IDOL",
+        desc: 'Personality Test'
     },
     {
         image:Pitchothon,
-        desc:"PITCH-O-THON"
+        title:"PITCH-O-THON",
+        desc: 'Ideas pitching Event'
     },
     {
         image:Photographia,
-        desc:"PHOTOGRAPHIA"
+        title:"PHOTOGRAPHIA",
+        desc: 'Mobile Photography Contest'
     },
     {
         image:Rectifier,
-        desc:"RECTIFIER"
+        title:"RECTIFIER",
+        desc: 'Circuit Debugging Contest'
     },
     {
         image:Robotics,
-        desc:"ROBOTICS"
+        title:"ROBOTICS",
+        desc: 'LFR, Roborace and Cross Road Event'
     },
     {
         image:Technocon,
-        desc:"TECHNOCON"
-    },
-    {
-        image:Trivea,
-        desc:"THE trIEEEvia"
+        title:"TECHNOCON",
+        desc: 'Tech Exploration Challenge'
     },
     {
         image:Trademark,
-        desc:"TRADEMARK"
+        title:"TRADEMARK",
+        desc: 'Logo Designing Contest'
+    },
+    {
+        image:Trivea,
+        title:"THE trIEEEvia",
+        desc: 'Technical quiz'
     },
     {
         image:Webify,
-        desc:"WEBIFY"
+        title:"WEBIFY",
+        desc: ' web designing contest'
     }
 ]
 
