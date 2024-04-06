@@ -1,33 +1,74 @@
 
-#sit-details {
-    padding-top: 10.2rem;
-    padding-bottom: 9rem;
-    background-color: rgb(50, 48, 48);
-    color: white;
-    position: relative;
-    padding-bottom: 2.1rem;
-    position: relative;
-    max-width: 700px;
-    text-align: center;
-    margin-bottom: 3.6rem;
+.sub-container {
+    background-image: url('../assets/images/gallery/bgs.jpeg');
+    background-color: black;
+    opacity: 0.9;
+    padding: 0 0 50px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: initial;
 }
 
+.sit-details, .ieee-details {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.about-desc {
+    font-size: 24px; 
+    color: #f6f6f6;
+    text-align: center; 
+}
+
+.subhead, .display-1, .display-2 {
+    font-size: 35px;  
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #F84611;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.sit-details {
+    padding-top: 10.2rem;
+    padding-bottom: 9rem;
+    color: white;
+    position: relative;
+    max-width: fit-content;
+    text-align: center;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+
+
+
 .ieee-details .s-about {
-     padding-top: 10.2rem;
-     padding-bottom: 9rem;
-     background-color: rgb(50, 48, 48);
+     padding-top: 6px;
+     padding-bottom: 6px;
      color: rgb(250, 248, 248);
      position: relative;
 }
 
  .ieee-details .section-header.has-bottom-sep {
-    padding-bottom: 2.1rem;
+    padding-bottom: 2px;
     position: relative;
 }
 
  .ieee-details .section-header {
     max-width: 700px;
-    text-align: center;
+    text-align: relative;
     margin-bottom: 3.6rem;
 }
 
@@ -40,14 +81,6 @@ h3{
     padding-top: 0%;
 }
 
-.display-1 {
-    font-size: 4rem;
-   line-height: 1.25px;
-   margin-top: 4px;
-   padding-top: 2px;
-   padding-bottom: 2px;
-   color: rgb(149, 194, 149);
-}
 
 
 h1 {
@@ -71,32 +104,59 @@ h1 {
     letter-spacing: 0.4px;
     line-height: 1.5em;
     margin: 14px 0 10px 0;
-    padding-top: auto;
+    padding: auto;
     text-align: center;
 }
 
-.s-sit {
-    padding-top: 10.2rem;
-    padding-bottom: 10.2rem;
-    background-color: rgb(32, 32, 32);
-    color: rgb(3, 101, 187);
+
+  .gal-content {
+    width: 80%;
+    margin: 0 auto;
     position: relative;
+  }
+  .gall .gal-content img {
+    width: 90%;
+    margin: 0 auto 15px auto;
+  }
+  
+  .gall-content .gall-tag {
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    width: 50%;
+  
+    
+  }
+  
 
-}
-
-.section {
+.gal-content {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .gal-tag {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust spacing between images */
+  }
+  
+  .gal-tag {
+    margin-right: 0; /* Remove margin for the last image */
+  }
+  
+  .gal-tag img {
+    max-width: 50%;
+    height: auto;
     display: block;
-}
-
-.display-2 {
-    margin-top: 0.6rem;
-    font-size: 4.2rem;
-    font-family: "Protest Guerrilla", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .12rem;
-    color: rgb(130, 159, 130);
-}
-
-.sit-2 {
-    text-align: justify;
-}
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 9));
+    }
+  }
+  
