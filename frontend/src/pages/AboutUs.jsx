@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import ieeetag1 from '../assets/images/gallery/gal1.jpg';
 import ieeetag2 from '../assets/images/gallery/gal2.jpg';
 import ieeetag3 from '../assets/images/gallery/gal3.jpg';
@@ -6,30 +7,10 @@ import ieeetag6 from '../assets/images/gallery/gal6.jpg';
 import ieeetag7 from '../assets/images/gallery/gal7.png';
 import ieeetag8 from '../assets/images/gallery/gal8.jpg';
 import ieeetag9 from '../assets/images/gallery/gal9.JPG';
-import Carousel from 'react-multi-carousel';
-import React from 'react';
 import './AboutUs.css';
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 4
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
 
-function AboutUsComponent() {
+function AboutUsComponents() {
   const spacing = 0.1;
   return (
     <div className='main-container'>
@@ -65,46 +46,30 @@ function AboutUsComponent() {
           </section>
         </div>
       </div>
-
-      <section id="ieee-galls" className="s-ieee-gals">
+      {/*<section id="ieee-galls" className="s-ieee-gals">
         <div className="row section-header aos-init">
           <div className="col-full">
             <h3 className="subhead"></h3>
             <h1 className="display-3">GALLERY</h1>
           </div>
         </div>
-        <div className="gall"></div>
-        <div className="gal-content">
-          <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-            <div className="gal-tag">     
-              <img src={ieeetag1} alt="img" />
-            </div>
-            <div className="gal-tag">
-              <img src={ieeetag2} alt="img" />
-            </div>
-            <div className="gall-tag">
-              <img src={ieeetag3} alt="img" />
-            </div>
-            <div className="gal-tag">
-              <img src={ieeetag4} alt="img" />
-            </div>
-            <div className="gal-tag">
-              <img src={ieeetag6} alt="img" />
-            </div>
-            <div className="gal-tag">
-              <img src={ieeetag7} alt="img" />
-            </div> 
-            <div className="gal-tag">
-              <img src={ieeetag8} alt="img" />
-            </div>
-            <div className="gal-tag">
-              <img src={ieeetag9} alt="img" />
-            </div>
-          </Carousel>
+            <div className="scroller" data-direction="right" data-speed="slow">
+               <div className="scroller__inner">
+                     <img src={ieeetag1} alt="img" />
+                     <img src={ieeetag2} alt="img" />
+                     <img src={ieeetag3} alt="img" />
+                     <img src={ieeetag4} alt="img" />
+                     <img src={ieeetag6} alt="img" />
+                     <img src={ieeetag7} alt="img" />
+                </div>
+             
         </div> 
-      </section>
-    </div>
+  </section>*/}
+      </div>
+  
   );
 }
 
-export default AboutUsComponent;
+
+
+export default AboutUsComponents;
