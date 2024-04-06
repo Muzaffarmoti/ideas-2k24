@@ -8,7 +8,7 @@ import details from './Events.json';
 function CardDetails() {
   const { eventnum } = useParams();
   const eventDetails = details[eventnum];
-  console.log(eventDetails.poster)
+
   // Define buttons based on the id property of eventDetails
   let buttons;
   if (eventDetails.id === 1 || eventDetails.id === 2) {
@@ -31,19 +31,26 @@ function CardDetails() {
   return (
     <div className='cd-main-div'>
       <Header />
+      <h2 className="centered">{eventDetails.name}</h2>
       <div className='poster-details'>
         <div className='poster-div'>
           <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' />
         </div>
         <div className='details-div'>
-          <h2>{eventDetails.name}</h2>
-          <p><strong>Description:</strong> {eventDetails.description}</p>
-          <p><strong>Team Size:</strong> {eventDetails.teamsize}</p>
-          <p><strong>Eligibility:</strong> {eventDetails.Eligibility}</p>
-          <p><strong>Location:</strong> {eventDetails.location}</p>
-          <p><strong>Entry Fee:</strong> {eventDetails.entryfee}</p>
+          <div className='desc'>
+            <p><strong style={{ color: '#F84611' }}>Description:</strong> {eventDetails.description}</p>
+          </div>
+          <div className="details-grid">
+            <div className='row-one'>
+              <p><strong style={{ color: '#F84611' }}>Team Size:</strong> {eventDetails.teamsize}</p>
+              <p><strong style={{ color: '#F84611' }}>Eligibility:</strong> {eventDetails.Eligibility}</p>
+            </div>
+            <div className='row-two'>
+              <p><strong style={{ color: '#F84611' }}>Location:</strong> {eventDetails.location}</p>
+              <p><strong style={{ color: '#F84611' }}>Entry Fee:</strong> {eventDetails.entryfee}</p>
+            </div>
+          </div>
         </div>
-
       </div>
       <div className='button-div'>
         {buttons}

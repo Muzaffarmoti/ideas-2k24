@@ -7,7 +7,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"200",
-        "poster":"1.png"
+        "poster":"6.png"
     },
     "cnario": {
         "id": 2,
@@ -17,7 +17,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"200",
-        "poster":"3.png"
+        "poster":"6.png"
     },
     "Webify": {
         "id": 3,
@@ -27,6 +27,6 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"200",
-        "poster":"3.png"
+        "poster":"6.png"
     }
 }

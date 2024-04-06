@@ -1,20 +1,23 @@
 .cd-main-div {
     display: flex;
-    height: 200vh;
+    height: 250vh;
     flex-direction: column;
-    background-image: url('../../src/assets/images/posters/idee.jpg');
     
-    background-size:contain; /* Fit the entire image within the container */
-    
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
   }
+  .centered {
+    text-align: center;
+    color:#F84611;
+  }
+  
   
   .poster-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 90%;
+    height: 95%;
+    width: 100%;
+    padding-top: 45px;
   }
   
   .poster-div {
@@ -23,8 +26,11 @@
   }
   .details-div{
     width: 50%;
-    
+    text-align:justify; 
+    height: 30%;
+    padding-top: 40px;
   }
+  
 
   .poster-div img{
     height: 100%;
@@ -33,7 +39,19 @@
   
   .button-div {
     width: 100%;
-    height: 10%;
+    height: 5%;
     
   }
-  
+  .details-grid{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+  }
+
+.row-one{
+    width: 55%;
+    margin-right: 4%;
+}
+.row-two{
+    width: 45%;
+}
