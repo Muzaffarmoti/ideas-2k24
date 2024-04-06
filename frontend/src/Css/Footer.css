@@ -1,6 +1,6 @@
 .footer-p {
     height: 5vh;
-    background-color: #323232;
+    background-color: #010001;
     color: ivory;
     display: flex;
     align-items: center;
@@ -10,11 +10,9 @@
 .footer-main-container {
     background-color: #323232;
     border-top-left-radius: 150px;
-    /* border-top-right-radius: 150px; */
 }
 
 .heading-primary--sub-skyblue {
-    /* margin: 3vh; */
     color: #F84611;
     padding: 2rem;
     font-size: 1rem;
@@ -33,12 +31,10 @@
 }
 
 .con-icons {
-    /* border: 1px red solid; */
     margin: 1vh;
     height: 4.55vh;
     width: 4.5vh;
     transition: all .3s ease;
-    /* mix-blend-mode:color-dodge; */
 }
 
 .con-icons:hover {
@@ -50,7 +46,7 @@
     color: #F84611;
     font-weight: bold;
     letter-spacing: 2.5px;
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none;
 }
 
 .follow-us-text::after {
@@ -63,11 +59,21 @@
     background-color: #F84611;
     transform: scaleX(0);
     transition: transform 0.3s ease;
+    animation: moving 2s linear infinite;
 }
 
-.follow-us-text:hover::after {
-    transform: scaleX(1);
+@keyframes moving {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
 }
+
 
 .icon-wrapper {
     position: relative;
@@ -98,7 +104,7 @@
 
 .con-icons {
     position: relative;
-    z-index: 2; /* Ensure the icon is above the circle */
+    z-index: 2;
     height: 4.55vh;
     width: 4.5vh;
     transition: all .3s ease;
@@ -108,21 +114,26 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
-    .icon-wrapper::before {
-        width: 63px; /* Adjust the width for smaller screens */
-        height: 63px; /* Adjust the height for smaller screens */
-    }
-}
-
 .icon-wrapper.youtube-icon {
     padding-top: 10px;
 }
+
+
 @media screen and (max-width: 768px) {
+    .icon-wrapper::before {
+        width: 63px;
+        height: 63px;
+    }
+
     .footer-main-container {
-        border-top-left-radius: 7rem; /* Change the radius for smaller screens */
+        border-top-left-radius: 7rem;
     }
 }
+
+.footer-main-container {
+    border-top-left-radius: 7rem; /* Change the radius for smaller screens */
+}
+
 
 /* .underline{
     width:100%;
