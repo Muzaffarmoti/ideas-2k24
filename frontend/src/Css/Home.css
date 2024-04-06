@@ -3,4 +3,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    position: relative;
+    /* -webkit-box-reflect: below; */
+}
+.home-main{
+        z-index: 1;
+}
+.home-main Header{
+    z-index: 2;
+}
+
+.events-section h2{
+    display: flex;
+    padding: 4rem 0rem;
+    letter-spacing: 0.5rem;
+}
+.events-heading-wrapper {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-image: url("../assets/images/spaceElements/halfmoon.png"); */
+    background-size: cover;
+    background-position: center;
+}
+
+.events-heading{
+    display: flex;
+    justify-content:center;
+    align-items:end;
+    text-align: center;
+    /* color: #F84611 ; */
 }
