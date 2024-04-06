@@ -5,6 +5,7 @@ import Sponsors from './sections/Sponsors'
 import Cards from './sections/Cards'
 import Footer from '../components/Footer'
 import '../Css/Home.css'
+import FAQ from './sections/FAQ'
 function Home() {
     return (
         <div>
@@ -15,6 +16,7 @@ function Home() {
                 <h2>OUR EVENTS</h2> 
                 <Cards/>
             </div>
+            <FAQ />
             <Footer/>
         </div>
     )
