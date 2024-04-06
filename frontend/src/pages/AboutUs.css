@@ -334,3 +334,36 @@ h1 {
     scale: 0.8;
   }
   
+
+.about-desc p {
+  animation: fadeInUp 4s ease-in-out;
+}
+
+/* Animation for <h1> tag */
+.s-services h1, .s-about h1 {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for slideInLeft animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
