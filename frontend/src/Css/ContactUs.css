@@ -1,6 +1,6 @@
 .contact_main_container{
     margin-top: 25px;
-}
+} 
 
 .contact_header{
     text-align: center;
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 20px;
-    /* z-index: 1; */
+    /* /* z-index: 1; */
 }
 
 .text1{
@@ -53,3 +53,56 @@
         height: auto;
         z-index: -1;
     }
+
+
+    .pic{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pic_sub1{
+        overflow: hidden;
+        gap: 1.25rem;
+        height: 5rem;
+        display: flex;
+        
+    }
+    @keyframes slide {
+        0% {
+            transform: translate(0);
+        }
+        100% {
+            transform: translate(-100%);
+        }
+    }
+   
+    .pic_sub2{
+         gap: 1.25rem;
+        height: 5rem;
+        display: flex;
+        animation: slide 10s linear infinite;
+        animation-play-state: running;
+    }
+
+    .pic_sub2_img{
+        filter: brightness(50%);
+       filter: grayscale(100%);
+       justify-content: center;
+        width: 5rem;
+      
+     }
+    .img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #101010; 
+    }
+
+   
+
+    
+        

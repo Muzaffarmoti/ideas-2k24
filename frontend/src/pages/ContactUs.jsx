@@ -1,10 +1,14 @@
 import React from 'react'
 import '../Css/ContactUs.css'
 import art_video from '../assets/videos/Art_at_contact.mp4'
+import sinch from '../assets/images/web_team/sinchan.jpeg'
+
+import Header from '../components/Header'
 
 function ContactUs() {
     return (
         <div className='contact_main_container'>
+            <Header/>
             <h3 className='contact_header'>Contact us </h3>
             <div className='contact_container1' >
                 <div className="container_map" ><iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
@@ -81,7 +85,7 @@ function ContactUs() {
                     <div className='text1'>
                         <h6 >Ananya BR</h6>
                         Member, IEEE SIT SB<br />
-                        📞+91 99110 449927 <br />
+                        📞+91 91104 49927 <br />
                         ✉️ ananyasetty127@gmail.com
                     </div>
                     <div className='text1'>
@@ -99,8 +103,68 @@ function ContactUs() {
                 </div>
 
             </div>
+
+            <div className='pic'>
+               <div className='pic_sub1'>
+                <div className='pic_sub2'>
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                </div>
+                <div className='pic_sub2'>
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>   
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                    <div className='pic_sub2_img'>
+                        <img  className='img' src={sinch}  />
+                        </div>                    
+                </div>
+                
+               </div>
+            </div>
         </div>
+
     )
 }
 
 export default ContactUs
+

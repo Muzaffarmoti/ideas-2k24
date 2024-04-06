@@ -1,261 +1,102 @@
-.honeycomb {
-    display: -webkit-box;
+.cards-container {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    /* max-width: 1350px; */
-    /* margin: 0 auto; */
-    padding: 0;
-    /* transform: translateY(80px); */
-    margin-top: 2rem;
-}
-
-.honeycomb-cell {
-    -webkit-box-flex: 0;
-    flex: 0 1 250px;
-    max-width: 250px;
-    height: 137.5px;
-    /* margin: 80px 12.5px 30px ; */
-    margin: 5rem 0.782rem 1.875rem;
-    position: relative;
-    /* padding: 0px 20px; */
-    text-align: center;
-    z-index: 1;
-    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.1);
-}
-
-.honeycomb-cell_img {
-    object-fit: cover;
-    object-position: center;
-    filter: grayscale(100%);
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-}
-
-.honeycomb-cell_title {
-    height: 100%;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    word-break: break-word;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.8em;
-    transition: opacity 350ms;
-}
-
-.honeycomb-cell_title>small {
-    font-weight: 300;
-    margin-top: 0.25em;
-}
-
-.honeycomb-cell::before,
-.honeycomb-cell::after {
-    content: '';
-}
-
-.honeycomb-cell::before,
-.honeycomb-cell::after,
-.honeycomb-cell_img {
-    top: -50%;
-    left: 0;
     width: 100%;
-    height: 200%;
-    display: block;
-    position: absolute;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    z-index: -1;
+    /* background-image: url("../../assets/images/icons/starsBg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
-.honeycomb-cell::before {
-    /* background: #fff; */
-
-    transform: scale(1.055);
-}
-
-.honeycomb-cell::after {
-    background: #111111;
-    opacity: 0.7;
-    transition: opacity 350ms;
-    -webkit-transition: opacity 350ms;
-
-}
-
-.honeycomb-cell:hover .honeycomb-cell_title {
-    opacity: 0;
-    display: none;
-}
-
-.honeycomb-cell:hover .honeycomb-cell_img {
-    filter: grayscale(0%);
-    display: none;
-}
-
-.honeycomb-cell:hover::before {
-    /* background: none; */
-
-}
-
-.honeycomb-cell:hover::after {
-    opacity: 0;
-}
-
-.honeycomb_Hidden {
-    display: none;
-    opacity: 0;
-    width: 250px;
-    margin: 0 12.5px;
-}
-
-.honeycomb-after-contents {
-    display: none;
-}
-
-.honeycomb-cell:hover .honeycomb-after-contents { 
-    height: 100%;
-    display: -webkit-box;
+.cards-row {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    word-break: break-word;
-    text-transform: uppercase;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5rem; /* Adjust spacing between rows */
+}
+
+.cards-main {
+    width: 12rem; /* Adjust as needed */
+    text-align: center;
+    border: #d64c22 solid 1px;
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+
+.card-image {
+    width: 6rem; /* Adjust size of circular image */
+    height: 6rem; /* Adjust size of circular image */
+    border-radius: 50%;
+    margin-bottom: 1rem; /* Adjust spacing between image and title */
+    border: #fff solid 1px ;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    color: #F84611;
+    margin-bottom: 1rem; /* Adjust spacing between title and description */
+}
+
+.card-desc {
+    font-size: 1.2rem;
+    color: #f1eeee;
+    margin-bottom: 1rem; /* Adjust spacing between description and button */
+}
+
+.card-btn {
+    background-color: #333; /* Adjust button color */
     color: #fff;
-    font-weight: 700;
-    font-size: 1.8em;
-    transition: opacity 350ms;
-
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: #F84611 solid 2px;
 }
 
-.honeycomb-cell_desc {
-    font-size: 1.5rem;
+.card-btn img {
+    width: 1.25rem; /* Adjust rocket icon size */
+    margin-right: 0.5rem; /* Adjust spacing between icon and text */
 }
 
-button {
-    font-family: var(--font-sans);
-    font-weight: var(--font-weight-6);
-    font-size: var(--font-size-5);
-    color: var(--gray-8);
-    background: var(--gray-0);
-    border: 0;
-    padding: var(--size-4) var(--size-8);
-    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
-    transition: transform 0.1s;
-    position: relative;
+.card-btn:hover {
+    background-color: #F84611; /* Adjust button color on hover */
 }
 
-button:hover {
-    --y: -10;
-    --scale: 1.1;
-    --border-scale: 1;
+.cards-main {
+    width: 12rem; /* Adjust as needed */
+    text-align: center;
+    border: #d64c22 solid 1px;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    transition: transform 0.3s; /* Add transition for transform property */
 }
 
-button:active {
-    --y: 5%;
-    --scale: 0.9;
-    --border-scale: 0.9, 0.8;
+.cards-main:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
 }
 
-button:before {
-    content: "";
-    position: absolute;
-    inset: calc(var(--size-3) * -1);
-    border: var(--size-2) solid var(--gray-0);
-    transform: scale(var(--border-scale, 0));
-    transition: transform 0.125s;
+/* Rest of your CSS code remains unchanged */
 
-    --angle-one: 105deg;
-    --angle-two: 290deg;
-    --spread-one: 30deg;
-    --spread-two: 40deg;
-    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
-    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
-    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
-    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+@media screen and (max-width: 768px) {
+    .cards-row {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
 
-    mask: conic-gradient(transparent 0 var(--start-one),
-            white var(--start-one) var(--end-one),
-            transparent var(--end-one) var(--start-two),
-            white var(--start-two) var(--end-two),
-            transparent var(--end-two));
-
-    z-index: -1;
-}
-
-@media (max-width: 550px) {
-    .honeycomb-cell {
-        /* margin: 81.25px 25px; */
-        margin: 100px 25px;
-
+    .cards-main {
+        width: calc(50% - 2rem); /* Adjust card width for smaller screens */
+        margin-bottom: 2rem; /* Adjust spacing between cards */
     }
 }
 
-
-@media (min-width: 550px) and (max-width: 825px) {
-    .honeycomb-cell:nth-child(3n) {
-        margin-right: calc(50% - 125px);
-        margin-left: calc(50% - 125px);
+@media screen and (max-width: 480px) {
+    .cards-main {
+        /* width: calc(100% - 2rem);  */
+        /* width: 12rem; */
+        padding: 1rem;
     }
-
-    .honeycomb_Hidden:nth-child(3n + 5) {
-        display: block;
-    }
-}
-
-@media (min-width: 825px) and (max-width: 1100px) {
-
-    .honeycomb-cell:nth-child(5n + 4) {
-        margin-left: calc(50% - 275px);
-    }
-
-    .honeycomb-cell:nth-child(5n + 5) {
-        margin-right: calc(50% - 275px);
-    }
-
-    .honeycomb_Hidden:nth-child(5n),
-    .honeycomb_Hidden:nth-child(5n + 3) {
-        display: block;
-    }
-}
-
-@media (min-width: 1100px) {
-
-    .honeycomb-cell:nth-child(7n + 5) {
-        margin-left: calc(50% - 25rem);
-    }
-
-    .honeycomb-cell:nth-child(7n + 7),
-    .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
-        margin-right: calc(50% - 400px);
-    }
-
-    .honeycomb-cell:nth-last-child(1) {
-        display: block;
-        margin-left: auto;
-        margin-right: 633px;
-    }
-
-    .honeycomb_Hidden:nth-child(7n + 7),
-    .honeycomb_Hidden:nth-child(7n + 9),
-    .honeycomb_Hidden:nth-child(7n + 11) {
-        display: block;
-    }
-
-
-
 }
