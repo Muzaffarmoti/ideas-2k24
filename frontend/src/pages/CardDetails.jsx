@@ -42,12 +42,12 @@ function CardDetails() {
           </div>
           <div className="details-grid">
             <div className='row-one'>
-              <p><strong style={{ color: '#F84611' }}>Team Size:</strong> {eventDetails.teamsize}</p>
-              <p><strong style={{ color: '#F84611' }}>Eligibility:</strong> {eventDetails.Eligibility}</p>
+              <div><span><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span>{eventDetails.teamsize}</span></div>
+              <div><span><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span>{eventDetails.Eligibility}</span></div>
             </div>
             <div className='row-two'>
-              <p><strong style={{ color: '#F84611' }}>Location:</strong> {eventDetails.location}</p>
-              <p><strong style={{ color: '#F84611' }}>Entry Fee:</strong> {eventDetails.entryfee}</p>
+              <div> <span><strong style={{ color: '#F84611' }}> Location:</strong> </span><span>{eventDetails.location}</span></div>
+              <div><span><strong style={{ color: '#F84611' }}>Entry Fee:</strong></span><span>{eventDetails.entryfee}</span></div>
             </div>
           </div>
         </div>
