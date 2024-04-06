@@ -14,13 +14,18 @@ function Hero() {
                 <div className='hero-text-ideeeas'>
                     <h1>
                         <span className="move-left" style={{ marginRight: '-70px' }}>I</span>
-                        <span className="inserted-letter">D</span>
-                        <span className='glow'>EEE</span>
-                        <span className="final-word">AS  2K24</span>
+                        <span className="final-word glow">D</span>
+                        <span>EEE</span>
+                        <span className="final-word glow">AS  <span className='colorcolor'> 2K24</span></span>
                     </h1>
                 </div>
-                <div className='hero-text-org'>
-                    <p>Organised by IEEE SIT SB</p>
+                <div className='hero-bottom-text'>
+                    <div className="hero-national">
+                        <h2 className='glow hero-national-mian'>National Level <span className='ieeecolor'>Technical Symposium</span></h2>
+                    </div>
+                    <div className='hero-text-org'>
+                            <h3>Organised by <span className='ieeecolor'>IEEE</span> SIT SB</h3>
+                    </div>
                 </div>
             </div>
         </div>
