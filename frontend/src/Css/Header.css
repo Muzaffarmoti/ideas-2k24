@@ -20,7 +20,7 @@ nav {
 }
 
 .header-icons-container {
-    width: 70%;
+    width: 45%;
     display: flex;
     justify-content: space-evenly;
     /* padding-top: 1rem; */
@@ -29,19 +29,19 @@ nav {
 }
 
 .header-hamburger {
-    width: 40%;
+    width: 55%;
     padding-bottom: 2rem;
 }
 
 .header-icon {
-    width: 8%;
-    height: 70%;
+    width: 9%;
+    height: 80%;
 }
 
 .header-icon img {
     cursor: pointer;
-    width: 100%;
-    height: 125%;
+    width: 110%;
+    height: 110%;
 }
 
 .header-hamburger {
