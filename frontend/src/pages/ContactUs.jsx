@@ -138,7 +138,7 @@ function ContactUs() {
                     <div className='text1'>
                         <h6 >Ananya BR</h6>
                         Member, IEEE SIT SB<br />
-                        📞+91 99110 449927 <br />
+                        📞+91 91104 49927 <br />
                         ✉️ ananyasetty127@gmail.com
                     </div>
                     <div className='text1'>

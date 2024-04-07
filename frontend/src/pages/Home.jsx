@@ -5,6 +5,7 @@ import Sponsors from './sections/Sponsors'
 import Cards from './sections/Cards'
 import Footer from '../components/Footer'
 import '../Css/Home.css'
+import FAQ from './sections/FAQ'
 function Home() {
     return (
         <div className='home-main'>
@@ -17,6 +18,7 @@ function Home() {
                 </div>                
                 <Cards />
             </div>
+            <FAQ />
             <Footer />
         </div>
     )
