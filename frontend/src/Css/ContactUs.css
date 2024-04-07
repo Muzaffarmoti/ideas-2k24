@@ -10,7 +10,7 @@
 }
 
 .contact_main_container h4{
-    padding: 3rem;
+    padding: 1.5rem;
 }
 .contact_container1{
     margin: 10px;
@@ -113,6 +113,7 @@
         justify-content: center;
         align-items: center;
         background-color: #101010; 
+        cursor: pointer;
     }
  .background-image {
        /* background-image: url('../assets/images/spaceElements/star_2.jpeg');     */
@@ -176,6 +177,7 @@
     font-size: 1.5rem;
     padding: 1.5rem;
 }
+
 
 .map_test{
     padding: 5px;

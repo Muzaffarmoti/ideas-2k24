@@ -99,11 +99,16 @@ function ContactUs() {
             const parent = image.closest('.pic_sub2');
             if (parent) {
                 parent.style.animationPlayState = 'paused'; // Pause the animation
+                parent.scrollBy({
+                    top: 100, // Adjust the scroll amount as needed
+                    behavior: 'smooth' // Add smooth scrolling behavior
+                });
             }
             const otherScrollers = document.querySelectorAll('.pic_sub1 .pic_sub2');
             otherScrollers.forEach(scroller => {
                 if (scroller !== parent) {
                     scroller.style.animationPlayState = 'paused';
+                    
                 }
             });
         };
@@ -125,7 +130,6 @@ function ContactUs() {
                 }
             });
         };
-
         images.forEach(image => {
             // Add event listener for mouse enter
             image.addEventListener('mouseenter', handleMouseEnter);
@@ -350,11 +354,18 @@ function ContactUs() {
                 </div> */}
                 {/* <div className='pic'> */}
                 {/* Scroller elements */}
-                {hoveredImageDetails && (
+                {/* {hoveredImageDetails && (
                     <div className='image-details'>
                         <p>{hoveredImageDetails}</p>
                     </div>
+                )}                 */}
+                <div className='image-details'>
+                {hoveredImageDetails ? (
+                    <p>{hoveredImageDetails}</p>
+                ) : (
+                    <p>Hover over an image to see details</p>
                 )}
+            </div>
                 <div className='pic_sub1'>
                     <div className='pic_sub2'>
                         {memberDetailsArray.map((item, index) => (
@@ -381,6 +392,7 @@ function ContactUs() {
                             </div>
                         ))}
                     </div>
+                    
                 </div>
                 {/* </div> */}
 
