@@ -13,37 +13,7 @@ import Header from '../components/Header'
 
 
 function ContactUs() {
-    // const rowFirst = ContactDetails.slice(0,2);
-    // const rowSecond = ContactDetails.slice(2);
-    // useEffect(() => {
-    //     const images = document.querySelectorAll('.pic_sub2_img');
-
-    //     images.forEach(image => {
-    //         // Add event listeners for hover
-    //         image.addEventListener('mouseenter', function () {
-    //             this.classList.add('paused'); // Add the paused class on hover
-    //             this.querySelector('img').style.filter = 'none';
-
-    //             // Create and append description element
-    //             const descriptionElement = document.createElement('div');
-    //             descriptionElement.className = 'description';
-    //             descriptionElement.textContent = this.getAttribute('data-description');
-    //             this.appendChild(descriptionElement);
-    //         });
-
-    //         // Remove classes and description on mouse leave
-    //         image.addEventListener('mouseleave', function () {
-    //             this.classList.remove('paused'); // Remove the paused class on mouse leave
-    //             this.querySelector('img').style.filter = '';
-
-    //             const descriptionElement = this.querySelector('.description');
-    //             if (descriptionElement) {
-    //                 this.removeChild(descriptionElement);
-    //             }
-    //         });
-    //     });
-    // }, []);
-    const memberDetailsArray = [
+       const memberDetailsArray = [
         {
             name: 'Anagha N',
             position: 'Lead, Web Master IEEE SIT SB',
@@ -208,22 +178,7 @@ function ContactUs() {
 
 
                     </div>
-                    {/* <div className='contact_container' >
-                        <ul className='contact_row'>
-                            {rowFirst.map((info,index)=>(
-                                <li className='contact_main'>
-                                <div className='text1'>
-                                <h6 >{info.Name}</h6>
-                                {info.post}<br />
-                                {info.Phone}<br />
-                                {info.Mail}
-                            </div>
-                                </li>
-                            ))}
-
-                        </ul>
-                    </div> */}
-                </div>
+           </div>
             </div>
             <div className='container_text1_test'>
                 <div className='text1'>
@@ -302,6 +257,71 @@ function ContactUs() {
 
             </div> */}
 
+                            <div className='text1'>
+                                <h6 >Kona Chandra Kiran</h6>
+                                Chair,IEEE SIT SB<br />
+                                📞+91 99897 94662<br />
+                                ✉️ konachandrakiran555@gmail.com
+                            </div>
+                            <div className='text1'>
+                                <h6 >Adarsh Reddy P</h6>
+                                Vicechair,IEEE SIT SB<br />
+                                📞+91 95914 88158<br />
+                                ✉️ adarshpreddy@ieee.org
+                            </div>
+                            <div className='text1'>
+                                <h6 >Chandana R</h6>
+                                Chair,WIE IEEE SIT SB<br />
+                                📞+91 79757 20929<br />
+                                ✉️ rchandana1711@gmail.com
+                            </div>
+                            <div className='text1'>
+                                <h6 >Nanditha B U</h6>
+                                Vicechair,WIE IEEE SIT SB<br />
+                                📞+91 95916 19331<br />
+                                ✉️ nandithabu53@gmail.com
+                            </div>
+                        </div>
+            <h4 className='contact_header'>THE WEB TEAM</h4>
+         
+            <div className='pic'>
+                {hoveredImageDetails && (
+                    <div className='image-details'>
+                        <p>{hoveredImageDetails}</p>
+                    </div>
+                )}
+                <div className='pic_sub1'>
+                    <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                    {/* Add more scrollers similarly */}
+                    <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                {/* </div> */}
+
+                {/* Render image details */}
+                
+            </div>
 
         </div>
     )
