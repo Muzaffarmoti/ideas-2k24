@@ -114,33 +114,10 @@
         align-items: center;
         background-color: #101010; 
     }
-/* 
-   .contact_container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   }
- 
-   .contact_row{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 5rem;
-   }
- .contact_main{
-    width: 12rem; /* Adjust as needed 
-    text-align: center;
-    border: #d64c22 solid 1px;
-    padding: 2rem;
-    border-radius: 0.8rem; 
- } */
  .background-image {
-    /* background-image: url('../assets/images/spaceElements/star_1.jpeg'); */
-    background-image: url('../assets/images/spaceElements/star_2.jpeg');
-    /* background-image: url('../assets/images/spaceElements/universe_1.jpeg'); */
-    /* background-image: url('../assets/images/spaceElements/universe_2.jpeg'); */
+       /* background-image: url('../assets/images/spaceElements/star_2.jpeg');     */
+    background-image: url('../assets/images/spaceElements/sun.jpeg');
+    /* background-image: url('../assets/images/spaceElements/intersteller-2.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -198,4 +175,27 @@
     align-items: center;
     font-size: 1.5rem;
     padding: 1.5rem;
+}
+
+.map_test{
+    padding: 5px;
+}
+
+.map_text_test{
+    border: #d64c22 solid 1px;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    background-color: black;
+    margin-bottom: 15px;
+    /* size: 10px; */
+}
+.container_text1_test{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.clr{
+    color: black;
+    text-decoration: underline;
+    font-size: 25px;
 }
