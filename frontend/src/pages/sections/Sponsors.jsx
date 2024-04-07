@@ -8,7 +8,7 @@ function Sponsors() {
     return (
             <section id="sponsors" className="sponsors-section">
                 <div className="col-full">
-                    <h1 className="sponsors-heading">Sponsors</h1>
+                    <h2 className="sponsors-heading">SPONSORED BY</h2>
                 </div>
                 <div className="sponsor-list">
                     <div className="sponsor-item">

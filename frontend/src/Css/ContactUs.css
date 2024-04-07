@@ -1,18 +1,19 @@
-.contact_main_container{
+.contact_main_container {
     margin-top: 25px;
-} 
+}
 
-.contact_header{
+.contact_header {
     text-align: center;
-    margin:10px 0 10px 0;
+    margin: 10px 0 10px 0;
     color: orangered;
     letter-spacing: 0.8rem;
 }
 
-.contact_main_container h4{
-    padding: 3rem;
+.contact_main_container h4 {
+    padding: 1.5rem;
 }
-.contact_container1{
+
+.contact_container1 {
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -21,14 +22,14 @@
     /* height: 100vh; */
 }
 
-.container_text1{
+.container_text1 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     /* /* z-index: 1; */
 }
 
-.text1{
+.text1 {
     /* padding: 50px; */
     border: #d64c22 solid 1px;
     padding: 2rem;
@@ -37,91 +38,99 @@
     background-color: #323232;
 }
 
-.cont{
+.cont {
     margin: 50px;
     position: relative;
 }
-.web_container{
+
+.web_container {
     display: flex;
     flex-direction: column;
 }
 
-.container_text_sub1{
+.container_text_sub1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.container_map{
+
+.container_map {
     margin-top: 20px;
 }
-.back{
-   
-        position: fixed;
-        top: 50%;
-        left: 75%;
-        transform: translate(-50%, -50%);
-        min-width:100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -1;
-    }
+
+.back {
+
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
 
 
-    .pic{
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+.pic {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic_sub1 {
+    overflow: hidden;
+    gap: 1.25rem;
+    height: 5rem;
+    display: flex;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
     }
 
-    .pic_sub1{
-        overflow: hidden;
-        gap: 1.25rem;
-        height: 5rem;
-        display: flex;
-        
+    100% {
+        transform: translate(-100%);
     }
-    @keyframes slide {
-        0% {
-            transform: translate(0);
-        }
-        100% {
-            transform: translate(-100%);
-        }
-    }
-   
-    .pic_sub2{
-         gap: 1.25rem;
-        height: 5rem;
-        display: flex;
-        animation: slide 10s linear infinite;
-        animation-play-state: running;
-    }
+}
 
-    .pic_sub2_img{
-        filter: brightness(50%);
-       filter: grayscale(100%);
-       justify-content: center;
-        width: 5rem;
-      
-     }
-    .img{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #101010; 
-    }
- .background-image {
-       /* background-image: url('../assets/images/spaceElements/star_2.jpeg');     */
+.pic_sub2 {
+    gap: 1.25rem;
+    height: 5rem;
+    display: flex;
+    animation: slide 10s linear infinite;
+    animation-play-state: running;
+}
+
+.pic_sub2_img {
+    filter: brightness(50%);
+    filter: grayscale(100%);
+    justify-content: center;
+    width: 5rem;
+
+}
+
+.img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    cursor: pointer;
+}
+
+.background-image {
+    /* background-image: url('../assets/images/spaceElements/star_2.jpeg');     */
     background-image: url('../assets/images/spaceElements/sun.jpeg');
     /* background-image: url('../assets/images/spaceElements/intersteller-2.jpeg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: fixed ;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -131,11 +140,11 @@
 
 
 
- .pic_sub2_img.paused {
-    animation-play-state: paused 
-} 
+.pic_sub2_img.paused {
+    animation-play-state: paused
+}
 
-        
+
 .pic_sub2 {
     gap: 1.25rem;
     height: 5rem;
@@ -145,31 +154,40 @@
 .pic_sub2_img {
     filter: grayscale(100%);
     width: 5rem;
-    position: relative; /* Add relative positioning */
+    position: relative;
+    /* Add relative positioning */
 }
 
 .pic_sub2_img.paused {
-    filter: grayscale(0%); /* Remove grayscale filter when paused */
+    filter: grayscale(0%);
+    /* Remove grayscale filter when paused */
 }
 
 .pic_sub2_img:hover .description {
-    display: block; /* Show description on hover */
+    display: block;
+    /* Show description on hover */
 }
 
 .description {
     display: none;
-    position: absolute; /* Position description */
-    bottom: -2rem; /* Adjust the distance from the image */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    position: absolute;
+    /* Position description */
+    bottom: -2rem;
+    /* Adjust the distance from the image */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 0.5rem;
     border-radius: 0.5rem;
     white-space: nowrap;
-    z-index: 1; /* Ensure description is above other elements */
+    z-index: 1;
+    /* Ensure description is above other elements */
 }
-.image-details p{
+
+.image-details p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,11 +195,12 @@
     padding: 1.5rem;
 }
 
-.map_test{
+
+.map_test {
     padding: 5px;
 }
 
-.map_text_test{
+.map_text_test {
     border: #d64c22 solid 1px;
     padding: 1rem;
     border-radius: 0.8rem;
@@ -190,13 +209,48 @@
     list-style: none;
     /* size: 10px; */
 }
-.container_text1_test{
+
+.container_text1_test {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.clr{
+
+.clr {
     color: black;
     text-decoration: underline;
     font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .pic {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-details p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .pic {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image-details p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+    
 }

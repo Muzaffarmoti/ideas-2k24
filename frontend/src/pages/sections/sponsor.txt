@@ -11,7 +11,6 @@
   .sponsors-heading {
     text-align: center;
     margin-bottom: 30px;
-    letter-spacing: 0.8rem;
   }
   
   /* Sponsor list */
@@ -30,24 +29,21 @@
   
   /* Sponsor card */
   .sponsor-card {
-    background-color:#333;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    width: 250px; 
-    /* height: 300px;  */
-    transition: height 1.5s ease-in-out; 
+    width: 250px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
   }
   
-
   /* Sponsor image */
   .sponsor-image {
-    height: 150px; 
+    height: 150px; /* Set the desired height */
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
   }
   
   .sponsor-image img {
@@ -63,10 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(-100%); /* Move details up */
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for opacity and transform */
-}
+  }
   
   /* Sponsor name */
   .sponsor-name {
@@ -82,10 +75,41 @@
   }
   /* Sponsor card */
 /* Sponsor card */
+.sponsor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 250px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    transition: height 0.5s ease-in-out; /* Smooth transition for height change */
+  }
+  
+  /* Sponsor image */
+  .sponsor-image {
+    height: 100%; /* Set the desired height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+  }
+  
+  /* Sponsor details */
+  .sponsor-details {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for opacity and transform */
+}
 
   
-  
- 
   /* Show sponsor details on hover */
   .sponsor-card:hover .sponsor-details {
     opacity: 1;
@@ -94,13 +118,12 @@
   
   /* Move sponsor image up on hover */
   .sponsor-card:hover .sponsor-image {
-    transform: translateY(-50%);
-     /* Move image up by 50% of its height */
+    transform: translateY(-50%); /* Move image up by 50% of its height */
   }
   
   /* Increase sponsor section height on hover */
   .sponsor-card:hover {
-    /* height: auto;  */
+    height: auto; /* Allow the card to expand based on content */
   }
   
   
