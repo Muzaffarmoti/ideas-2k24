@@ -35,7 +35,7 @@ function ContactUs() {
             image: likith
         },
         {
-            name: 'Muzaffar M M',
+            name: 'Muzaffar M Motiwale',
             position: 'Joint Treasure, IEEE SIT SB',
             image: muzaffar
         },
