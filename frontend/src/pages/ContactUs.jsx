@@ -11,6 +11,7 @@ import rishith from '../assets/images/web_team/rishith.jpg'
 import ContactDetails from './ContactDetails'
 import Header from '../components/Header'
 
+
 function ContactUs() {
     // const rowFirst = ContactDetails.slice(0,2);
     // const rowSecond = ContactDetails.slice(2);
@@ -155,10 +156,10 @@ function ContactUs() {
                 <div className='cont'>
                     {/* <div className='back'>
                         <video autoPlay loop muted>
-                            <source src={art_video} type='video/mp4' />
+                            <source src={space} type='video/gif' />
                         </video>
                     </div> */}
-                    <div className='content'>
+                    {/* <div className='content'>
                         <div className='container_text1'>
                             <div className='text1'>
                                 <h6 >Kona Chandra Kiran</h6>
@@ -187,6 +188,19 @@ function ContactUs() {
                                 ✉️ nandithabu53@gmail.com
                             </div>
                         </div>
+                    </div> */}
+                    <div className='map_test'>
+                        <h5 className='contact_header clr' >DIRECTION</h5>
+                       <ul> 
+                        <li className='map_text_test'>siddaganga Institute of Technology is one of the well-known institutes which was established in the
+                         year 1963 and is located in Tumkur, Karnataka. The institute offers various Degree courses 
+                         including UG and PG programs. Programs are offered in Full-Time mode, and are delivered by </li>
+                        <li className='map_text_test'>highly experienced faculty. Students can pursue education in multiple courses like 
+                         MBA/PGDM, MCA, B.Arch, B.E. / B.Tech, M.E./M.Tech in the stream of Business & Management Studies, </li> 
+                         <li className='map_text_test'>IT & Software, Architecture & Planning, Engineering. It provides students with the opportunity to 
+                         learn from skilled and experienced faculty members who specialize in the fields of Telecommunication</li></ul>
+                        
+                       
                     </div>
                     {/* <div className='contact_container' >
                         <ul className='contact_row'>
@@ -205,6 +219,32 @@ function ContactUs() {
                     </div> */}
                 </div>
             </div>
+            <div className='container_text1_test'>
+                            <div className='text1'>
+                                <h6 >Kona Chandra Kiran</h6>
+                                Chair,IEEE SIT SB<br />
+                                📞+91 99897 94662<br />
+                                ✉️ konachandrakiran555@gmail.com
+                            </div>
+                            <div className='text1'>
+                                <h6 >Adarsh Reddy P</h6>
+                                Vicechair,IEEE SIT SB<br />
+                                📞+91 95914 88158<br />
+                                ✉️ adarshpreddy@ieee.org
+                            </div>
+                            <div className='text1'>
+                                <h6 >Chandana R</h6>
+                                Chair,WIE IEEE SIT SB<br />
+                                📞+91 79757 20929<br />
+                                ✉️ rchandana1711@gmail.com
+                            </div>
+                            <div className='text1'>
+                                <h6 >Nanditha B U</h6>
+                                Vicechair,WIE IEEE SIT SB<br />
+                                📞+91 95916 19331<br />
+                                ✉️ nandithabu53@gmail.com
+                            </div>
+                        </div>
             <h4 className='contact_header'>THE WEB TEAM</h4>
             {/* <div className='web_container'>
                 <div className='container_text_sub1'>
