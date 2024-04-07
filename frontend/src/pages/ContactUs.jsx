@@ -108,7 +108,7 @@ function ContactUs() {
             otherScrollers.forEach(scroller => {
                 if (scroller !== parent) {
                     scroller.style.animationPlayState = 'paused';
-                    
+
                 }
             });
         };
@@ -195,16 +195,16 @@ function ContactUs() {
                     </div> */}
                     <div className='map_test'>
                         <h5 className='contact_header clr' >DIRECTION</h5>
-                       <ul> 
-                        <li className='map_text_test'>siddaganga Institute of Technology is one of the well-known institutes which was established in the
-                         year 1963 and is located in Tumkur, Karnataka. The institute offers various Degree courses 
-                         including UG and PG programs. Programs are offered in Full-Time mode, and are delivered by </li>
-                        <li className='map_text_test'>highly experienced faculty. Students can pursue education in multiple courses like 
-                         MBA/PGDM, MCA, B.Arch, B.E. / B.Tech, M.E./M.Tech in the stream of Business & Management Studies, </li> 
-                         <li className='map_text_test'>IT & Software, Architecture & Planning, Engineering. It provides students with the opportunity to 
-                         learn from skilled and experienced faculty members who specialize in the fields of Telecommunication</li></ul>
-                        
-                       
+                        <ul>
+                            <li className='map_text_test'>siddaganga Institute of Technology is one of the well-known institutes which was established in the
+                                year 1963 and is located in Tumkur, Karnataka. The institute offers various Degree courses
+                                including UG and PG programs. Programs are offered in Full-Time mode, and are delivered by </li>
+                            <li className='map_text_test'>highly experienced faculty. Students can pursue education in multiple courses like
+                                MBA/PGDM, MCA, B.Arch, B.E. / B.Tech, M.E./M.Tech in the stream of Business & Management Studies, </li>
+                            <li className='map_text_test'>IT & Software, Architecture & Planning, Engineering. It provides students with the opportunity to
+                                learn from skilled and experienced faculty members who specialize in the fields of Telecommunication</li></ul>
+
+
                     </div>
                     {/* <div className='contact_container' >
                         <ul className='contact_row'>
@@ -224,32 +224,32 @@ function ContactUs() {
                 </div>
             </div>
             <div className='container_text1_test'>
-                            <div className='text1'>
-                                <h6 >Kona Chandra Kiran</h6>
-                                Chair,IEEE SIT SB<br />
-                                📞+91 99897 94662<br />
-                                ✉️ konachandrakiran555@gmail.com
-                            </div>
-                            <div className='text1'>
-                                <h6 >Adarsh Reddy P</h6>
-                                Vicechair,IEEE SIT SB<br />
-                                📞+91 95914 88158<br />
-                                ✉️ adarshpreddy@ieee.org
-                            </div>
-                            <div className='text1'>
-                                <h6 >Chandana R</h6>
-                                Chair,WIE IEEE SIT SB<br />
-                                📞+91 79757 20929<br />
-                                ✉️ rchandana1711@gmail.com
-                            </div>
-                            <div className='text1'>
-                                <h6 >Nanditha B U</h6>
-                                Vicechair,WIE IEEE SIT SB<br />
-                                📞+91 95916 19331<br />
-                                ✉️ nandithabu53@gmail.com
-                            </div>
-                        </div>
-            <h4 className='contact_header'>THE WEB TEAM</h4>
+                <div className='text1'>
+                    <h6 >Kona Chandra Kiran</h6>
+                    Chair,IEEE SIT SB<br />
+                    📞+91 99897 94662<br />
+                    ✉️ konachandrakiran555@gmail.com
+                </div>
+                <div className='text1'>
+                    <h6 >Adarsh Reddy P</h6>
+                    Vicechair,IEEE SIT SB<br />
+                    📞+91 95914 88158<br />
+                    ✉️ adarshpreddy@ieee.org
+                </div>
+                <div className='text1'>
+                    <h6 >Chandana R</h6>
+                    Chair,WIE IEEE SIT SB<br />
+                    📞+91 79757 20929<br />
+                    ✉️ rchandana1711@gmail.com
+                </div>
+                <div className='text1'>
+                    <h6 >Nanditha B U</h6>
+                    Vicechair,WIE IEEE SIT SB<br />
+                    📞+91 95916 19331<br />
+                    ✉️ nandithabu53@gmail.com
+                </div>
+            </div>
+            {/* <h4 className='contact_header'>THE WEB TEAM</h4> */}
             {/* <div className='web_container'>
                 <div className='container_text_sub1'>
                     <div className='text1'>
@@ -300,108 +300,108 @@ function ContactUs() {
 
             </div> */}
 
-            <div className='pic'>
-                {/* <div className='pic_sub1'>
-                    <div className='pic_sub2'>
-                        <div id='image1' className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB'>
-                            <img className='img' src={anagha} alt='Anagha' />
-                        </div>
-                        <div id='image3' className='pic_sub2_img' data-description='3' >
-                            <img className='img' src={ananya} alt='Ananya' />
-                        </div>
-                        <div id='image2' className='pic_sub2_img'>
-                            <img className='img' src={deeksha} alt='Deeksha' data-description='2' />
-                        </div>
-                        <div id='image5' className='pic_sub2_img' data-description='5'>
-                            <img className='img' src={likith} alt='likith' />
-                        </div>
-                        <div id='image4' className='pic_sub2_img' data-description='4' >
-                            <img className='img' src={muzaffar} alt='muzaffar' />
-                        </div>
-
-                        <div id='image6' className='pic_sub2_img' data-description='6' >
-                            <img className='img' src={nayana} alt='nayana' />
-                        </div>
-                        <div id='image7' className='pic_sub2_img' data-description='7'>
-                            <img className='img' src={rishith} alt='rishith ' />
-                        </div>
-
-                    </div>
-                    <div className='pic_sub2'>
-                        <div className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB '>
-                            <img className='img' src={anagha} alt='Anagha' />
-                        </div>
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={ananya} alt='Ananya' />
-                        </div>
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={deeksha} alt='Deeksha' />
-                        </div>
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={likith} alt='likith' />
-                        </div>
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={muzaffar} alt='muzaffar' />
-                        </div>
-
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={nayana} alt='nayana' />
-                        </div>
-                        <div className='pic_sub2_img'>
-                            <img className='img' src={rishith} alt='rishith ' />
-                        </div>
-                    </div>
-                </div> */}
-                {/* <div className='pic'> */}
-                {/* Scroller elements */}
-                {/* {hoveredImageDetails && (
-                    <div className='image-details'>
-                        <p>{hoveredImageDetails}</p>
-                    </div>
-                )}                 */}
-                <div className='image-details'>
-                {hoveredImageDetails ? (
-                    <p>{hoveredImageDetails}</p>
-                ) : (
-                    <p>Hover over an image to see details</p>
-                )}
-            </div>
-                <div className='pic_sub1'>
-                    <div className='pic_sub2'>
-                        {memberDetailsArray.map((item, index) => (
-                            <div
-                                className='pic_sub2_img'
-                                key={index}
-                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
-                                onMouseLeave={handleMouseLeave}
-                            >
-                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
-                            </div>
-                        ))}
-                    </div>
-                    {/* Add more scrollers similarly */}
-                    <div className='pic_sub2'>
-                        {memberDetailsArray.map((item, index) => (
-                            <div
-                                className='pic_sub2_img'
-                                key={index}
-                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
-                                onMouseLeave={handleMouseLeave}
-                            >
-                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
-                            </div>
-                        ))}
-                    </div>
-                    
-                </div>
-                {/* </div> */}
-
-                {/* Render image details */}
-                
-            </div>
 
         </div>
     )
 }
 
 export default ContactUs
+            // <div className='pic'>
+            //     {/* <div className='pic_sub1'>
+            //         <div className='pic_sub2'>
+            //             <div id='image1' className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB'>
+            //                 <img className='img' src={anagha} alt='Anagha' />
+            //             </div>
+            //             <div id='image3' className='pic_sub2_img' data-description='3' >
+            //                 <img className='img' src={ananya} alt='Ananya' />
+            //             </div>
+            //             <div id='image2' className='pic_sub2_img'>
+            //                 <img className='img' src={deeksha} alt='Deeksha' data-description='2' />
+            //             </div>
+            //             <div id='image5' className='pic_sub2_img' data-description='5'>
+            //                 <img className='img' src={likith} alt='likith' />
+            //             </div>
+            //             <div id='image4' className='pic_sub2_img' data-description='4' >
+            //                 <img className='img' src={muzaffar} alt='muzaffar' />
+            //             </div>
+
+            //             <div id='image6' className='pic_sub2_img' data-description='6' >
+            //                 <img className='img' src={nayana} alt='nayana' />
+            //             </div>
+            //             <div id='image7' className='pic_sub2_img' data-description='7'>
+            //                 <img className='img' src={rishith} alt='rishith ' />
+            //             </div>
+
+            //         </div>
+            //         <div className='pic_sub2'>
+            //             <div className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB '>
+            //                 <img className='img' src={anagha} alt='Anagha' />
+            //             </div>
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={ananya} alt='Ananya' />
+            //             </div>
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={deeksha} alt='Deeksha' />
+            //             </div>
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={likith} alt='likith' />
+            //             </div>
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={muzaffar} alt='muzaffar' />
+            //             </div>
+
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={nayana} alt='nayana' />
+            //             </div>
+            //             <div className='pic_sub2_img'>
+            //                 <img className='img' src={rishith} alt='rishith ' />
+            //             </div>
+            //         </div>
+            //     </div> */}
+            //     {/* <div className='pic'> */}
+            //     {/* Scroller elements */}
+            //     {/* {hoveredImageDetails && (
+            //         <div className='image-details'>
+            //             <p>{hoveredImageDetails}</p>
+            //         </div>
+            //     )}                 */}
+            //     <div className='image-details'>
+            //         {hoveredImageDetails ? (
+            //             <p>{hoveredImageDetails}</p>
+            //         ) : (
+            //             <p>Hover over an image to see details</p>
+            //         )}
+            //     </div>
+            //     <div className='pic_sub1'>
+            //         <div className='pic_sub2'>
+            //             {memberDetailsArray.map((item, index) => (
+            //                 <div
+            //                     className='pic_sub2_img'
+            //                     key={index}
+            //                     onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+            //                     onMouseLeave={handleMouseLeave}
+            //                 >
+            //                     <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+            //                 </div>
+            //             ))}
+            //         </div>
+            //         {/* Add more scrollers similarly */}
+            //         <div className='pic_sub2'>
+            //             {memberDetailsArray.map((item, index) => (
+            //                 <div
+            //                     className='pic_sub2_img'
+            //                     key={index}
+            //                     onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+            //                     onMouseLeave={handleMouseLeave}
+            //                 >
+            //                     <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+            //                 </div>
+            //             ))}
+            //         </div>
+
+            //     </div>
+            //     {/* </div> */}
+
+            //     {/* Render image details */}
+
+            // </div>
