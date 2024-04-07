@@ -256,35 +256,10 @@ function ContactUs() {
                 </div>
 
             </div> */}
-
-                            <div className='text1'>
-                                <h6 >Kona Chandra Kiran</h6>
-                                Chair,IEEE SIT SB<br />
-                                📞+91 99897 94662<br />
-                                ✉️ konachandrakiran555@gmail.com
-                            </div>
-                            <div className='text1'>
-                                <h6 >Adarsh Reddy P</h6>
-                                Vicechair,IEEE SIT SB<br />
-                                📞+91 95914 88158<br />
-                                ✉️ adarshpreddy@ieee.org
-                            </div>
-                            <div className='text1'>
-                                <h6 >Chandana R</h6>
-                                Chair,WIE IEEE SIT SB<br />
-                                📞+91 79757 20929<br />
-                                ✉️ rchandana1711@gmail.com
-                            </div>
-                            <div className='text1'>
-                                <h6 >Nanditha B U</h6>
-                                Vicechair,WIE IEEE SIT SB<br />
-                                📞+91 95916 19331<br />
-                                ✉️ nandithabu53@gmail.com
-                            </div>
-                        </div>
-            <h4 className='contact_header'>THE WEB TEAM</h4>
+                       
+            {/* <h4 className='contact_header'>THE WEB TEAM</h4> */}
          
-            <div className='pic'>
+            {/* <div className='pic'>
                 {hoveredImageDetails && (
                     <div className='image-details'>
                         <p>{hoveredImageDetails}</p>
@@ -304,7 +279,7 @@ function ContactUs() {
                         ))}
                     </div>
                     {/* Add more scrollers similarly */}
-                    <div className='pic_sub2'>
+                    {/* <div className='pic_sub2'>
                         {memberDetailsArray.map((item, index) => (
                             <div
                                 className='pic_sub2_img'
@@ -316,12 +291,12 @@ function ContactUs() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </div> } */}
                 {/* </div> */}
 
                 {/* Render image details */}
                 
-            </div>
+            {/* </div> */}
 
         </div>
     )
