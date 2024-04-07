@@ -1,0 +1,64 @@
+.faq-container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.faq-mini-container{
+    width: 60%;
+    padding: 50px;
+}
+
+.faq-item {
+    position: relative;
+    border: 1px solid #F84611;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  /* Arrow icon */
+  .arrow-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: orange;
+    transition: all 0.2s ease;
+    font-size: 8px;
+  }
+  
+  /* Question */
+  .question {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    padding-left: 30px; /* Adjust padding to make room for the arrow icon */
+    font-weight: 400;
+  }
+
+
+/* Answer */
+.answer {
+    color: white;
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease; /* Smooth transition for opacity and max-height */
+}
+
+.faq-item.open .answer {
+    opacity: 1;
+    max-height: 1000px; /* Set max-height to allow for smooth expansion */
+}
+
+.faq-item.open .arrow-icon {
+    top: 30%; /* Adjust top position when open */
+}
