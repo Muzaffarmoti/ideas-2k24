@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Css/ContactUs.css'
 import art_video from '../assets/videos/Art_at_contact.mp4'
 import anagha from '../assets/images/web_team/anagha.jpg'
@@ -14,40 +14,139 @@ import Header from '../components/Header'
 function ContactUs() {
     // const rowFirst = ContactDetails.slice(0,2);
     // const rowSecond = ContactDetails.slice(2);
+    // useEffect(() => {
+    //     const images = document.querySelectorAll('.pic_sub2_img');
+
+    //     images.forEach(image => {
+    //         // Add event listeners for hover
+    //         image.addEventListener('mouseenter', function () {
+    //             this.classList.add('paused'); // Add the paused class on hover
+    //             this.querySelector('img').style.filter = 'none';
+
+    //             // Create and append description element
+    //             const descriptionElement = document.createElement('div');
+    //             descriptionElement.className = 'description';
+    //             descriptionElement.textContent = this.getAttribute('data-description');
+    //             this.appendChild(descriptionElement);
+    //         });
+
+    //         // Remove classes and description on mouse leave
+    //         image.addEventListener('mouseleave', function () {
+    //             this.classList.remove('paused'); // Remove the paused class on mouse leave
+    //             this.querySelector('img').style.filter = '';
+
+    //             const descriptionElement = this.querySelector('.description');
+    //             if (descriptionElement) {
+    //                 this.removeChild(descriptionElement);
+    //             }
+    //         });
+    //     });
+    // }, []);
+    const memberDetailsArray = [
+        {
+            name: 'Anagha N',
+            position: 'Lead, Web Master IEEE SIT SB',
+            image: anagha
+        },
+        {
+            name: 'Ananya BR',
+            position: 'Member, IEEE SIT SB',
+            image: ananya
+        },
+        {
+            name: 'Deeksha S',
+            position: 'Member, IEEE SIT SB',
+            image: deeksha
+        },
+        {
+            name: 'Likith S H',
+            position: 'Member, IEEE SIT SB',
+            image: likith
+        },
+        {
+            name: 'Muzaffar M M',
+            position: 'Joint Treasure, IEEE SIT SB',
+            image: muzaffar
+        },
+        {
+            name: 'Nayana M',
+            position: 'Member, IEEE SIT SB',
+            image: nayana
+        },
+        {
+            name: 'Rishith  P',
+            position: 'Lead, Design Master IEEE SIT SB',
+            image: rishith
+        },
+    ];
+
+    const [hoveredImageDetails, setHoveredImageDetails] = useState(null);
+
+    const handleMouseEnter = (details) => {
+        setHoveredImageDetails(details);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredImageDetails(null);
+    };
     useEffect(() => {
         const images = document.querySelectorAll('.pic_sub2_img');
 
-        images.forEach(image => {
-            // Add event listeners for hover
-            image.addEventListener('mouseenter', function() {
-                this.classList.add('paused'); // Add the paused class on hover
-                this.querySelector('img').style.filter = 'none';
-
-                // Create and append description element
-                const descriptionElement = document.createElement('div');
-                descriptionElement.className = 'description';
-                descriptionElement.textContent = this.getAttribute('data-description');
-                this.appendChild(descriptionElement);
-            });
-
-            // Remove classes and description on mouse leave
-            image.addEventListener('mouseleave', function() {
-                this.classList.remove('paused'); // Remove the paused class on mouse leave
-                this.querySelector('img').style.filter = '';
-
-                const descriptionElement = this.querySelector('.description');
-                if (descriptionElement) {
-                    this.removeChild(descriptionElement);
+        const handleMouseEnter = (event) => {
+            const image = event.target;
+            image.classList.add('paused'); // Add the paused class on hover
+            const parent = image.closest('.pic_sub2');
+            if (parent) {
+                parent.style.animationPlayState = 'paused'; // Pause the animation
+            }
+            const otherScrollers = document.querySelectorAll('.pic_sub1 .pic_sub2');
+            otherScrollers.forEach(scroller => {
+                if (scroller !== parent) {
+                    scroller.style.animationPlayState = 'paused';
                 }
             });
+        };
+        const handleMouseLeave = (event) => {
+            const image = event.target;
+            image.classList.remove('paused'); // Remove the paused class on mouse leave
+            const parent = image.closest('.pic_sub2');
+            if (parent) {
+                parent.style.animationPlayState = 'running'; // Resume the animation
+            }
+            const otherScroller = document.querySelector('.pic_sub1 .pic_sub2');
+            if (otherScroller && otherScroller !== parent) {
+                otherScroller.style.animationPlayState = 'running';
+            }
+            const otherScrollers = document.querySelectorAll('.pic_sub1 .pic_sub2');
+            otherScrollers.forEach(scroller => {
+                if (scroller !== parent) {
+                    scroller.style.animationPlayState = 'running';
+                }
+            });
+        };
+
+        images.forEach(image => {
+            // Add event listener for mouse enter
+            image.addEventListener('mouseenter', handleMouseEnter);
+
+            // Add event listener for mouse leave
+            image.addEventListener('mouseleave', handleMouseLeave);
         });
+
+        // Cleanup function to remove event listeners
+        return () => {
+            images.forEach(image => {
+                image.removeEventListener('mouseenter', handleMouseEnter);
+                image.removeEventListener('mouseleave', handleMouseLeave);
+            });
+        };
     }, []);
 
     return (
         <div className='contact_main_container'>
-            <Header/>
+            <Header />
             <div className='background-image'></div>
-            <h3 className='contact_header'>Contact us </h3>
+            <h3 className='contact_header'>CONTACT US </h3>
             <div className='contact_container1' >
                 <div className="container_map" ><iframe width="600" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Siddaganga%20Institute%20Of%20Technology%20Bangalore%20-%20Honnavar%20Hwy,%20Chandana%20Complex,%20Tumakuru,%20Karnataka%20572103+(SIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
@@ -106,7 +205,7 @@ function ContactUs() {
                     </div> */}
                 </div>
             </div>
-            <h4 className='contact_header'>Web Team</h4>
+            <h4 className='contact_header'>THE WEB TEAM</h4>
             {/* <div className='web_container'>
                 <div className='container_text_sub1'>
                     <div className='text1'>
@@ -158,62 +257,99 @@ function ContactUs() {
             </div> */}
 
             <div className='pic'>
-               <div className='pic_sub1'>
-                <div className='pic_sub2'>
-                    <div id='image1' className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB'>
-                        <img  className='img' src={anagha}  alt='Anagha'/>
-                        </div>   
-                    <div id='image2' className='pic_sub2_img'>
-                        <img  className='img' src={deeksha} alt='Deeksha' data-description='2'/>
-                        </div>   
-                    <div id='image3' className='pic_sub2_img' data-description='3' >
-                        <img  className='img' src={ananya} alt='Ananya' />
-                        </div>   
+                {/* <div className='pic_sub1'>
+                    <div className='pic_sub2'>
+                        <div id='image1' className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB'>
+                            <img className='img' src={anagha} alt='Anagha' />
+                        </div>
+                        <div id='image3' className='pic_sub2_img' data-description='3' >
+                            <img className='img' src={ananya} alt='Ananya' />
+                        </div>
+                        <div id='image2' className='pic_sub2_img'>
+                            <img className='img' src={deeksha} alt='Deeksha' data-description='2' />
+                        </div>
+                        <div id='image5' className='pic_sub2_img' data-description='5'>
+                            <img className='img' src={likith} alt='likith' />
+                        </div>
                         <div id='image4' className='pic_sub2_img' data-description='4' >
-                        <img  className='img' src={muzaffar}  alt='muzaffar'/>
-                        </div>     
-                    <div id='image5' className='pic_sub2_img' data-description='5'>
-                        <img  className='img' src={likith}  alt='likith'/>
-                        </div>   
-                                       
-                    <div id='image6' className='pic_sub2_img' data-description='6' >
-                        <img  className='img' src={nayana} alt='nayana' />
-                        </div>                    
-                    <div id='image7' className='pic_sub2_img' data-description='7'>
-                        <img  className='img' src={rishith} alt='rishith ' />
-                        </div>        
-                     
-                </div>
-                <div className='pic_sub2'>
-                    <div className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB '>
-                        <img  className='img' src={anagha}  alt='Anagha'/>
-                        </div>   
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={deeksha} alt='Deeksha'  />
-                        </div>   
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={ananya} alt='Ananya' />
-                        </div> 
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={muzaffar} alt='muzaffar' />
-                        </div>       
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={likith} alt='likith' />
-                        </div>   
-                                      
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={nayana}  alt='nayana' />
-                        </div>                    
-                    <div className='pic_sub2_img'>
-                        <img  className='img' src={rishith} alt='rishith ' />
-                        </div>        
-               </div>                               
-               </div>
-            </div>
-        </div>
+                            <img className='img' src={muzaffar} alt='muzaffar' />
+                        </div>
 
+                        <div id='image6' className='pic_sub2_img' data-description='6' >
+                            <img className='img' src={nayana} alt='nayana' />
+                        </div>
+                        <div id='image7' className='pic_sub2_img' data-description='7'>
+                            <img className='img' src={rishith} alt='rishith ' />
+                        </div>
+
+                    </div>
+                    <div className='pic_sub2'>
+                        <div className='pic_sub2_img' data-description='Anagha WEB Master IEEE SIT SB '>
+                            <img className='img' src={anagha} alt='Anagha' />
+                        </div>
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={ananya} alt='Ananya' />
+                        </div>
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={deeksha} alt='Deeksha' />
+                        </div>
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={likith} alt='likith' />
+                        </div>
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={muzaffar} alt='muzaffar' />
+                        </div>
+
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={nayana} alt='nayana' />
+                        </div>
+                        <div className='pic_sub2_img'>
+                            <img className='img' src={rishith} alt='rishith ' />
+                        </div>
+                    </div>
+                </div> */}
+                {/* <div className='pic'> */}
+                {/* Scroller elements */}
+                {hoveredImageDetails && (
+                    <div className='image-details'>
+                        <p>{hoveredImageDetails}</p>
+                    </div>
+                )}
+                <div className='pic_sub1'>
+                    <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                    {/* Add more scrollers similarly */}
+                    <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                {/* </div> */}
+
+                {/* Render image details */}
+                
+            </div>
+
+        </div>
     )
 }
 
 export default ContactUs
-
