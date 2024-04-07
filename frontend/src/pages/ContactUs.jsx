@@ -194,15 +194,17 @@ function ContactUs() {
                         </div>
                     </div> */}
                     <div className='map_test'>
-                        <h5 className='contact_header clr' >DIRECTION</h5>
+                        <h5 className='contact_header clr'>HOW TO REACH US</h5>
                         <ul>
-                            <li className='map_text_test'>siddaganga Institute of Technology is one of the well-known institutes which was established in the
-                                year 1963 and is located in Tumkur, Karnataka. The institute offers various Degree courses
-                                including UG and PG programs. Programs are offered in Full-Time mode, and are delivered by </li>
-                            <li className='map_text_test'>highly experienced faculty. Students can pursue education in multiple courses like
-                                MBA/PGDM, MCA, B.Arch, B.E. / B.Tech, M.E./M.Tech in the stream of Business & Management Studies, </li>
-                            <li className='map_text_test'>IT & Software, Architecture & Planning, Engineering. It provides students with the opportunity to
-                                learn from skilled and experienced faculty members who specialize in the fields of Telecommunication</li></ul>
+                            <li className='map_text_test'><span>BUS:</span>  Frequent buses are available to Tumakuru from the Kempegowda Bus Station,
+                             Bengaluru. Alight at the SIT stop one and a half hour later. If you happen to sleep
+                              through, fret not. Alight at the Tumakuru bus stand. Autos and the local buses (no. 201) are easily available to SIT </li>
+                            <li className='map_text_test'><span>TRAIN:</span>  Trains are available intermittently from
+                             Bengaluru station. Kindly refer to the train schedules for timings. From Tumakuru station, autos are available to SIT. </li>
+                            <li className='map_text_test'><span>TAXI:</span>  Taxis are available from Bangalore to SIT. However, considering the frequency
+                             of buses,  taxis are not really recommended. </li>
+                            <li className='map_text_test'><span>AIR:</span>  Air The nearest airport is the Kempegowda International Airport, Bengaluru. </li>
+                            </ul>
 
 
                     </div>
