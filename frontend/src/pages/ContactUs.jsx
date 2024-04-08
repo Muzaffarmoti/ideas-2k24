@@ -13,37 +13,7 @@ import Header from '../components/Header'
 
 
 function ContactUs() {
-    // const rowFirst = ContactDetails.slice(0,2);
-    // const rowSecond = ContactDetails.slice(2);
-    // useEffect(() => {
-    //     const images = document.querySelectorAll('.pic_sub2_img');
-
-    //     images.forEach(image => {
-    //         // Add event listeners for hover
-    //         image.addEventListener('mouseenter', function () {
-    //             this.classList.add('paused'); // Add the paused class on hover
-    //             this.querySelector('img').style.filter = 'none';
-
-    //             // Create and append description element
-    //             const descriptionElement = document.createElement('div');
-    //             descriptionElement.className = 'description';
-    //             descriptionElement.textContent = this.getAttribute('data-description');
-    //             this.appendChild(descriptionElement);
-    //         });
-
-    //         // Remove classes and description on mouse leave
-    //         image.addEventListener('mouseleave', function () {
-    //             this.classList.remove('paused'); // Remove the paused class on mouse leave
-    //             this.querySelector('img').style.filter = '';
-
-    //             const descriptionElement = this.querySelector('.description');
-    //             if (descriptionElement) {
-    //                 this.removeChild(descriptionElement);
-    //             }
-    //         });
-    //     });
-    // }, []);
-    const memberDetailsArray = [
+       const memberDetailsArray = [
         {
             name: 'Anagha N',
             position: 'Lead, Web Master IEEE SIT SB',
@@ -65,7 +35,7 @@ function ContactUs() {
             image: likith
         },
         {
-            name: 'Muzaffar M M',
+            name: 'Muzaffar M Motiwale',
             position: 'Joint Treasure, IEEE SIT SB',
             image: muzaffar
         },
@@ -194,34 +164,21 @@ function ContactUs() {
                         </div>
                     </div> */}
                     <div className='map_test'>
-                        <h5 className='contact_header clr' >DIRECTION</h5>
+                        <h5 className='contact_header clr'>HOW TO REACH US</h5>
                         <ul>
-                            <li className='map_text_test'>siddaganga Institute of Technology is one of the well-known institutes which was established in the
-                                year 1963 and is located in Tumkur, Karnataka. The institute offers various Degree courses
-                                including UG and PG programs. Programs are offered in Full-Time mode, and are delivered by </li>
-                            <li className='map_text_test'>highly experienced faculty. Students can pursue education in multiple courses like
-                                MBA/PGDM, MCA, B.Arch, B.E. / B.Tech, M.E./M.Tech in the stream of Business & Management Studies, </li>
-                            <li className='map_text_test'>IT & Software, Architecture & Planning, Engineering. It provides students with the opportunity to
-                                learn from skilled and experienced faculty members who specialize in the fields of Telecommunication</li></ul>
+                            <li className='map_text_test'><span>BUS:</span>  Frequent buses are available to Tumakuru from the Kempegowda Bus Station,
+                             Bengaluru. Alight at the SIT stop one and a half hour later. If you happen to sleep
+                              through, fret not. Alight at the Tumakuru bus stand. Autos and the local buses (no. 201) are easily available to SIT </li>
+                            <li className='map_text_test'><span>TRAIN:</span>  Trains are available intermittently from
+                             Bengaluru station. Kindly refer to the train schedules for timings. From Tumakuru station, autos are available to SIT. </li>
+                            <li className='map_text_test'><span>TAXI:</span>  Taxis are available from Bangalore to SIT. However, considering the frequency
+                             of buses,  taxis are not really recommended. </li>
+                            <li className='map_text_test'><span>AIR:</span>  Air The nearest airport is the Kempegowda International Airport, Bengaluru. </li>
+                            </ul>
 
 
                     </div>
-                    {/* <div className='contact_container' >
-                        <ul className='contact_row'>
-                            {rowFirst.map((info,index)=>(
-                                <li className='contact_main'>
-                                <div className='text1'>
-                                <h6 >{info.Name}</h6>
-                                {info.post}<br />
-                                {info.Phone}<br />
-                                {info.Mail}
-                            </div>
-                                </li>
-                            ))}
-
-                        </ul>
-                    </div> */}
-                </div>
+           </div>
             </div>
             <div className='container_text1_test'>
                 <div className='text1'>
@@ -299,7 +256,47 @@ function ContactUs() {
                 </div>
 
             </div> */}
+                       
+            {/* <h4 className='contact_header'>THE WEB TEAM</h4> */}
+         
+            {/* <div className='pic'>
+                {hoveredImageDetails && (
+                    <div className='image-details'>
+                        <p>{hoveredImageDetails}</p>
+                    </div>
+                )}
+                <div className='pic_sub1'>
+                    <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                    {/* Add more scrollers similarly */}
+                    {/* <div className='pic_sub2'>
+                        {memberDetailsArray.map((item, index) => (
+                            <div
+                                className='pic_sub2_img'
+                                key={index}
+                                onMouseEnter={() => handleMouseEnter(`${item.name}, ${item.position}`)}
+                                onMouseLeave={handleMouseLeave}
+                            >
+                                <img className='img' src={item.image} alt={`Image ${index + 1}`} />
+                            </div>
+                        ))}
+                    </div>
+                </div> } */}
+                {/* </div> */}
 
+                {/* Render image details */}
+                
+            {/* </div> */}
 
         </div>
     )
