@@ -10,6 +10,7 @@ function Sponsors() {
                 <div className="col-full">
                     <h2 className="sponsors-heading">SPONSORED BY</h2>
                 </div>
+                
                 <div className="sponsor-list">
                     <div className="sponsor-item">
                         <div className="sponsor-card">

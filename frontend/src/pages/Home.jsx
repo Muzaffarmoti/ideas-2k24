@@ -80,7 +80,6 @@ function Home() {
             otherScrollers.forEach(scroller => {
                 if (scroller !== parent) {
                     scroller.style.animationPlayState = 'paused';
-
                 }
             });
         };
