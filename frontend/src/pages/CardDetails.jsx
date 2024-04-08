@@ -14,16 +14,16 @@ function CardDetails() {
   if (eventDetails.id === 1 || eventDetails.id === 2) {
     buttons = (
       <>
-        <button>Button 1</button>
-        <button>Button 2</button>
+        <button className='card-btnn'>Button 1</button>
+        <button className='card-btnn'>Button 2</button>
       </>
     );
   } else {
     buttons = (
       <>
-        <button>Button 1</button>
-        <button>Button 2</button>
-        <button>Button 3</button>
+        <button className='card-btnn'>Button 1</button>
+        <button className='card-btnn'>Button 2</button>
+        <button className='card-btnn'>Button 3</button>
       </>
     );
   }
@@ -42,12 +42,12 @@ function CardDetails() {
           </div>
           <div className="details-grid">
             <div className='row-one'>
-              <div><span><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span>{eventDetails.teamsize}</span></div>
-              <div><span><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span>{eventDetails.Eligibility}</span></div>
+              <div className='details'><span className='span-taggg'><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span className='span-taggs'>{eventDetails.teamsize}</span></div>
+              <div className='details'><span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span className='span-taggs'>{eventDetails.Eligibility}</span></div>
             </div>
             <div className='row-two'>
-              <div> <span><strong style={{ color: '#F84611' }}> Location:</strong> </span><span>{eventDetails.location}</span></div>
-              <div><span><strong style={{ color: '#F84611' }}>Entry Fee:</strong></span><span>{eventDetails.entryfee}</span></div>
+              <div className='details'> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>{eventDetails.location}</span></div>
+              <div className='details'><span className='span-tag'><strong style={{ color: '#F84611' }}>Entry Fee:</strong></span><span className='span-tagg'>{eventDetails.entryfee}</span></div>
             </div>
           </div>
         </div>

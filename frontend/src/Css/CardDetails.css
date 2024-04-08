@@ -8,7 +8,10 @@
     text-align: center;
     color:#F84611;
   }
-  
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
   
   .poster-details {
     display: flex;
@@ -28,7 +31,8 @@
     width: 50%;
     text-align:justify; 
     height: 30%;
-    padding-top: 5%;
+    padding-top: 2rem;
+    
   }
   
 
@@ -39,8 +43,11 @@
   
   .button-div {
     width: 100%;
-    height: 5%;
-    
+    height: 5%;  
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%; /* Ensures the container stretches across the parent */  
   }
   .details-grid{
     display: flex;
@@ -54,4 +61,39 @@
 }
 .row-two{
     width: 45%;
+}
+.span-tag{
+    font-size: 1.8rem;
+    padding-left: 3rem;
+}
+.span-taggg{
+    font-size: 1.8rem;
+    padding-left: 3rem;
+}
+.span-tagg{
+    font-size: 1.5rem;
+    width: 70%;
+    padding-left: 3rem;
+}
+.span-taggs{
+    font-size: 1.5rem;
+    width: 70%;
+    padding-left: 3rem;
+}
+.desc{
+    text-align: justify;
+}
+.details{
+    padding-top: 1.2rem;
+}
+.card-btnn{
+    background-color: #333; /* Adjust button color */
+    color: #fff;
+    border: none;
+    border-radius: 1.25rem;
+    padding: 0.8rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: #F84611 solid 2px;
+    
 }
