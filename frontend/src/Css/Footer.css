@@ -121,14 +121,20 @@
 
 @media screen and (max-width: 768px) {
     .icon-wrapper::before {
-        width: 63px;
-        height: 63px;
+        width: 50px; /* Adjust width for smaller screens */
+        height: 50px; /* Adjust height for smaller screens */
+    }
+
+    .icon-wrapper .con-icons {
+        height: 3.5vh; /* Adjust height for smaller screens */
+        width: 3.5vh; /* Adjust width for smaller screens */
     }
 
     .footer-main-container {
         border-top-left-radius: 7rem;
     }
 }
+
 
 .footer-main-container {
     border-top-left-radius: 7rem; /* Change the radius for smaller screens */
