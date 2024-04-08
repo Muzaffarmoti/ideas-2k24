@@ -21,7 +21,7 @@ function Sponsors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='slide slide2' style={{ backgroundColor: 'rgb(83, 178, 255)' }}>
+                            <div className='slide slide2' style={{ backgroundColor: '#333' }}>
                                 <div className='content'>
                                     <h3>Computer Society of India</h3>
                                     <p>Ticketing Partner</p>
@@ -47,7 +47,7 @@ function Sponsors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='slide slide2' style={{ backgroundColor: 'rgb(83, 178, 255)' }}>
+                            <div className='slide slide2' style={{ backgroundColor: '#333' }}>
                                 <div className='content'>
                                     <h3>Kwikpic</h3>
                                     <p>General Sponsor</p>
@@ -65,7 +65,7 @@ function Sponsors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='slide slide2' style={{ backgroundColor: 'rgb(83, 178, 255)' }}>
+                            <div className='slide slide2' style={{ backgroundColor: '#333' }}>
                                 <div className='content'>
                                     <h3>SpaaX</h3>
                                     <p>General Sponsor</p>
