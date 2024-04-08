@@ -22,6 +22,7 @@
     border: #d64c22 solid 1px;
     padding: 2rem;
     border-radius: 0.8rem;
+    background-color:#333;
 }
 
 .card-image {
@@ -45,7 +46,10 @@
     color: #f1eeee;
     margin-bottom: 1rem; /* Adjust spacing between description and button */
 }
-
+.card-after-contents{
+    display: flex;
+    flex-direction: column;
+}
 .card-btn {
     background-color: #333; /* Adjust button color */
     color: #fff;
@@ -55,6 +59,9 @@
     cursor: pointer;
     transition: background-color 0.3s;
     border: #F84611 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-btn img {
@@ -80,6 +87,20 @@
 }
 
 /* Rest of your CSS code remains unchanged */
+
+@media screen and (max-width: 1000px) {
+    .cards-row {
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .cards-main {
+        width: 30%; /* Adjust card width for smaller screens */
+        margin-bottom: 2rem; /* Adjust spacing between cards */
+    }
+}
+
+
 
 @media screen and (max-width: 768px) {
     .cards-row {
