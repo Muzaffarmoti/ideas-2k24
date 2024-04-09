@@ -11,44 +11,53 @@ function CardDetails() {
   useEffect(() => {
     AOS.init({
       // Global settings:
-      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-      initClassName: 'aos-init', // class applied after initialization
-      animatedClassName: 'aos-animate', // class applied on animation
-      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-      debounceDelay: 10, // the delay on debounce used while resizing window (advanced)
-      throttleDelay: 19, // the delay on throttle used while scrolling the page (advanced)
-
-      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-      offset: 120, // offset (in px) from the original trigger point
-      delay: 0, // values from 0 to 3000, with step 50ms
-      duration: 800, // values from 0 to 3000, with step 50ms
-      easing: 'ease', // default easing for AOS animations
-      once: false, // whether animation should happen only once - while scrolling down
-      mirror: false, // whether elements should animate out while scrolling past them
-      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      disable: false,
+      startEvent: 'DOMContentLoaded',
+      initClassName: 'aos-init',
+      animatedClassName: 'aos-animate',
+      useClassNames: false,
+      disableMutationObserver: false,
+      debounceDelay: 10,
+      throttleDelay: 19,
+      offset: 120,
+      delay: 0,
+      duration: 800,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
     });
   }, []);
 
   const { eventnum } = useParams();
   const eventDetails = details[eventnum];
 
-  // Define buttons based on the id property of eventDetails
+  const handleRegister = async (ydlink) => {
+    window.open(ydlink, "_blank");
+  };
+
+  const handleDownloadBrochure = async (link) => {
+    window.open(link, "_blank");
+  };
+
+  const handleUploadFile = async (link) => {
+    window.open(link, "_blank");
+  };
+
   let buttons;
   if (eventDetails.id === 1 || eventDetails.id === 2) {
     buttons = (
       <>
-        <button className='card-btnn'>Register</button>
-        <button className='card-btnn'>Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}>Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}>Download Brochure</button>
       </>
     );
   } else {
     buttons = (
       <>
-        <button className='card-btnn'>Register</button>
-        <button className='card-btnn'>Download Brochure</button>
-        <button className='card-btnn'>Upload File </button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}>Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}>Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}>Upload File</button>
       </>
     );
   }
@@ -62,8 +71,8 @@ function CardDetails() {
           <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' />
         </div>
         <div className='details-div' data-aos="fade-up">
-          <div className='desc'>
-            <p><strong style={{ color: '#F84611' }}>Description:</strong> {eventDetails.description}</p>
+          <div className='desc' data-aos="fade-up">
+            <span className='descriptionn' style={{ color: 'white' }}>{eventDetails.description}</span>
           </div>
           <div className="details-grid">
             <div className='row-one'>
