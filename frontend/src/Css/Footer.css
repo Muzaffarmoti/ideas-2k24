@@ -118,7 +118,6 @@
     padding-top: 10px;
 }
 
-
 @media screen and (max-width: 768px) {
     .icon-wrapper::before {
         width: 50px; /* Adjust width for smaller screens */
