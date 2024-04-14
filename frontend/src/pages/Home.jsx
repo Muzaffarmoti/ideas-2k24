@@ -14,6 +14,8 @@ import likith from '../assets/images/web_team/likith.jpg'
 import muzaffar from '../assets/images/web_team/muzaffar.jpeg'
 import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Home() {
     const memberDetailsArray = [
         {
@@ -117,11 +119,15 @@ function Home() {
             });
         };
     }, []);
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className='home-main'>
             <Header />
             <Hero />
-            <div>
+            <div data-aos="zoom-in">
                 <Sponsors />
             </div>
             <div className='events-section'>
