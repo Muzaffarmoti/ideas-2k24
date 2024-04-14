@@ -81,16 +81,7 @@ function AboutUsComponents() {
     const images = [image1, image2, image3, image4, image6, image7, image8, image9];
     return (
       <div>
-        <div className='namegal'>
-        <section id="gallname" className="s-gallname">
-        <div className="col-full">
-         <h3 className="subhead"></h3>
-        <h1 className="center display-3 display-3--light aos-init aos-animate" style={{marginRight: spacing + 'em'}}>Gallery</h1>
-    </div>
-      </section>
-      </div>
-
-         <section id="gall" className="s-gall">
+          <section id="gall" className="s-gall">
      <div className="scroller" data-direction="right" data-speed="slow">
         <div className="scroller__inner">
           {images.map((image, index) => (
