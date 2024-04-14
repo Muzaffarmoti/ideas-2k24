@@ -17,7 +17,7 @@ function AboutUsComponents() {
   const styles = {
     image: {
       width: '300px',
-      height: '300px',   
+      height: '300px',
     }
   };
 
@@ -42,27 +42,27 @@ function AboutUsComponents() {
       <div className='main-container'>
         <Header />
         <div className='sub-container'>
-          <div className='sit-details'>  
+          <div className='sit-details'>
             <section id="services" className="s-services">
               <div className="row section-header has-bottom-sep aos-init">
                 <div className="col-full">
                   <h3 className="subhead"></h3>
-                  <h1 className="display-2 display-2--light aos-init aos-animate" style={{marginRight: spacing + 'em'}}>About  SIT</h1>
+                  <h1 className="display-2 display-2--light aos-init aos-animate" style={{ marginRight: spacing + 'em' }}>About  SIT</h1>
                 </div>
               </div>
               <div className="row about-desc aos-init aos-animate">
-                <div className="col-full" style={{color: '#f6f6f6'}}>
+                <div className="col-full" style={{ color: '#f6f6f6' }}>
                   <p className="aos-init aos-animate">Siddaganga Institute of Technology has a rich heritage of bestowing knowledge and passion to young minds. Its motto 'work is worship' is ingrained into the minds of every student, thus creating an inclusive and empowering community for students that encourages growth and achievement. The unwavering assistance from professors and administrators played a significant role in building the confidence and perspective of every individual.</p>
                 </div>
               </div>
             </section>
-          </div>   
+          </div>
           <div className='ieee-details'>
             <section id="about" className="s-about">
               <div className="row section-header has-bottom-sep aos-init aos-animate">
                 <div className="col-full">
                   <h3 className="subhead subhead--dark"></h3>
-                  <h1 className="display-1 display-1--light aos-init aos-animate" style={{textTransform: 'uppercase'}}>About IEEE SIT SB</h1>
+                  <h1 className="display-1 display-1--light aos-init aos-animate" style={{ textTransform: 'uppercase' }}>About IEEE SIT SB</h1>
                 </div>
               </div>
               <div className="row about-desc aos-init aos-animate">
@@ -81,15 +81,15 @@ function AboutUsComponents() {
     const images = [image1, image2, image3, image4, image6, image7, image8, image9];
     return (
       <div>
-          <section id="gall" className="s-gall">
-     <div className="scroller" data-direction="right" data-speed="slow">
-        <div className="scroller__inner">
-          {images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
-          ))}
-        </div>
-      </div>
-      </section>
+        <section id="gall" className="s-gall">
+          <div className="scroller" data-direction="right" data-speed="slow">
+            <div className="scroller__inner">
+              {images.map((image, index) => (
+                <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     );
   };
@@ -100,31 +100,31 @@ function AboutUsComponents() {
     return (
       <div>
         <section id="gall1" className="s-gall1">
-      <div className="scroller" data-direction="left" data-speed="slow">
-        <div className="scroller__inner">
-          {images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
-          ))}
-        </div>
-    </div>
-    </section>
-    </div>
+          <div className="scroller" data-direction="left" data-speed="slow">
+            <div className="scroller__inner">
+              {images.map((image, index) => (
+                <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
     );
   };
-   
+
   const AvatarScroller2 = () => {
     const images = [image1, image2, image3, image4, image6, image7, image8, image9];
     return (
       <div>
-       <section id="gall2" className="s-gall2">
-      <div className="scroller" data-direction="right" data-speed="slow">
-        <div className="scroller__inner">
-          {images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
-          ))}
-        </div>
-      </div>
-      </section>
+        <section id="gall2" className="s-gall2">
+          <div className="scroller" data-direction="right" data-speed="slow">
+            <div className="scroller__inner">
+              {images.map((image, index) => (
+                <img key={index} src={image} alt={`Image ${index + 1}`} style={styles.image} />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     );
   };

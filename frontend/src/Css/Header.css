@@ -78,7 +78,7 @@ nav {
     display: flex;
     position: absolute;
     flex-direction: column;
-    animation: slideIn 1.5s forwards;
+    animation: slideIn 1.2s forwards;
     /* Use slideIn animation */
     width: 20%;
     height: 85vh;
