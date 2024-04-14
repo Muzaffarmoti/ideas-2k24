@@ -395,7 +395,7 @@ body {
   gap: 0.3%;
 }
 
-.scroller[data-animated="true"] {
+/*.scroller[data-animated="true"] {
   overflow: scroll;
   -webkit-mask: linear-gradient(
     90deg,
@@ -405,7 +405,7 @@ body {
     transparent
   );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
+}*/
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
