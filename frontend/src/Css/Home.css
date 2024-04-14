@@ -16,11 +16,11 @@
 
 .events-section h2{
     display: flex;
-    padding: 4rem 0rem;
-    letter-spacing: 0.5rem;
+    
 }
 .events-heading-wrapper {
     /* position: absolute; */
+    padding: 4rem 0rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -34,13 +34,17 @@
     justify-content:center;
     align-items:end;
     text-align: center;
+    position: relative;
+    letter-spacing: 0.8rem;
     /* color: #F84611 ; */
 }
 
 .events-heading::after {
     content: '';
     position: absolute;
-    bottom: 1300px;
+    /* bottom: 1310px; */
+    /* bottom: 91.5%; */
+    top: 100%;
     left: 40%;
     /* right: 50%; */
     width: 20%;
