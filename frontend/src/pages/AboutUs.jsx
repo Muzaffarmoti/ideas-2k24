@@ -150,7 +150,7 @@ function AboutUsComponents() {
 
 
   return (
-    <div>
+    <div className='about-us-main'>
       <h1 style={{ textAlign: 'center' }}></h1>
       <Scroller speed="fast" />
       <AvatarScroller />

@@ -17,7 +17,14 @@
     padding: 1rem 0rem 2rem 0rem;
     /* height: 100vh; */
 }
-
+.contact_header_heading{
+    color: #fff;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .text1 {
     /* padding: 50px; */
     border: #d64c22 solid 1px;
@@ -90,8 +97,8 @@
 
 .background-image {
     /* background-image: url('../assets/images/spaceElements/star_2.jpeg');     */
-    background-image: url('../assets/images/spaceElements/sun.jpeg');
-    /* background-image: url('../assets/images/spaceElements/intersteller-2.jpeg'); */
+    /* background-image: url('../assets/images/spaceElements/sun.jpeg'); */
+    background-image: url('../assets/images/posters/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
