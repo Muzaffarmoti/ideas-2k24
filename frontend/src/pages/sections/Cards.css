@@ -18,11 +18,13 @@
 
 .cards-main {
     width: 12rem; /* Adjust as needed */
+    /* box-sizing: border-box; */
     text-align: center;
     border: #d64c22 solid 1px;
     padding: 2rem;
     border-radius: 0.8rem;
     background-color:#333;
+    box-shadow: #f7f6f6;
 }
 
 .card-image {

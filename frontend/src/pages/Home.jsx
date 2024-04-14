@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Hero from './sections/Hero'
 import Header from '../components/Header'
 import Sponsors from './sections/Sponsors'
@@ -38,7 +38,7 @@ function Home() {
         },
         {
             name: 'Muzaffar M Motiwale',
-            position: 'Joint Treasure, IEEE SIT SB',
+            position: 'Joint Treasurer, IEEE SIT SB',
             image: muzaffar
         },
         {
@@ -121,17 +121,19 @@ function Home() {
         <div className='home-main'>
             <Header />
             <Hero />
-            <Sponsors />
+            <div>
+                <Sponsors />
+            </div>
             <div className='events-section'>
                 <div className="events-heading-wrapper">
                     <h2 className='events-heading'>OUR EVENTS</h2>
-                </div>                
+                </div>
                 <Cards />
             </div>
             <FAQ />
             <div className='pic'>
-            <h4 className='contact_header'>THE WEB TEAM</h4>
-            <div className='image-details'>
+                <h4 className='contact_header'>THE WEB TEAM</h4>
+                <div className='image-details'>
                     {hoveredImageDetails ? (
                         <p>{hoveredImageDetails}</p>
                     ) : (
