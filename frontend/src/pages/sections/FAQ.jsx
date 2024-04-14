@@ -30,14 +30,14 @@ const FAQ = () => {
             id: 4,
             question: 'If my abstract gets selected for two events Aavishkar and Technocon, can our team participate in both?',
             answer:
-                'YES.',
+                'YES, You can participate.',
             isOpen: false,
         },
         {
             id: 5,
             question: 'If I am shortlisted for two rounds on the same day, will it be permissible to attend both?',
             answer:
-                'YES',
+                'YES, You are allowed.',
             isOpen: false,
         },
         {
@@ -58,7 +58,7 @@ const FAQ = () => {
             id: 8,
             question: 'If I have any doubts , whom should I contact with?',
             answer:
-                'Do refer the contact page',
+                'Do refer the contact page.',
             isOpen: false,
         },
     ]);

@@ -34,7 +34,7 @@
 
 .faq-item {
     position: relative;
-     border: 1px solid #F84611;
+     border: 1px solid white;
      /* border-bottom:transparent ; */
     /* border:  0.5px solid rgb(242, 211, 211); */
     /* color: #F84611; */
@@ -51,24 +51,23 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: orange;
     /* transition: all 0.2s ease; */
     font-size: 8px;
   }
   
   /* Question */
   .question {
-    color: white;
+    color: #F84611;
     margin: 0;
-    font-size: 17px;
+    font-size: 18px;
     padding-left: 30px; /* Adjust padding to make room for the arrow icon */
-    font-weight: 350;
+    font-weight: 400;
   }
 
 
 /* Answer */
 .answer {
-    color: #F84611;
+    color: white;
     padding-left: 30px;
     margin-top: 10px;
     font-size: 17px;
@@ -82,57 +81,17 @@
 .faq-item.open .answer {
     opacity: 1;
     max-height: 1000px; /* Set max-height to allow for smooth expansion */
+    animation: answerrr 0.5s ease-in-out;
   
 }
 
 .faq-item.open .arrow-icon {
     top: 30%; /* Adjust top position when open */
+    transform: translateY(-50%) rotate(180deg); 
 }
 
 /*neww */
-.faq-container {
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
-.faq-mini-container {
-  width: 70%;
-  padding: 50px;
-}
-
-.faq-item {
-  position: relative;
-  border: 0.1px solid #F84611;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 15px;
-  cursor: pointer;
-}
-
-.arrow-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: orange;
-  font-size: 8px;
-  transition: transform 1s ease; /* Smooth transition for arrow icon position */
-}
-
-.faq-item.open .arrow-icon {
-  transform: translateY(-50%) rotate(180deg); /* Rotate arrow icon when answer is open */
-}
-
-.faq-item.open .answer {
-  opacity: 1;
-  max-height: 1000px; 
-  animation: answerrr 0.5s ease-in-out;
-  
-}
 .faq-item.open {
   border-bottom: transparent;
 }
@@ -159,3 +118,4 @@
       transform: scaleX(0);
   }
 }
+

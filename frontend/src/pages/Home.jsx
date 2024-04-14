@@ -14,6 +14,7 @@ import likith from '../assets/images/web_team/likith.jpg'
 import muzaffar from '../assets/images/web_team/muzaffar.jpeg'
 import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
+import Count from './sections/Count'
 function Home() {
     const memberDetailsArray = [
         {
@@ -128,6 +129,7 @@ function Home() {
                 </div>                
                 <Cards />
             </div>
+            <Count />
             <FAQ />
             <div className='pic'>
             <h4 className='contact_header'>THE WEB TEAM</h4>
