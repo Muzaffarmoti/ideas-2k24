@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import details from './Events.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import rocket from '../assets/images/icons/rocket.png'
 
 function CardDetails() {
   useEffect(() => {
@@ -48,16 +49,16 @@ function CardDetails() {
   if (eventDetails.id === 1 || eventDetails.id === 2) {
     buttons = (
       <>
-        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}>Register</button>
-        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}>Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
       </>
     );
   } else {
     buttons = (
       <>
-        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}>Register</button>
-        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}>Download Brochure</button>
-        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}>Upload File</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
       </>
     );
   }
