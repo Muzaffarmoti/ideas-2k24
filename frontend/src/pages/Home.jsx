@@ -16,6 +16,7 @@ import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TimeLine from './sections/TimeLine'
 function Home() {
     const memberDetailsArray = [
         {
@@ -136,6 +137,9 @@ function Home() {
                     <h2 className='events-heading'>OUR EVENTS</h2>
                 </div>
                 <Cards />
+            </div>
+            <div>
+                <TimeLine/>
             </div>
             <FAQ />
             <div className='pic'>
