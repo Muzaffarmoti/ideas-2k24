@@ -37,7 +37,7 @@ function Home() {
             image: likith
         },
         {
-            name: 'Muzaffar M M',
+            name: 'Muzaffar M Motiwale',
             position: 'Joint Treasure, IEEE SIT SB',
             image: muzaffar
         },
@@ -80,7 +80,6 @@ function Home() {
             otherScrollers.forEach(scroller => {
                 if (scroller !== parent) {
                     scroller.style.animationPlayState = 'paused';
-
                 }
             });
         };
