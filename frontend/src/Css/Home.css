@@ -36,3 +36,17 @@
     text-align: center;
     /* color: #F84611 ; */
 }
+
+.events-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 1300px;
+    left: 40%;
+    /* right: 50%; */
+    width: 20%;
+    height: 2px;
+    background-color: #F84611;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    animation: moving 4s linear infinite;
+}

@@ -135,7 +135,8 @@ function Home() {
                     {hoveredImageDetails ? (
                         <p>{hoveredImageDetails}</p>
                     ) : (
-                        <p>Hover over an image to see details</p>
+                        // <p>Hover over an image to see details</p>
+                        <p>Glimpse Beyond the Surface: Hover for Insights!</p>
                     )}
                 </div>
                 <div className='pic_sub1'>

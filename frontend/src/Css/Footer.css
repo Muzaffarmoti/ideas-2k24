@@ -59,7 +59,7 @@
     background-color: #F84611;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-    animation: moving 2s linear infinite;
+    animation: moving 4s linear infinite;
 }
 
 @keyframes moving {

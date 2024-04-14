@@ -130,12 +130,16 @@
   transition: all 0.3s ease-in-out;
 }
 .sponsor-card .slide.slide2 .content h3 {
-  margin: 0 0 10px 0;
   padding: 0;
-  font-size: 24px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
   color: #ffffff;
   line-height: 1.25;
+  letter-spacing: 0.1rem;
+  /* width: 80%; */
+  font-size: 1.5rem;
 }
 
 .sponsor-card .slide.slide2 .content p {
@@ -172,7 +176,7 @@
     max-width: 100%;
     max-height: 100%;
   } */
-  img{
+  .icon img{
     max-width: 100%;
     height: 100%;
     border-style: none;
@@ -180,53 +184,20 @@
     overflow: clip;
   }
   
-  /* Sponsor details */
-  /* .sponsor-details {
-    padding: 20px;
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0; /* Initially hidden */
-    /* transform: translateY(-100%); /* Move details up */
-    /* transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; Smooth transition for opacity and transform
-} 
-   */
-  /* Sponsor name
-  .sponsor-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px; */
-  /* } */
-  
-  /* Sponsor type */
-  /* .sponsor-type {
-    font-size: 14px;
-    color: #666;
-  } */
-/* Show sponsor details on hover */
-  /* Show sponsor details on hover */
-  /* .sponsor-card:hover .sponsor-details {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  
-  /* Move sponsor image up on hover */
-  /* .sponsor-card:hover .sponsor-image {
-    transform: translateY(-50%); */
-     /* Move image up by 50% of its height */
-  /* } */
-  
-  /* Increase sponsor section height on hover */
-  /* .sponsor-card:hover { */
-    /* height: auto;  */
-  /* } */
- 
-  
-  /* Medium Size Devices */
- 
-  /* Small Mobile Devices for Block Grids */
+  .sponsors-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 570px;
+    left: 35%;
+    /* right: 50%; */
+    width: 30%;
+    height: 2px;
+    background-color: #F84611;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    animation: moving 4s linear infinite;
+}
+
 
   @media only screen and (max-width: 1200px) {
     .sponsor-item {

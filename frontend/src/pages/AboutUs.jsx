@@ -47,7 +47,7 @@ function AboutUsComponents() {
               <div className="row section-header has-bottom-sep aos-init">
                 <div className="col-full">
                   <h3 className="subhead"></h3>
-                  <h1 className="display-2 display-2--light aos-init aos-animate" style={{marginRight: spacing + 'em'}}>About S.I.T</h1>
+                  <h1 className="display-2 display-2--light aos-init aos-animate" style={{marginRight: spacing + 'em'}}>About  SIT</h1>
                 </div>
               </div>
               <div className="row about-desc aos-init aos-animate">
