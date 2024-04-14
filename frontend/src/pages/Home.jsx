@@ -130,7 +130,8 @@ function Home() {
             <div data-aos="zoom-in">
                 <Sponsors />
             </div>
-            <div className='events-section'>
+            <div className='events-section' data-aos="fade-up"
+     data-aos-duration="3000">
                 <div className="events-heading-wrapper">
                     <h2 className='events-heading'>OUR EVENTS</h2>
                 </div>
