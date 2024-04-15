@@ -10,22 +10,21 @@
 }
 
 .count-data h1 {
-    font-size: 48px;
+    font-size: 80px;
     animation: countAnimation 1s ease-in-out;
 }
 
 .count-heading {
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.6rem;
+    padding:0 100px;
 }
 
-.count-no {
-    font-size: 50px;
+.count-no{
     padding: 40px;
     color: #F84611;
 }
 
-@media only screen and (max-width: 700px) {
-    
+@media only screen and (max-width: 700px) {   
 .count-heading h2{
     letter-spacing: 0.4rem;
     font-size: 40px;
@@ -36,7 +35,6 @@
         opacity: 0;
         transform: translateY(-20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);

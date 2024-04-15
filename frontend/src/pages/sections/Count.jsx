@@ -48,7 +48,7 @@ const Count = () => {
   return (
     <div ref={countRef} className='count-maincontainer'>
       <div className='count-heading'>
-        <h2 className='count-heading'>2023 Registration Count</h2>
+        <h2 className='count-heading'>IdEEEas 2k23 Registration Count</h2>
       </div>
       <div className='count-data'>
         <h1 className='count-no'>{count}</h1>
