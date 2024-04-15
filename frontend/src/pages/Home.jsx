@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import Hero from './sections/Hero'
 import Header from '../components/Header'
 import Sponsors from './sections/Sponsors'
@@ -12,8 +12,12 @@ import deeksha from '../assets/images/web_team/deeksha.jpg'
 import ananya from '../assets/images/web_team/ananya.jpg'
 import likith from '../assets/images/web_team/likith.jpg'
 import muzaffar from '../assets/images/web_team/muzaffar.jpeg'
-import nayana from '../assets/images/web_team/nayana.jpg'
+import nayana from '../assets/images/web_team/nayana2.jpeg'
 import rishith from '../assets/images/web_team/rishith.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import TimeLine from './sections/TimeLine'
+import Count from './sections/Count'
 function Home() {
     const memberDetailsArray = [
         {
@@ -38,7 +42,7 @@ function Home() {
         },
         {
             name: 'Muzaffar M Motiwale',
-            position: 'Joint Treasure, IEEE SIT SB',
+            position: 'Joint Treasurer, IEEE SIT SB',
             image: muzaffar
         },
         {
@@ -117,21 +121,37 @@ function Home() {
             });
         };
     }, []);
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className='home-main'>
             <Header />
             <Hero />
-            <Sponsors />
-            <div className='events-section'>
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <Sponsors />
+            </div>
+            <div className='events-section' data-aos="fade-up"
+                data-aos-duration="3000">
                 <div className="events-heading-wrapper">
                     <h2 className='events-heading'>OUR EVENTS</h2>
-                </div>                
+                </div>
                 <Cards />
             </div>
-            <FAQ />
+            <Count />
+            <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">
+                <div className="events-heading-wrapper">
+                        <h2 className='events-heading'>THE TIMELINE</h2>
+                </div>
+                <TimeLine/>
+            </div>
+            <div className="faq-sec" data-aos="fade-up" data-aos-duration="3000">
+                <FAQ />
+            </div>
             <div className='pic'>
-            <h4 className='contact_header'>THE WEB TEAM</h4>
-            <div className='image-details'>
+                <h4 className='contact_header'>THE WEB TEAM</h4>
+                <div className='image-details'>
                     {hoveredImageDetails ? (
                         <p>{hoveredImageDetails}</p>
                     ) : (

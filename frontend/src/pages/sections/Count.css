@@ -1,0 +1,42 @@
+.count-maincontainer {
+    text-align: center;
+    padding: 30px;
+    margin: 80px 0px;
+    background-color: #323232;
+}
+
+.count-heading h2 {
+    margin-bottom: 20px;
+}
+
+.count-data h1 {
+    font-size: 80px;
+    animation: countAnimation 1s ease-in-out;
+}
+
+.count-heading {
+    letter-spacing: 0.6rem;
+    padding:0 100px;
+}
+
+.count-no{
+    padding: 40px;
+    color: #F84611;
+}
+
+@media only screen and (max-width: 700px) {   
+.count-heading h2{
+    letter-spacing: 0.4rem;
+    font-size: 40px;
+}
+}
+@keyframes countAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

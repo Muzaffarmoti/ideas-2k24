@@ -10,6 +10,7 @@ import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import ContactDetails from './ContactDetails'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 function ContactUs() {
@@ -164,7 +165,7 @@ function ContactUs() {
                         </div>
                     </div> */}
                     <div className='map_test'>
-                        <h5 className='contact_header clr'>HOW TO REACH US</h5>
+                        <span className='contact_header_heading'>HOW TO REACH US</span>
                         <ul>
                             <li className='map_text_test'><span>BUS:</span>  Frequent buses are available to Tumakuru from the Kempegowda Bus Station,
                                 Bengaluru. Alight at the SIT stop one and a half hour later. If you happen to sleep
@@ -173,7 +174,7 @@ function ContactUs() {
                                 Bengaluru station. Kindly refer to the train schedules for timings. From Tumakuru station, autos are available to SIT. </li>
                             <li className='map_text_test'><span>TAXI:</span>  Taxis are available from Bangalore to SIT. However, considering the frequency
                                 of buses,  taxis are not really recommended. </li>
-                            <li className='map_text_test'><span>AIR:</span>  Air The nearest airport is the Kempegowda International Airport, Bengaluru. </li>
+                            <li className='map_text_test'><span>AIR:</span>  The nearest airport is the Kempegowda International Airport, Bengaluru. </li>
                         </ul>
 
 
@@ -297,7 +298,7 @@ function ContactUs() {
             {/* Render image details */}
 
             {/* </div> */}
-
+                <Footer/>
         </div>
     )
 }
