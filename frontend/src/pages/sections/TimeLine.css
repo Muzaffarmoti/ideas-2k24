@@ -11,7 +11,8 @@ body {
 }
 
 .timeline a {
-    color: #ffffcc;
+    /* color: #ffffcc; */
+    color: #ffff;
     text-decoration: none;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -50,16 +51,18 @@ body {
 }
 
 #timeline {
-    width: 500px;
+    width: 700px;
     height: 600px;
     overflow: hidden;
     margin: 40px auto;
     position: relative;
-    background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif') 3px top repeat-y;
+    background: url(http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif) 3px top repeat-y;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #dates {
-    width: 100px;
+    width: 200px;
     height: 600px;
     overflow: hidden;
     float: left;
@@ -67,13 +70,14 @@ body {
 
 #dates li {
     list-style: none;
-    width: 100px;
+    width: 200px;
     height: 100px;
     line-height: 100px;
     font-size: 24px;
     padding-left: 10px;
     background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png') left center no-repeat;
 }
+
 
 #dates a {
     line-height: 38px;
@@ -97,7 +101,10 @@ body {
     height: 600px;
     list-style: none;
     text-align: center;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #issues li.selected img {
@@ -131,13 +138,14 @@ body {
 
 #issues li h1 {
     color: #d64c22;
-    font-size: 48px;
+    font-size: 44px;
     text-align: center;
     text-shadow: #000 1px 1px 2px;
+    padding-top: 2rem;
 }
 
 #issues li p {
-    font-size: 14px;
+    font-size: 24px;
     margin: 10px 20px;
     font-weight: normal;
     line-height: 22px;
@@ -146,26 +154,28 @@ body {
 
 #grad_top,
 #grad_bottom {
-    width: 500px;
+    width: 700px;
     height: 80px;
     position: absolute;
 }
 
 #grad_top {
     top: 0;
-    background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x;
+    /* background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_top.png') repeat-x; */
+    background-image: url('../../assets/images/icons/grad_top.png');
 }
 
 #grad_bottom {
     bottom: 0;
-    background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x;
+    /* background: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/grad_bottom.png') repeat-x; */
+    background-image: url('../../assets/images/icons/grad_bottom.png');
 }
 
 #next,
 #prev {
     position: absolute;
     left: 45%;
-    left: 55%;
+    /* left: 55%; */
     font-size: 70px;
     width: 38px;
     height: 22px;
@@ -182,15 +192,97 @@ body {
 
 #next {
     bottom: 0;
-    background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+    /* background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png'); */
+    background-image: url('../../assets/images/icons/next_v.png');
 }
 
 #prev {
     top: 0;
-    background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+    /* background-image: url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png'); */
+    background-image: url('../../assets/images/icons/prev_v.png');
 }
 
 #next.disabled,
 #prev.disabled {
     opacity: 0.2;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    #timeline {
+        width: 350px;
+        height: 600px;
+        overflow: hidden;
+        margin: 40px auto;
+        position: relative;
+        background: url(http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif) 3px top repeat-y;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #issues li {
+        max-width: 300px;
+        width: 200px;
+        height: 600px;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dates .selected {
+        font-size: 20px;
+    }
+    #issues li p {
+        font-size: 20px;
+        margin: 10px 20px;
+        font-weight: normal;
+        line-height: 22px;
+        text-shadow: #000 1px 1px 2px;
+    }
+    #issues li h1 {
+        color: #d64c22;
+        font-size: 40px;
+        text-align: center;
+        text-shadow: #000 1px 1px 2px;
+    }
+}
+
+@media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
+    #timeline {
+        width: 400px;
+        height: 600px;
+        overflow: hidden;
+        margin: 40px auto;
+        position: relative;
+        background: url(http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif) 3px top repeat-y;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #issues li {
+        max-width: 300px;
+        width: 500px;
+        height: 600px;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dates .selected {
+        font-size: 28px;
+    }
+    #issues li p {
+        font-size: 24px;
+        margin: 10px 20px;
+        font-weight: normal;
+        line-height: 22px;
+        text-shadow: #000 1px 1px 2px;
+    }
+    #issues li h1 {
+        color: #d64c22;
+        font-size: 48px;
+        text-align: center;
+        text-shadow: #000 1px 1px 2px;
+    }
 }

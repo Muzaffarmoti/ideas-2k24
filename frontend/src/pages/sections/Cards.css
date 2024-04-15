@@ -23,7 +23,9 @@
     border: #d64c22 solid 1px;
     padding: 2rem;
     border-radius: 0.8rem;
-    background-color:#333;
+    /* background-color:#333; */
+    background: rgb(123,123,136);
+background: linear-gradient(121deg, rgb(80, 80, 87) 0%, rgb(74, 80, 80) 39%, rgba(0,0,0,1) 100%);
     box-shadow: #f7f6f6;
 }
 
@@ -37,7 +39,7 @@
 
 .card-title {
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.15rem;
     color: #F84611;
     margin-bottom: 1rem; /* Adjust spacing between title and description */
@@ -72,7 +74,9 @@
 }
 
 .card-btn:hover {
-    background-color: #F84611; /* Adjust button color on hover */
+    background-color: #F84611;
+    /* background: rgb(255, 60, 1); */
+/* background: linear-gradient(121deg, rgb(255, 60, 0) 0%, rgb(253, 59, 0) 39%, rgba(255,59,0,1) 100%); */
 }
 
 .cards-main {
@@ -120,6 +124,6 @@
     .cards-main {
         /* width: calc(100% - 2rem);  */
         /* width: 12rem; */
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 }
