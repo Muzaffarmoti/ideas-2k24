@@ -139,6 +139,7 @@ function Home() {
                 </div>
                 <Cards />
             </div>
+            <Count />
             <FAQ />
             <div className='pic'>
                 <h4 className='contact_header'>THE WEB TEAM</h4>
