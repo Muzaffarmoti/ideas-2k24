@@ -12,7 +12,7 @@ import deeksha from '../assets/images/web_team/deeksha.jpg'
 import ananya from '../assets/images/web_team/ananya.jpg'
 import likith from '../assets/images/web_team/likith.jpg'
 import muzaffar from '../assets/images/web_team/muzaffar.jpeg'
-import nayana from '../assets/images/web_team/nayana.jpg'
+import nayana from '../assets/images/web_team/nayana2.jpeg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -129,7 +129,7 @@ function Home() {
         <div className='home-main'>
             <Header />
             <Hero />
-            <div data-aos="zoom-in">
+            <div data-aos="fade-up" data-aos-duration="3000">
                 <Sponsors />
             </div>
             <div className='events-section' data-aos="fade-up"
@@ -140,7 +140,15 @@ function Home() {
                 <Cards />
             </div>
             <Count />
-            <FAQ />
+            <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">
+                <div className="events-heading-wrapper">
+                        <h2 className='events-heading'>THE TIMELINE</h2>
+                </div>
+                <TimeLine/>
+            </div>
+            <div className="faq-sec" data-aos="fade-up" data-aos-duration="3000">
+                <FAQ />
+            </div>
             <div className='pic'>
                 <h4 className='contact_header'>THE WEB TEAM</h4>
                 <div className='image-details'>

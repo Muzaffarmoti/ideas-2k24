@@ -10,6 +10,7 @@ import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import ContactDetails from './ContactDetails'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 function ContactUs() {
@@ -297,7 +298,7 @@ function ContactUs() {
             {/* Render image details */}
 
             {/* </div> */}
-
+                <Footer/>
         </div>
     )
 }

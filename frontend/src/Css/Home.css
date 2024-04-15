@@ -54,3 +54,7 @@
     transition: transform 0.3s ease;
     animation: moving 4s linear infinite;
 }
+
+.timeline-section .events-heading-wrapper h2{
+    padding: 0px;
+}

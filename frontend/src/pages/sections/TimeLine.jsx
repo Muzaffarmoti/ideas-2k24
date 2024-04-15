@@ -2,6 +2,8 @@ import React , {useEffect} from 'react'
 import $ from 'jquery';
 import './jquery.timelinr-0.9.7'
 import './TimeLine.css'
+import curtain from '../../assets/images/icons/curtain2.jpg'
+import comingsoon from '../../assets/images/icons/comingSoon.webp'
 function TimeLine() {
     useEffect(() => {
         $().timelinr({
@@ -14,9 +16,10 @@ function TimeLine() {
     }, []);
     return (
         <div id="timeline" className='timeline'>
+            
             <ul id="dates">
-                <li><a href="#1900" class="selected">April 15th</a></li>
-                <li><a href="#1930">April 25th</a></li>
+                <li><a href="#1900" class="selected">Apr 15th</a></li>
+                <li><a href="#1930">Upcoming</a></li>
                 {/* <li><a href="#1944">1944</a></li>
                 <li><a href="#1950">1950</a></li>
                 <li><a href="#1971">1971</a></li>
@@ -28,16 +31,16 @@ function TimeLine() {
             </ul>
             <ul id="issues">
                 <li id="1900" class="selected">
-                    <img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/1.png" />
+                    <img src={curtain} />
                     <h1>April 15th</h1>
                     <p>IdEEEas 2k24 Curtain Raiser</p>
                 </li>
                 <li id="1930">
-                    <img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/2.png" />
-                    <h1>APril 25th</h1>
-                    <p>The most awaited event, IdEEEas 2k24 is here!!!!</p>
+                    <img src={comingsoon} />
+                    {/* <h1>Coming Soon</h1> */}
+                    <p>The most awaited event, <span style={{color:"#f84611"}}>IdEEEas 2k24</span> is here!!!!</p>
                 </li>
-                <li id="1944">
+                {/* <li id="1944">
                     <img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/3.png" />
                     <h1>1944</h1>
                     <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
@@ -76,7 +79,7 @@ function TimeLine() {
                     <img src="http://www.csslab.cl/ejemplos/timelinr/latest/images/10.png" />
                     <h1>2011</h1>
                     <p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
-                </li>
+                </li> */}
             </ul>
             <div id="grad_top"></div>
             <div id="grad_bottom"></div>

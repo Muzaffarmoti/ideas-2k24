@@ -69,7 +69,7 @@ function CardDetails() {
       <h2 className="centered">{eventDetails.name}</h2>
       <div className='poster-details'>
         <div className='poster-div'>
-          <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' />
+          {/* <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' /> */}
         </div>
         <div className='details-div' data-aos="fade-up">
           <div className='desc' data-aos="fade-up">
@@ -81,7 +81,7 @@ function CardDetails() {
               <div className='details' data-aos="fade-left"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span className='span-taggs'>{eventDetails.Eligibility}</span></div>
             </div>
             <div className='row-two'>
-              <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>{eventDetails.location}</span></div>
+              <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>T B D</span></div>
               <div className='details' data-aos="fade-left"><span className='span-tag'><strong style={{ color: '#F84611' }}>Entry Fee:</strong></span><span className='span-tagg'>{eventDetails.entryfee}</span></div>
             </div>
           </div>
