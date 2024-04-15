@@ -46,7 +46,7 @@
   }
   
   /* Arrow icon */
-  .arrow-icon {
+  .f-arrow-icon {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -85,16 +85,11 @@
   
 }
 
-.faq-item.open .arrow-icon {
-    top: 30%; /* Adjust top position when open */
-    transform: translateY(-50%) rotate(180deg); 
-}
-
-/*neww */
 
 .faq-item.open {
   border-bottom: transparent;
 }
+
 @keyframes answerrr {
   0%{
     opacity: 0;
@@ -119,3 +114,7 @@
   }
 }
 
+.faq-item.open .f-arrow-icon{
+  top: 30%; /* Adjust top position when open */
+  transform: translateY(-50%) rotate(180deg); 
+}

@@ -84,7 +84,7 @@ const FAQ = () => {
                         onClick={() => toggleAnswer(faq.id)}
                     >
                         <img
-                            className="arrow-icon"
+                            className="f-arrow-icon"
                             src={faq.isOpen ? upArrow : downArrow}
                             alt={faq.isOpen ? 'Up Arrow' : 'Down Arrow'}
                         />
