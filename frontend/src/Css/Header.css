@@ -1,23 +1,18 @@
 nav {
     width: calc(100% - 3.5rem);
-    /* Adjust width to account for margins */
     display: flex;
     height: 9vh;
-    /* Decrease height */
     padding: 0.5rem 0 0 0;
     position: relative;
     background-color: #323232;
-    /* Change to your desired shade of grey */
     border-radius: 8px;
-    /* Add border radius */
     margin: 1.5rem;
     
-    /* Add margin */
 }
 
 .sit-logo {
-    width: 12%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 12%; 
+    height: auto; 
 }
 
 
@@ -111,8 +106,7 @@ nav {
 .header-list li {
     display: block;
     background: none;
-    /* height: 30%; */
-    /* margin: auto; */
+    
     margin-top: 0%;
     width: 100%;
     /* width: 100px; */
@@ -124,8 +118,6 @@ nav {
     box-sizing: border-box;
     transition: background-color ease-in-out 350ms;
 
-    /* margin-left: auto;
-    padding-right:80px; */
 }
 
 .header-list a {
@@ -149,10 +141,6 @@ nav {
     }
 }
 
-/* .your-element {
-    animation: glow 2s infinite alternate;
-} */
-
 
 .header-list li:hover a {
     background: none;
@@ -161,14 +149,6 @@ nav {
 
 .header-list-close {
     display: none;
-    /* top: -100%; */
-    /* -webkit-animation: bar-close 0.9s ease-in-out; */
-
-
-    /* right: -100%; */
-    /* transition: all 0.3s ease-in-out; */
-    /* overflow: hidden; */
-
 }
 
 
@@ -187,11 +167,11 @@ nav {
 }
 
 .header-icons-container:nth-child(2) {
-    width: 10%; /* Adjust the width for smaller screens */
+    width: 10%; 
 }
 
 .header-icon:nth-child(2) {
-    width: 14%; /* Adjust the width for smaller screens */
+    width: 14%; 
 }
 
 .header-icon:nth-child(2) img {
@@ -296,11 +276,11 @@ nav {
 }
 @media screen and (max-width: 768px) {
     .header-icons-container:nth-child(2) {
-        width: 15%; /* Adjust the width for smaller screens */
+        width: 15%; 
     }
 
     .header-icon:nth-child(2) {
-        width: 19%; /* Adjust the width for smaller screens */
+        width: 19%; 
     }
 
     .header-icon:nth-child(2) img {
