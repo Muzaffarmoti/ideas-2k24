@@ -1,4 +1,4 @@
-.faq-container {
+.faq-container{
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -6,25 +6,21 @@
   align-items: center;
   flex-direction: column;
 }
-
-.faq-mini-container {
+.faq-mini-container{
   width: 70%;
   padding: 50px;
-}
 
-.faq-heading-container {
-  position: relative;
 }
-
-.faq-heading {
-  letter-spacing: 0.8rem;
-  margin-bottom: 20px;
+.faq-heading-container{
+position: relative;
 }
-
-.faq-heading::after {
+.faq-heading{
+letter-spacing: 0.8rem;
+margin-bottom: 20px;
+}
+.faq-heading::after{
   content: '';
   position: absolute;
-  bottom: 0px;
   bottom: 15px;
   left: 0%;
   /* right: 50%; */
@@ -39,18 +35,18 @@
 .faq-item {
   position: relative;
   border: 1px solid #F84611;
-  /* border-bottom:transparent ; */
+   /* border-bottom:transparent ; */
   /* border:  0.5px solid rgb(242, 211, 211); */
   /* color: #F84611; */
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 15px;
   cursor: pointer;
-
+ 
 }
 
 /* Arrow icon */
-.f-arrow-icon {
+.arrow-icon {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -65,10 +61,10 @@
   color: white;
   margin: 0;
   font-size: 17px;
-  padding-left: 30px;
-  /* Adjust padding to make room for the arrow icon */
+  padding-left: 30px; /* Adjust padding to make room for the arrow icon */
   font-weight: 350;
 }
+
 
 /* Answer */
 .answer {
@@ -80,67 +76,44 @@
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  animation: answerrr 1s forwards;
 }
 
 .faq-item.open .answer {
   opacity: 1;
-  max-height: 1000px;
-  /* Set max-height to allow for smooth expansion */
+  max-height: 1000px; /* Set max-height to allow for smooth expansion */
 
 }
 
-.faq-item.open .f-arrow-icon {
-  top: 30%;
-  /* Adjust top position when open */
-  transform: translateY(-50%) rotate(180deg);
+.faq-item.open .arrow-icon {
+  top: 25%; /* Adjust top position when open */
 }
-
-/*neww */
 
 .faq-item.open {
-  border-bottom: transparent;
+border-bottom: transparent;
 }
 
+
 @keyframes answerrr {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 1;
-  }
+0%{
+  opacity: 0;
+}
+50%{
+  opacity: 0.5;
+}
+100%{
+  opacity: 1;
+}
 }
 
 @keyframes moving {
-  0% {
+0% {
     transform: scaleX(0);
-  }
-
-  50% {
+}
+50% {
     transform: scaleX(1);
-  }
-
-  100% {
+}
+100% {
     transform: scaleX(0);
-  }
 }
-
-@media only screen and (max-device-width: 768px) and (min-device-width: 481px) {
-  .faq-heading {
-    letter-spacing: 0.5rem;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-}
-
-@media only screen and (max-width: 480px) and (min-width: 320px) {
-  .faq-heading {
-    letter-spacing: 0.5rem;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
 }
