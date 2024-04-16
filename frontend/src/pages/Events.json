@@ -16,7 +16,7 @@
         "teamsize":" Max.1",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
-        "entryfee":"200",
+        "entryfee":"50",
         "poster":"6.png"
     },
     "cnario": {
@@ -26,7 +26,7 @@
         "teamsize":" Max.2",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
-        "entryfee":"200",
+        "entryfee":"100",
         "poster":"6.png"
     },
     "ideasidol": {
@@ -36,7 +36,7 @@
         "teamsize":" Max.1",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
-        "entryfee":"200",
+        "entryfee":"50",
         "poster":"6.png",
         "brochure":"https://drive.google.com/file/d/10eX3CyXVhHoHLlzrv2mvGWrHWZK3Psxw/view?usp=share_link",
         "link": "https://drive.google.com/drive/folders/1Jp7WtgVc-i09xSwD-MhnnKFZ-gVKrEu-?usp=drive_link",
@@ -59,7 +59,7 @@
         "teamsize":" Max.1",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
-        "entryfee":"200",
+        "entryfee":"50",
         "poster":"6.png"
     },
     "rectifier": {
@@ -69,7 +69,7 @@
         "teamsize":" Max.2",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
-        "entryfee":"200",
+        "entryfee":"100",
         "poster":"6.png"
     },
     "robotics": {

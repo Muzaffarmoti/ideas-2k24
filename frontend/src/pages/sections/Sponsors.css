@@ -245,14 +245,57 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* margin: 0 auto; */
-    /* max-width: 1400px; */
   }
 
   .sponsor-item {
-    width: 85%;
+    width: 65%;
     margin: 0rem;
     padding: 0rem;
+  }
+
+  .sponsors-heading {
+    font-size: 1.8rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .sponsor-card {
+    width: 100%;
+  }
+
+  .slide.slide2 {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .content h3 {
+    max-width: 100%;
+    margin: 0;
+    word-wrap: break-word;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    /* overflow: hidden;  */
+    padding: 0 1rem;
+    font-size: 0.5rem;
+  }
+
+  .sponsor-card .slide.slide2 .content h3 {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #ffffff;
+    /* line-height: 1.5; */
+    height: 100%;
+    letter-spacing: 0.1rem;
+    /* width: 80%; */
+    font-size: 1.15rem;
   }
 }
 
@@ -264,13 +307,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
+    padding: 0rem 2rem;
     /* margin: 0 auto; */
     /* max-width: 1400px; */
   }
 
   .sponsors-heading {
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
   }
 
@@ -278,5 +322,50 @@
     width: 85%;
     margin: 0rem;
     padding: 0rem;
+  }
+
+  .sponsors-heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .sponsor-card {
+    width: 100%;
+  }
+
+  .slide.slide2 {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .content h3 {
+    max-width: 100%;
+    margin: 0;
+    word-wrap: break-word;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    /* overflow: hidden;  */
+    padding: 0 1rem;
+    font-size: 0.5rem;
+  }
+
+  .sponsor-card .slide.slide2 .content h3 {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #ffffff;
+    /* line-height: 1.5; */
+    height: 100%;
+    letter-spacing: 0.1rem;
+    /* width: 80%; */
+    font-size: 1.15rem;
   }
 }

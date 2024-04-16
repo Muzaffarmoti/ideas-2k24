@@ -142,7 +142,7 @@ function Home() {
             <Count />
             <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">
                 <div className="events-heading-wrapper">
-                        <h2 className='events-heading'>THE TIMELINE</h2>
+                        <h2 className='events-heading'>TIMELINE</h2>
                 </div>
                 <TimeLine/>
             </div>
