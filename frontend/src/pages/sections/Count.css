@@ -46,11 +46,24 @@
         letter-spacing: 0.6rem;
         padding:0px;
     }
+    .count-data h1 {
+        font-size: 50px;
+    }
+    .count-heading h2{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
     .count-heading {
         letter-spacing: 0.6rem;
         padding:0px;
+        font-size: 200px;
+    }
+    .count-data h1 {
+        font-size: 50px;
+    }
+    .count-heading h2{
+        font-size: 30px;
     }
 }

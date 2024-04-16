@@ -49,7 +49,7 @@
     letter-spacing: 0.5rem;
     position: relative;
     white-space: nowrap;
-    -webkit-box-reflect: below -50px linear-gradient(transparent, rgb(155, 159, 233, 0.23)); 
+    -webkit-box-reflect: below -40px linear-gradient(transparent, rgb(155, 159, 233, 0.23)); 
 
 }
 
@@ -177,13 +177,19 @@
         font-weight: 200;
     }
     .hero-text-ideeeas h1 {
-        -webkit-box-reflect: below -38px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
+        -webkit-box-reflect: below -11px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
     }
     .hero-national h2 {
         font-size:2rem;
         font-weight: 200;
     }
     
+}
+
+@media only screen and (max-width: 400px){
+    .hero-text-ideeeas h1 {
+        -webkit-box-reflect: below -10px linear-gradient(transparent, rgb(155, 159, 233, 0.25));
+    }
 }
 /* 
 .colorcolor{
