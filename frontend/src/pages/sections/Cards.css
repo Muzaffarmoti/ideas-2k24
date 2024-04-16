@@ -124,6 +124,6 @@ background: linear-gradient(121deg, rgb(80, 80, 87) 0%, rgb(74, 80, 80) 39%, rgb
     .cards-main {
         /* width: calc(100% - 2rem);  */
         /* width: 12rem; */
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 }
