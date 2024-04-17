@@ -46,7 +46,19 @@ function CardDetails() {
   };
 
   let buttons;
-  if (eventDetails.id === 1 || eventDetails.id === 5 || eventDetails.id === 9) {
+  if (eventDetails.id === 9) {
+    buttons = (
+      <>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink1)}><img src={rocket} alt="rocket" />Register for Robo Soccer</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink2)}><img src={rocket} alt="rocket" />Register for Fast n Furious</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink3)}><img src={rocket} alt="rocket" />Register for Roborace</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink4)}><img src={rocket} alt="rocket" />Register for LFR</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
+      </>
+    );
+  } 
+  else if(eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10){
     buttons = (
       <>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
@@ -54,7 +66,8 @@ function CardDetails() {
         <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
       </>
     );
-  } else {
+  }
+  else {
     buttons = (
       <>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
