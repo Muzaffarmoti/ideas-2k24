@@ -22,7 +22,7 @@
 .sponsor-list {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 auto;
   max-width: 1400px;
