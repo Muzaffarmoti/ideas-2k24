@@ -5,9 +5,12 @@ import './Sponsors.css';
 // import sponsor3 from '../../assets/images/sponsors/SpaaX.png';
 
 import sponsor1 from '../../assets/images/sponsors/ComputerSociety.png';
-import sponsor2 from '../../assets/images/sponsors/Kwikpic.jpg';
+import sponsor2 from '../../assets/images/sponsorsNew/4.png';
 import sponsor3 from '../../assets/images/sponsors/SpaaX.png';
-import sponsor4 from '../../assets/images/sponsors/SpaaX.png';
+import sponsor4 from '../../assets/images/sponsorsNew/1.png';
+import sponsor5 from '../../assets/images/sponsorsNew/2.png';
+import sponsor6 from '../../assets/images/sponsorsNew/3.png';
+
 
 function Sponsors() {
     const sponsorsList = [
@@ -22,8 +25,14 @@ function Sponsors() {
             title:"SpaaX",
             image:sponsor3
         },{
-            title:"hello",
+            title:"Laptop Menu",
             image:sponsor4
+        },{
+            title:"N S Silks",
+            image:sponsor5
+        },{
+            title:"Seetha Jewels",
+            image:sponsor6
         }
     ]
     return (
@@ -36,23 +45,25 @@ function Sponsors() {
                 {sponsorsList.map((sponsor,index) => {
                     {console.log(sponsor.title)}
                     {console.log(sponsor.image)}
-                    <div className="sponsor-item" key={index}>
-                        <div className="sponsor-card">
-                            <div className='slide slide1'>
-                                <div className='sponsor_sub'>
-                                    <div className='icon'>
-                                        <img alt='' src={sponsor.image} />
-                                        {/* <h1>{sponsor.title}</h1> */}
+                    return(
+                        <div className="sponsor-item" key={index}>
+                            <div className="sponsor-card">
+                                <div className='slide slide1'>
+                                    <div className='sponsor_sub'>
+                                        <div className='icon'>
+                                            <img alt='' src={sponsor.image} />
+                                            {/* <h1>{sponsor.title}</h1> */}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='slide slide2' style={{ backgroundColor: '#333' }}>
+                                    <div className='content'>
+                                        <h3>{sponsor.title}</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div className='slide slide2' style={{ backgroundColor: '#333' }}>
-                                <div className='content'>
-                                    <h3>{sponsor.title}</h3>
-                                </div>
-                            </div>
                         </div>
-                    </div>
+                    )
                 })}
                 {/* <div className="sponsor-item">
                     <div className="sponsor-card">

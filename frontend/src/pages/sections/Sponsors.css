@@ -216,6 +216,16 @@
   .sponsor-item {
     width: 33.33%;
   }
+  .sponsor-list {
+    display: flex;
+    /* flex-direction: column; */
+    /* width: 33.33%; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* max-width: 1400px; */
+  }
 }
 
 /* Tablets */
