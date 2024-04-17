@@ -7,7 +7,8 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"200",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://forms.gle/vVzA22g6rxULFgHg9"
     },
     "blitz": {
         "id": 2,
@@ -17,7 +18,8 @@
         "Eligibility" : "Students of all semesters and all branches are eligible.",
         "location":" IEM 101/102",
         "entryfee":"50",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f5e1d46e0fb0001a5199a"
     },
     "cnario": {
         "id": 3,
@@ -27,7 +29,8 @@
         "Eligibility" : "Students of all semesters and all branches are eligible.",
         "location":" IEM 101/102",
         "entryfee":"100",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f646d46e0fb0001a53176"
     },
     "ideasidol": {
         "id": 4,
@@ -40,67 +43,77 @@
         "poster":"6.png",
         "brochure":"https://drive.google.com/file/d/10eX3CyXVhHoHLlzrv2mvGWrHWZK3Psxw/view?usp=share_link",
         "link": "https://drive.google.com/drive/folders/1Jp7WtgVc-i09xSwD-MhnnKFZ-gVKrEu-?usp=drive_link",
-        "ydlink":"https://www.yepdesk.com/embed/webify2k23"
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f67b646e0fb0001a5648b"
+    },
+    
+    "logolympics": {
+        "id": 5,
+        "name": "LOGO OLYMPICS",
+        "description": "Design is about more than just aesthetics. It's about connecting with the audience and communicating a message that resonates with them. One of the major skills of an engineering student is creativity. A logo is a symbol or emblem that is unique to a brand, an individual, a company, or a business.Logos serve to represent a given organization through a visual image that can be easily understood, builds trust, and gets recognized. Through this event, we unleash each participant's inner designer by designing a logo based on the given theme showcasing their creativity.",
+        "teamsize":" 1",
+        "Eligibility" : "Open to all branches of BE and diploma students.",
+        "location":" IEM 101/102",
+        "entryfee":"50",
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/logo-olympics"
     },
     "pitchothon": {
-        "id": 5,
+        "id": 6,
         "name": "PITCH-O-THON",
         "description": "Pitch-o-thon is the newest addition to IdEEEas-2k23 which focuses on giving a platform to all the brilliant ideas which can be converted into a startup in the future. This supports both technical and non-technical business proposals. It is open to students from all the engineering colleges and students pursuing MBA. The best idea will be selected based on how the team presents the idea from the perspective of business which includes finances, future stacks, growth, market demand, marketing, and many more.",
         "teamsize":" 2 to 4",
         "Eligibility" : "Students of 1st and 2nd year can form a group and participate, 3rd and 4th year can form a group and participate.Open to all branches and MBA students",
         "location":" IEM 101/102",
         "entryfee":"200",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f743646e0fb0001a5d782"
     },
     "photographia": {
-        "id": 6,
+        "id": 7,
         "name": "PHOTOGRAPHIA",
         "description": "Unleash your creativity in Photographia, the captivating photography contest of the year. Freeze time, transport viewers, and tell stories through your lens. Judgment criteria are designed to assess the overall technical skill, creativity, composition, and adherence to the theme. Leave an impression, and gain recognition.",
         "teamsize":" 1",
         "Eligibility" : "Open to all branches of all years.",
         "location":" IEM 101/102",
         "entryfee":"50",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f756746e0fb0001a5e069"
     },
     "rectifier": {
-        "id": 7,
+        "id": 8,
         "name": "RECTIFIER",
         "description": "One of the major skills of an engineering student is to find and resolve defects or problems a system that hinders its functioning. Rectifier,the hardware debugging contest which tests the rectifying skills of the participants. With 1-2nd years and 3-4th years as a division event is open to all electronics geeks.",
         "teamsize":" Max.2",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"100",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f805146e0fb0001a623b7"
     },
     "robotics": {
-        "id": 8,
+        "id": 9,
         "name": "ROBOTICS",
         "description": "Robotics has been a star attraction of IdEEEas for a long time, with people from all over India  in with their creations for an event where nothing is impossible. The event is itself divided into three.Bot(i.e. Line follower) and Manual Bot Competition (Roborace and Crossroads). The  atmosphere is enough to send a down one's spine!",
         "teamsize":" 2 to 4",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"200 per team ( for group events ) 50 for individual events",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink1":"https://www.yepdesk.com/buy-tickets/661f86a046e0fb0001a64d14",
+        "ydlink2":"https://www.yepdesk.com/buy-tickets/661f85f246e0fb0001a6461c",
+        "ydlink3":"https://www.yepdesk.com/buy-tickets/661f82f746e0fb0001a63396",
+        "ydlink4":"https://www.yepdesk.com/buy-tickets/661f847a46e0fb0001a64049"
     },
     "technocon": {
-        "id": 9,
+        "id": 10,
         "name": "TECHNOCON",
         "description": "The event challenges teams to write insightful articles and deliver captivating presentations on technology topics. Participants analyze real-world problems, propose innovative solutions, and explore the potential of emerging technologies",
         "teamsize":" 1 to 3",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"100",
-        "poster":"6.png"
-    },
-    "trademark": {
-        "id": 10,
-        "name": "TRADEMARK",
-        "description": "Design is about more than just aesthetics. It's about connecting with the audience and communicating a message that resonates with them. One of the major skills of an engineering student is creativity. A logo is a symbol or emblem that is unique to a brand, an individual, a company, or a business.Logos serve to represent a given organization through a visual image that can be easily understood, builds trust, and gets recognized. Through this event, we unleash each participant's inner designer by designing a logo based on the given theme showcasing their creativity.",
-        "teamsize":" 1",
-        "Eligibility" : "Open to all branches of BE and diploma students.",
-        "location":" IEM 101/102",
-        "entryfee":"50",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f872646e0fb0001a6507f"
     },
     "trivea": {
         "id": 11,
@@ -110,7 +123,8 @@
         "Eligibility" : "Students of all semesters and all branches can participate.",
         "location":" IEM 101/102",
         "entryfee":"100",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f7c5246e0fb0001a60a90"
     },
     "webify": {
         "id": 12,
@@ -120,6 +134,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" IEM 101/102",
         "entryfee":"100",
-        "poster":"6.png"
+        "poster":"6.png",
+        "ydlink":"https://www.yepdesk.com/buy-tickets/661f820946e0fb0001a62e66"
     }
 }

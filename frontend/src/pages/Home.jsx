@@ -22,7 +22,7 @@ function Home() {
     const memberDetailsArray = [
         {
             name: 'Anagha N',
-            position: 'Lead, Web Master IEEE SIT SB',
+            position: 'Web Team Lead, IEEE SIT SB',
             image: anagha
         },
         {
@@ -52,7 +52,7 @@ function Home() {
         },
         {
             name: 'Rishith  P',
-            position: 'Lead, Design Master IEEE SIT SB',
+            position: 'Design Team Lead,IEEE SIT SB',
             image: rishith
         },
     ];
