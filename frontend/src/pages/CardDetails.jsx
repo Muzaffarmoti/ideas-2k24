@@ -46,14 +46,7 @@ function CardDetails() {
   };
 
   let buttons;
-  if (eventDetails.id === 1 || eventDetails.id === 2) {
-    buttons = (
-      <>
-        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
-        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
-      </>
-    );
-  } else {
+  if (eventDetails.id === 1 || eventDetails.id === 5 || eventDetails.id === 9) {
     buttons = (
       <>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
@@ -61,6 +54,14 @@ function CardDetails() {
         <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
       </>
     );
+  } else {
+    buttons = (
+      <>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+      </>
+    );
+    
   }
 
   return (
@@ -78,7 +79,10 @@ function CardDetails() {
           <div className="details-grid">
             <div className='row-one'>
               <div className='details' data-aos="fade-right"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span className='span-taggs'>{eventDetails.teamsize}</span></div>
-              <div className='details' data-aos="fade-left"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span className='span-taggs'>{eventDetails.Eligibility}</span></div>
+              <div className='details' data-aos="fade-left">
+                <span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span>
+                <span className='span-taggs'>{eventDetails.Eligibility}</span>
+              </div>
             </div>
             <div className='row-two'>
               <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>T B D</span></div>

@@ -38,7 +38,18 @@ function AboutUsComponents() {
       height: '300px',
     }
   };
-
+// Media queries for different screen sizes
+if (window.matchMedia("(max-width: 600px)").matches) {
+  styles.image = {
+    width: '200px',
+    height: '200px',
+  };
+} else if (window.matchMedia("(max-width: 900px)").matches) {
+  styles.image = {
+    width: '250px',
+    height: '250px',
+  };
+}
   const Scroller = ({ direction = 'left', speed = 'fast', children }) => {
     useEffect(() => {
       const scrollers = document.querySelectorAll('.scroller');

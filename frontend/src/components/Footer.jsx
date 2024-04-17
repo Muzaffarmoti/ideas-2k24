@@ -26,9 +26,9 @@ export default function Footer() {
                         <img alt="youtube" src={youtube} className="con-icons"></img>
                     </a>
                 </div>
-                <div className="icon-wrapper" onClick={() => redirectToLink("mailto:ieee2021.22@gmail.com")}>
+                <div className="icon-wrapper" onClick={() => redirectToLink("mailto:ieee@sit.ac.in")}>
                     <div className="icon-circle"></div>
-                    <img alt="email" src={email} className="con-icons" data-tip="ieee2021.22@gmail.com"></img>
+                    <img alt="email" src={email} className="con-icons" data-tip="ieee@sit.ac.in"></img>
                 </div>
                 <div className="icon-wrapper" onClick={() => redirectToLink("https://ieeesit.blogspot.com/?m=1")}>
                     <div className="icon-circle"></div>
