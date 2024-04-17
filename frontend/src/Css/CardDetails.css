@@ -173,14 +173,17 @@
   }
 
   .details-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding:1rem;
   }
 
   .row-one,
   .row-two {
-    width: 65%;
-    padding-left: 15%;
+    max-width: 80%;
+    /* margin-right: 0; */
   }
 
   .span-tag,
@@ -225,7 +228,6 @@
   .details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .button-div {
@@ -254,18 +256,33 @@
     height: auto;
   }
   .details-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    max-width: 90%;
     padding:1rem;
+  
   }
   .span-taggs {
     /* padding-left: 1rem; */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
     width: 80%;
   }
+  /* .span-tag{
+    font-size: 1.3rem;
+  } */
+
+  /* .row-one,
+  .row-two {
+    max-width: 80%;
+    margin-left: 25%;
+  } */
+
   .details {
     display: flex;
     flex-direction: column;
