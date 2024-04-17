@@ -37,6 +37,11 @@ const cardDetails = [
         title:"IdEEEas IDOL",
         desc: 'Personality Test',
         name:"ideasidol"
+    },{
+        image:Trademark,
+        title:"LOGO-OLYMPICS",
+        desc: 'Logo Designing Contest',
+        name:"logolympics"
     },
     {
         image:Pitchothon,
@@ -67,12 +72,6 @@ const cardDetails = [
         title:"TECHNOCON",
         desc: 'Tech Exploration Challenge',
         name:"technocon"
-    },
-    {
-        image:Trademark,
-        title:"LOGO-OLYMPICS",
-        desc: 'Logo Designing Contest',
-        name:"logolympics"
     },
     {
         image:Trivea,

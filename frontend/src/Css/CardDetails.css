@@ -130,6 +130,20 @@
   /* Adjust button color on hover */
 }
 
+.template-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+.template-link pre{
+  color: #ffff;
+  font-size: 1.5rem;
+}
+.template-link a{
+  color: #F84611;
+  font-size: 1.5rem;
+}
 @media screen and (max-width: 768px) {
   .card-btnn {
     background-color: #333;
@@ -247,6 +261,14 @@
     cursor: pointer;
     margin: 1rem;
   }
+  .template-link pre{
+    color: #ffff;
+    font-size: 1rem;
+  }
+  .template-link a{
+    color: #F84611;
+    font-size: 1rem;
+  }
 }
 
 
@@ -303,5 +325,13 @@
     padding: 0.8rem 1.6rem;
     cursor: pointer;
     margin: 1rem;
+  }
+  .template-link pre{
+    color: #ffff;
+    font-size: 0.8rem;
+  }
+  .template-link a{
+    color: #F84611;
+    font-size: 0.8rem;
   }
 }

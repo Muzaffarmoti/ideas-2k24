@@ -7,8 +7,9 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":"T B D",
         "entryfee":"200",
-        "poster":"6.png",
-        "ydlink":"https://forms.gle/vVzA22g6rxULFgHg9"
+        "poster":"aavishkar.png",
+        "ydlink":"https://forms.gle/vVzA22g6rxULFgHg9",
+        "template":"https://docs.google.com/document/d/1aZ-R5JfdY1jisKUA4IPDJ7o6eJOnlOlJ/edit?usp=drive_link&ouid=103165201749712775087&rtpof=true&sd=true"
     },
     "blitz": {
         "id": 2,
@@ -18,7 +19,7 @@
         "Eligibility" : "Students of all semesters and all branches are eligible.",
         "location":"T B D",
         "entryfee":"50",
-        "poster":"6.png",
+        "poster":"blitz.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f5e1d46e0fb0001a5199a"
     },
     "cnario": {
@@ -29,7 +30,7 @@
         "Eligibility" : "Students of all semesters and all branches are eligible.",
         "location":" Linux lab, CSE",
         "entryfee":"100",
-        "poster":"6.png",
+        "poster":"cnario.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f646d46e0fb0001a53176"
     },
     "ideasidol": {
@@ -40,7 +41,7 @@
         "Eligibility" : "Open to all branches of all years.",
         "location":" Media Center",
         "entryfee":"50",
-        "poster":"6.png",
+        "poster":"ideasidol.png",
         "brochure":"https://drive.google.com/file/d/10eX3CyXVhHoHLlzrv2mvGWrHWZK3Psxw/view?usp=share_link",
         "link": "https://drive.google.com/drive/folders/1Jp7WtgVc-i09xSwD-MhnnKFZ-gVKrEu-?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f67b646e0fb0001a5648b"
@@ -54,7 +55,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" Online event",
         "entryfee":"50",
-        "poster":"6.png",
+        "poster":"logolympics.png",
         "ydlink":"https://www.yepdesk.com/logo-olympics"
     },
     "pitchothon": {
@@ -65,7 +66,7 @@
         "Eligibility" : "Students of 1st and 2nd year can form a group and participate, 3rd and 4th year can form a group and participate.Open to all branches and MBA students",
         "location":"Faraday seminar hall",
         "entryfee":"200",
-        "poster":"6.png",
+        "poster":"pitchothon.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f743646e0fb0001a5d782"
     },
     "photographia": {
@@ -76,7 +77,7 @@
         "Eligibility" : "Open to all branches of all years.",
         "location":" GJCB Seminar Hall",
         "entryfee":"50",
-        "poster":"6.png",
+        "poster":"photographia.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f756746e0fb0001a5e069"
     },
     "rectifier": {
@@ -87,7 +88,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" T B D",
         "entryfee":"100",
-        "poster":"6.png",
+        "poster":"rectifier.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f805146e0fb0001a623b7"
     },
     "robotics": {
@@ -98,7 +99,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":"SIT Stadium ",
         "entryfee":"200 per team ( for group events ) 50 for individual events",
-        "poster":"6.png",
+        "poster":"robotics.png",
         "ydlink1":"https://www.yepdesk.com/buy-tickets/661f86a046e0fb0001a64d14",
         "ydlink2":"https://www.yepdesk.com/buy-tickets/661f85f246e0fb0001a6461c",
         "ydlink3":"https://www.yepdesk.com/buy-tickets/661f82f746e0fb0001a63396",
@@ -112,7 +113,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" T B D",
         "entryfee":"100",
-        "poster":"6.png",
+        "poster":"technocon.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f872646e0fb0001a6507f"
     },
     "trivea": {
@@ -123,7 +124,7 @@
         "Eligibility" : "Students of all semesters and all branches can participate.",
         "location":"T B D",
         "entryfee":"100",
-        "poster":"6.png",
+        "poster":"trivea.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f7c5246e0fb0001a60a90"
     },
     "webify": {
@@ -134,7 +135,7 @@
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" ECL 401",
         "entryfee":"100",
-        "poster":"6.png",
+        "poster":"webify.png",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f820946e0fb0001a62e66"
     }
 }

@@ -54,11 +54,10 @@ function CardDetails() {
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink3)}><img src={rocket} alt="rocket" />Register for Roborace</button>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink4)}><img src={rocket} alt="rocket" />Register for LFR</button>
         <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
-        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
       </>
     );
-  } 
-  else if(eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10){
+  }
+  else if (eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10) {
     buttons = (
       <>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
@@ -74,7 +73,7 @@ function CardDetails() {
         <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
       </>
     );
-    
+
   }
 
   return (
@@ -98,7 +97,7 @@ function CardDetails() {
               </div>
             </div>
             <div className='row-two'>
-              <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>T B D</span></div>
+              <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>{eventDetails.location}</span></div>
               <div className='details' data-aos="fade-left"><span className='span-tag'><strong style={{ color: '#F84611' }}>Entry Fee:</strong></span><span className='span-tagg'>{eventDetails.entryfee}</span></div>
             </div>
           </div>
@@ -107,6 +106,12 @@ function CardDetails() {
       <div className='button-div' data-aos="zoom-in">
         {buttons}
       </div>
+      {eventDetails.template &&
+        <div className='template-link'> 
+        <pre>Click </pre>
+          <a href={eventDetails.template} target={"_blank"}> HERE</a>
+          <pre> to view the synopsis template</pre>
+        </div>}
       <Footer />
     </div>
   );
