@@ -13,7 +13,6 @@ import Webify from '../../assets/images/eventLogoNew/webify.png'
 
 
 
-
 const cardDetails = [
     {
         image:Aavishkar,
@@ -71,9 +70,9 @@ const cardDetails = [
     },
     {
         image:Trademark,
-        title:"TRADEMARK",
+        title:"LOGO-OLYMPICS",
         desc: 'Logo Designing Contest',
-        name:"trademark"
+        name:"logolympics"
     },
     {
         image:Trivea,
@@ -84,7 +83,7 @@ const cardDetails = [
     {
         image:Webify,
         title:"WEBIFY",
-        desc: ' web designing contest',
+        desc: ' Web designing contest',
         name:"webify"
     }
 ]
