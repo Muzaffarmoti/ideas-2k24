@@ -10,6 +10,7 @@ import sponsor3 from '../../assets/images/sponsors/SpaaX.png';
 import sponsor4 from '../../assets/images/sponsorsNew/1.png';
 import sponsor5 from '../../assets/images/sponsorsNew/2.png';
 import sponsor6 from '../../assets/images/sponsorsNew/3.png';
+import sponsor7 from '../../assets/images/sponsorsNew/tvs.png';
 
 
 function Sponsors() {
@@ -33,6 +34,9 @@ function Sponsors() {
         },{
             title:"Seetha Jewels",
             image:sponsor6
+        },{
+            title:"Vasista TVS ",
+            image:sponsor7
         }
     ]
     return (

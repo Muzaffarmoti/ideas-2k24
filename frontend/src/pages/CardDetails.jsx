@@ -82,7 +82,7 @@ function CardDetails() {
       <h2 className="centered">{eventDetails.name}</h2>
       <div className='poster-details'>
         <div className='poster-div'>
-          {/* <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' /> */}
+          <img src={"/POSTER/" + eventDetails.poster} alt='Event Poster' />
         </div>
         <div className='details-div' data-aos="fade-up">
           <div className='desc' data-aos="fade-up">

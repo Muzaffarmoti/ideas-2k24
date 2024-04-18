@@ -129,15 +129,15 @@ function Home() {
         <div className='home-main'>
             <Header />
             <Hero />
-            <div data-aos="fade-up" data-aos-duration="3000">
-                <Sponsors />
-            </div>
             <div className='events-section' data-aos="fade-up"
                 data-aos-duration="3000">
                 <div className="events-heading-wrapper">
                     <h2 className='events-heading'>OUR EVENTS</h2>
                 </div>
                 <Cards />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <Sponsors />
             </div>
             <Count />
             <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">

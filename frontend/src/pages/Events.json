@@ -8,6 +8,7 @@
         "location":"T B D",
         "entryfee":"200",
         "poster":"aavishkar.png",
+        "brochure":"https://drive.google.com/file/d/1BJ7yWUJEWdWHLw-afp_9rUFoNxzciriP/view?usp=drive_link",
         "ydlink":"https://forms.gle/vVzA22g6rxULFgHg9",
         "template":"https://docs.google.com/document/d/1aZ-R5JfdY1jisKUA4IPDJ7o6eJOnlOlJ/edit?usp=drive_link&ouid=103165201749712775087&rtpof=true&sd=true"
     },
@@ -20,6 +21,7 @@
         "location":"T B D",
         "entryfee":"50",
         "poster":"blitz.png",
+        "brochure":"https://drive.google.com/file/d/1LwxUttkZ5ClZotII8Bjc00XZAuD1I8cz/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f5e1d46e0fb0001a5199a"
     },
     "cnario": {
@@ -31,6 +33,7 @@
         "location":" Linux lab, CSE",
         "entryfee":"100",
         "poster":"cnario.png",
+        "brochure":"https://drive.google.com/file/d/1rT6VPe2C5TeGO0Bn2lTCzyFfdq_Y7GBt/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f646d46e0fb0001a53176"
     },
     "ideasidol": {
@@ -41,21 +44,22 @@
         "Eligibility" : "Open to all branches of all years.",
         "location":" Media Center",
         "entryfee":"50",
-        "poster":"ideasidol.png",
-        "brochure":"https://drive.google.com/file/d/10eX3CyXVhHoHLlzrv2mvGWrHWZK3Psxw/view?usp=share_link",
+        "poster":"ideeeasidol.png",
+        "brochure":"https://drive.google.com/file/d/1gYozAJASwkOEUaIK_etaXGoe3SAAdeg9/view?usp=drive_link",
         "link": "https://drive.google.com/drive/folders/1Jp7WtgVc-i09xSwD-MhnnKFZ-gVKrEu-?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f67b646e0fb0001a5648b"
     },
     
     "logolympics": {
         "id": 5,
-        "name": "LOGO OLYMPICS",
+        "name": "LOGOLYMPICS",
         "description": "Design is about more than just aesthetics. It's about connecting with the audience and communicating a message that resonates with them. One of the major skills of an engineering student is creativity. A logo is a symbol or emblem that is unique to a brand, an individual, a company, or a business.Logos serve to represent a given organization through a visual image that can be easily understood, builds trust, and gets recognized. Through this event, we unleash each participant's inner designer by designing a logo based on the given theme showcasing their creativity.",
         "teamsize":" 1",
         "Eligibility" : "Open to all branches of BE and diploma students.",
         "location":" Online event",
         "entryfee":"50",
         "poster":"logolympics.png",
+        "brochure":"https://drive.google.com/file/d/1zUf5DjF8eL2leiC_Kz4vuZ9dQ96gUvjp/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/logo-olympics"
     },
     "pitchothon": {
@@ -67,6 +71,7 @@
         "location":"Faraday seminar hall",
         "entryfee":"200",
         "poster":"pitchothon.png",
+        "brochure":"https://drive.google.com/file/d/1RjGwjlHH15Dyak88nxNKOQsA3-bltnPQ/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f743646e0fb0001a5d782"
     },
     "photographia": {
@@ -78,6 +83,7 @@
         "location":" GJCB Seminar Hall",
         "entryfee":"50",
         "poster":"photographia.png",
+        "brochure":"https://drive.google.com/file/d/1_kLyohYaXgk3tbhYQvZNdk98VrRivYX1/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f756746e0fb0001a5e069"
     },
     "rectifier": {
@@ -89,6 +95,7 @@
         "location":" T B D",
         "entryfee":"100",
         "poster":"rectifier.png",
+        "brochure":"https://drive.google.com/file/d/1vgEKzXyQ9Ikge_L5Nf2qhqNX6RipIs2m/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f805146e0fb0001a623b7"
     },
     "robotics": {
@@ -100,6 +107,7 @@
         "location":"SIT Stadium ",
         "entryfee":"200 per team ( for group events ) 50 for individual events",
         "poster":"robotics.png",
+        "brochure":"https://drive.google.com/file/d/1CjFIdR0ImXoQGFKxu3V2pGvu_JHa0QPc/view?usp=drive_link",
         "ydlink1":"https://www.yepdesk.com/buy-tickets/661f86a046e0fb0001a64d14",
         "ydlink2":"https://www.yepdesk.com/buy-tickets/661f85f246e0fb0001a6461c",
         "ydlink3":"https://www.yepdesk.com/buy-tickets/661f82f746e0fb0001a63396",
@@ -114,6 +122,7 @@
         "location":" T B D",
         "entryfee":"100",
         "poster":"technocon.png",
+        "brochure":"",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f872646e0fb0001a6507f"
     },
     "trivea": {
@@ -124,7 +133,8 @@
         "Eligibility" : "Students of all semesters and all branches can participate.",
         "location":"T B D",
         "entryfee":"100",
-        "poster":"trivea.png",
+        "poster":"trieeevia.png",
+        "brochure":"https://drive.google.com/file/d/1ByXZqwpI44OUyGreZpjlRR5xlJ4DKmhW/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f7c5246e0fb0001a60a90"
     },
     "webify": {
@@ -136,6 +146,7 @@
         "location":" ECL 401",
         "entryfee":"100",
         "poster":"webify.png",
+        "brochure":"https://drive.google.com/file/d/1u4UZf6kcHNitl_Mvr1UiGtXjJd5slWTY/view?usp=drive_link",
         "ydlink":"https://www.yepdesk.com/buy-tickets/661f820946e0fb0001a62e66"
     }
 }

@@ -39,7 +39,7 @@ const cardDetails = [
         name:"ideasidol"
     },{
         image:Trademark,
-        title:"LOGO-OLYMPICS",
+        title:"LOGOLYMPICS",
         desc: 'Logo Designing Contest',
         name:"logolympics"
     },
