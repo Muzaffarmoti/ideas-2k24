@@ -4,6 +4,7 @@ import './jquery.timelinr-0.9.7'
 import './TimeLine.css'
 import curtain from '../../assets/images/icons/curtain2.jpg'
 import comingsoon from '../../assets/images/icons/comingSoon.webp'
+import ideas from '../../assets/images/icons/2.png'
 function TimeLine() {
     useEffect(() => {
         $().timelinr({
@@ -19,7 +20,7 @@ function TimeLine() {
             
             <ul id="dates">
                 <li><a href="#1900" class="selected">Apr 15th</a></li>
-                <li><a href="#1930">Upcoming</a></li>
+                <li><a href="#1930">Apr 25th</a></li>
                 {/* <li><a href="#1944">1944</a></li>
                 <li><a href="#1950">1950</a></li>
                 <li><a href="#1971">1971</a></li>
@@ -36,8 +37,8 @@ function TimeLine() {
                     <p>IdEEEas 2k24 Curtain Raiser</p>
                 </li>
                 <li id="1930">
-                    <img src={comingsoon} />
-                    {/* <h1>Coming Soon</h1> */}
+                    <img src={ideas} />
+                    <h1>April 25th</h1>
                     <p>The most awaited event, <span style={{color:"#f84611"}}>IdEEEas 2k24</span> is here!!!!</p>
                 </li>
                 {/* <li id="1944">

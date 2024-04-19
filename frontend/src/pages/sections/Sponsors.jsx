@@ -23,7 +23,7 @@ function Sponsors() {
             title:"Kwikpic",
             image:sponsor2
         },{
-            title:"SpaaX",
+            title:"SpaX",
             image:sponsor3
         },{
             title:"Laptop Menu",
@@ -60,7 +60,7 @@ function Sponsors() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='slide slide2' style={{ backgroundColor: '#333' }}>
+                                <div className='slide slide2'>
                                     <div className='content'>
                                         <h3>{sponsor.title}</h3>
                                     </div>

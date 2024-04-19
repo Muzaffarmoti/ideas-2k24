@@ -95,8 +95,13 @@
 }
 
 .desc {
-  text-align: justify;
+  /* text-align: justify; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: left; */
   letter-spacing: .001rem;
+  
 }
 
 .descriptionn {

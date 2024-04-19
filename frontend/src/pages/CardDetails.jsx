@@ -28,6 +28,7 @@ function CardDetails() {
       mirror: false,
       anchorPlacement: 'top-bottom',
     });
+    window.scrollTo(0, 0);
   }, []);
 
   const { eventnum } = useParams();
@@ -57,15 +58,15 @@ function CardDetails() {
       </>
     );
   }
-  else if (eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10) {
-    buttons = (
-      <>
-        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
-        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
-        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
-      </>
-    );
-  }
+  // else if (eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10) {
+  //   buttons = (
+  //     <>
+  //       <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+  //       <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+  //       <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
+  //     </>
+  //   );
+  // }
   else {
     buttons = (
       <>
