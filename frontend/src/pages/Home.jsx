@@ -18,6 +18,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TimeLine from './sections/TimeLine'
 import Count from './sections/Count'
+// import Marquee from 'react-double-marquee';
+import Marquee from "react-fast-marquee";
+
+
 function Home() {
     const memberDetailsArray = [
         {
@@ -129,6 +133,14 @@ function Home() {
         <div className='home-main'>
             <Header />
             <Hero />
+            <div className='marque-hero'>
+                <Marquee direction="left" className="marquee-text">
+                    Last Date for submitting Abstract for Pitch-o-thon is 23rd April 2024
+                </Marquee>
+                <Marquee direction="right" className="marquee-text">
+                    Last Date for submitting Poster for Technocon is 23rd April 2024
+                </Marquee>
+            </div>
             <div className='events-section' data-aos="fade-up"
                 data-aos-duration="3000">
                 <div className="events-heading-wrapper">
@@ -139,9 +151,9 @@ function Home() {
             <Count />
             <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">
                 <div className="events-heading-wrapper">
-                        <h2 className='events-heading'>TIMELINE</h2>
+                    <h2 className='events-heading'>TIMELINE</h2>
                 </div>
-                <TimeLine/>
+                <TimeLine />
             </div>
             <div data-aos="fade-up" data-aos-duration="3000">
                 <Sponsors />

@@ -58,15 +58,15 @@ function CardDetails() {
       </>
     );
   }
-  // else if (eventDetails.id === 1 || eventDetails.id === 6 || eventDetails.id === 10) {
-  //   buttons = (
-  //     <>
-  //       <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
-  //       <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
-  //       <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
-  //     </>
-  //   );
-  // }
+  else if (eventDetails.id === 6 || eventDetails.id === 10) {
+    buttons = (
+      <>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+        <button className='card-btnn' onClick={() => handleUploadFile(eventDetails.link)}><img src={rocket} alt="rocket" />Upload File</button>
+      </>
+    );
+  }
   else {
     buttons = (
       <>
@@ -89,6 +89,32 @@ function CardDetails() {
           <div className='desc' data-aos="fade-up">
             <span className='descriptionn' style={{ color: 'white' }}>{eventDetails.description}</span>
           </div>
+          {eventDetails.theme &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>THEME : </pre>
+              <span className='theme-desc'>{eventDetails.theme}</span>
+            </div>
+          }
+          {eventDetails.id === 10 &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>POSTER SUBMISSION DEADLINE : </pre>
+              <span className='theme-desc'>23 April 2024</span>
+            </div>
+          }
+          {eventDetails.id === 6 &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>ABSTRACT SUBMISSION DEADLINE : </pre>
+              <span className='theme-desc'>23 April 2024</span>
+            </div>
+          }
+          {eventDetails.template &&
+            <div className='template-link' data-aos="fade-up">
+              <pre>Click </pre>
+              <a href={eventDetails.template} target={"_blank"}> HERE</a>
+              {eventDetails.id === 10 && <pre> to view the poster template</pre>}
+              {eventDetails.id === 1 && <pre> to view the synopsis template</pre>}
+            </div>}
+            
           <div className="details-grid">
             <div className='row-one'>
               <div className='details' data-aos="fade-right"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span className='span-taggs'>{eventDetails.teamsize}</span></div>
@@ -104,15 +130,17 @@ function CardDetails() {
           </div>
         </div>
       </div>
+
+      {/* {eventDetails.about && 
+        <div className=''>
+          <span>{eventDetails.about}</span>
+        </div>
+      } */}
+
       <div className='button-div' data-aos="zoom-in">
         {buttons}
       </div>
-      {eventDetails.template &&
-        <div className='template-link'> 
-        <pre>Click </pre>
-          <a href={eventDetails.template} target={"_blank"}> HERE</a>
-          <pre> to view the synopsis template</pre>
-        </div>}
+
       <Footer />
     </div>
   );

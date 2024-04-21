@@ -70,7 +70,7 @@ const cardDetails = [
     {
         image:Technocon,
         title:"TECHNOCON",
-        desc: 'Tech Exploration Challenge',
+        desc: 'Poster Presentation Event',
         name:"technocon"
     },
     {

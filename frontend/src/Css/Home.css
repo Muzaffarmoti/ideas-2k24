@@ -13,7 +13,28 @@
 .home-main Header{
     z-index: 2;
 }
-
+.marque-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0rem 0.5rem;
+    width: 98%;
+    white-space: 'nowrap';
+    
+}
+.marquee-text{
+    font-size: 1.5rem;
+    background-color: rgb(215, 83, 43);
+    border: #000000 1px solid;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0.5rem;
+    
+    /* justify-content: center; */
+}
 .events-section h2{
     display: flex;
     

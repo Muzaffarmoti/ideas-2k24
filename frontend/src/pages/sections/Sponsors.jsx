@@ -23,7 +23,7 @@ function Sponsors() {
             title:"Kwikpic",
             image:sponsor2
         },{
-            title:"SpaX",
+            title:"SPAX",
             image:sponsor3
         },{
             title:"Laptop Menu",
