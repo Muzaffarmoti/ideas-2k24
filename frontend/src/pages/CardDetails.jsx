@@ -28,6 +28,7 @@ function CardDetails() {
       mirror: false,
       anchorPlacement: 'top-bottom',
     });
+    window.scrollTo(0, 0);
   }, []);
 
   const { eventnum } = useParams();
@@ -46,14 +47,18 @@ function CardDetails() {
   };
 
   let buttons;
-  if (eventDetails.id === 1 || eventDetails.id === 2) {
+  if (eventDetails.id === 9) {
     buttons = (
       <>
-        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink1)}><img src={rocket} alt="rocket" />Register for Robo Soccer</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink2)}><img src={rocket} alt="rocket" />Register for Fast n Furious</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink3)}><img src={rocket} alt="rocket" />Register for Roborace</button>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink4)}><img src={rocket} alt="rocket" />Register for LFR</button>
         <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
       </>
     );
-  } else {
+  }
+  else if (eventDetails.id === 6 || eventDetails.id === 10) {
     buttons = (
       <>
         <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
@@ -62,6 +67,15 @@ function CardDetails() {
       </>
     );
   }
+  else {
+    buttons = (
+      <>
+        <button className='card-btnn' onClick={() => handleRegister(eventDetails.ydlink)}><img src={rocket} alt="rocket" />Register</button>
+        <button className='card-btnn' onClick={() => handleDownloadBrochure(eventDetails.brochure)}><img src={rocket} alt="rocket" />Download Brochure</button>
+      </>
+    );
+
+  }
 
   return (
     <div className='cd-main-div'>
@@ -69,16 +83,45 @@ function CardDetails() {
       <h2 className="centered">{eventDetails.name}</h2>
       <div className='poster-details'>
         <div className='poster-div'>
-          <img src={"/Eventposter/" + eventDetails.poster} alt='Event Poster' />
+          <img src={"/POSTER/" + eventDetails.poster} alt='Event Poster' />
         </div>
         <div className='details-div' data-aos="fade-up">
           <div className='desc' data-aos="fade-up">
             <span className='descriptionn' style={{ color: 'white' }}>{eventDetails.description}</span>
           </div>
+          {eventDetails.theme &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>THEME : </pre>
+              <span className='theme-desc'>{eventDetails.theme}</span>
+            </div>
+          }
+          {eventDetails.id === 10 &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>POSTER SUBMISSION DEADLINE : </pre>
+              <span className='theme-desc'>23 April 2024</span>
+            </div>
+          }
+          {eventDetails.id === 6 &&
+            <div className='theme' data-aos="fade-up">
+              <pre className='theme-title'>ABSTRACT SUBMISSION DEADLINE : </pre>
+              <span className='theme-desc'>23 April 2024</span>
+            </div>
+          }
+          {eventDetails.template &&
+            <div className='template-link' data-aos="fade-up">
+              <pre>Click </pre>
+              <a href={eventDetails.template} target={"_blank"}> HERE</a>
+              {eventDetails.id === 10 && <pre> to view the poster template</pre>}
+              {eventDetails.id === 1 && <pre> to view the synopsis template</pre>}
+            </div>}
+            
           <div className="details-grid">
             <div className='row-one'>
               <div className='details' data-aos="fade-right"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Team Size:</strong> </span> <span className='span-taggs'>{eventDetails.teamsize}</span></div>
-              <div className='details' data-aos="fade-left"><span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span> <span className='span-taggs'>{eventDetails.Eligibility}</span></div>
+              <div className='details' data-aos="fade-left">
+                <span className='span-taggg'><strong style={{ color: '#F84611' }}>Eligibility:</strong> </span>
+                <span className='span-taggs'>{eventDetails.Eligibility}</span>
+              </div>
             </div>
             <div className='row-two'>
               <div className='details' data-aos="fade-right"> <span className='span-tag'><strong style={{ color: '#F84611' }}> Location:</strong> </span><span className='span-tagg'>{eventDetails.location}</span></div>
@@ -87,9 +130,17 @@ function CardDetails() {
           </div>
         </div>
       </div>
+
+      {/* {eventDetails.about && 
+        <div className=''>
+          <span>{eventDetails.about}</span>
+        </div>
+      } */}
+
       <div className='button-div' data-aos="zoom-in">
         {buttons}
       </div>
+
       <Footer />
     </div>
   );

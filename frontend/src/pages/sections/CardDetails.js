@@ -13,7 +13,6 @@ import Webify from '../../assets/images/eventLogoNew/webify.png'
 
 
 
-
 const cardDetails = [
     {
         image:Aavishkar,
@@ -38,6 +37,11 @@ const cardDetails = [
         title:"IdEEEas IDOL",
         desc: 'Personality Test',
         name:"ideasidol"
+    },{
+        image:Trademark,
+        title:"LOGOLYMPICS",
+        desc: 'Logo Designing Contest',
+        name:"logolympics"
     },
     {
         image:Pitchothon,
@@ -66,14 +70,8 @@ const cardDetails = [
     {
         image:Technocon,
         title:"TECHNOCON",
-        desc: 'Tech Exploration Challenge',
+        desc: 'Poster Presentation Event',
         name:"technocon"
-    },
-    {
-        image:Trademark,
-        title:"TRADEMARK",
-        desc: 'Logo Designing Contest',
-        name:"trademark"
     },
     {
         image:Trivea,
@@ -84,7 +82,7 @@ const cardDetails = [
     {
         image:Webify,
         title:"WEBIFY",
-        desc: ' web designing contest',
+        desc: ' Web designing contest',
         name:"webify"
     }
 ]

@@ -12,16 +12,21 @@ import deeksha from '../assets/images/web_team/deeksha.jpg'
 import ananya from '../assets/images/web_team/ananya.jpg'
 import likith from '../assets/images/web_team/likith.jpg'
 import muzaffar from '../assets/images/web_team/muzaffar.jpeg'
-import nayana from '../assets/images/web_team/nayana.jpg'
+import nayana from '../assets/images/web_team/nayana2.jpeg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TimeLine from './sections/TimeLine'
+import Count from './sections/Count'
+// import Marquee from 'react-double-marquee';
+import Marquee from "react-fast-marquee";
+
+
 function Home() {
     const memberDetailsArray = [
         {
             name: 'Anagha N',
-            position: 'Lead, Web Master IEEE SIT SB',
+            position: 'Web Team Lead, IEEE SIT SB',
             image: anagha
         },
         {
@@ -51,7 +56,7 @@ function Home() {
         },
         {
             name: 'Rishith  P',
-            position: 'Lead, Design Master IEEE SIT SB',
+            position: 'Design Team Lead,IEEE SIT SB',
             image: rishith
         },
     ];
@@ -128,8 +133,13 @@ function Home() {
         <div className='home-main'>
             <Header />
             <Hero />
-            <div data-aos="zoom-in">
-                <Sponsors />
+            <div className='marque-hero'>
+                <Marquee direction="left" className="marquee-text">
+                    Last Date for submitting Abstract for Pitch-o-thon is 23rd April 2024
+                </Marquee>
+                <Marquee direction="right" className="marquee-text">
+                    Last Date for submitting Poster for Technocon is 23rd April 2024
+                </Marquee>
             </div>
             <div className='events-section' data-aos="fade-up"
                 data-aos-duration="3000">
@@ -138,10 +148,19 @@ function Home() {
                 </div>
                 <Cards />
             </div>
-            <div>
-                <TimeLine/>
+            <Count />
+            <div className="timeline-section" data-aos="fade-up" data-aos-duration="3000">
+                <div className="events-heading-wrapper">
+                    <h2 className='events-heading'>TIMELINE</h2>
+                </div>
+                <TimeLine />
             </div>
-            <FAQ />
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <Sponsors />
+            </div>
+            <div className="faq-sec" data-aos="fade-up" data-aos-duration="3000">
+                <FAQ />
+            </div>
             <div className='pic'>
                 <h4 className='contact_header'>THE WEB TEAM</h4>
                 <div className='image-details'>

@@ -10,6 +10,7 @@ import nayana from '../assets/images/web_team/nayana.jpg'
 import rishith from '../assets/images/web_team/rishith.jpg'
 import ContactDetails from './ContactDetails'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 
 function ContactUs() {
@@ -183,25 +184,25 @@ function ContactUs() {
             <div className='container_text1_test'>
                 <div className='text1'>
                     <h6 >Kona Chandra Kiran</h6>
-                    Chair,IEEE SIT SB<br />
+                    Chair, IEEE SIT SB<br />
                     📞+91 99897 94662<br />
                     ✉️ konachandrakiran555@gmail.com
                 </div>
                 <div className='text1'>
                     <h6 >Adarsh Reddy P</h6>
-                    Vicechair,IEEE SIT SB<br />
+                    Vicechair, IEEE SIT SB<br />
                     📞+91 95914 88158<br />
                     ✉️ adarshpreddy@ieee.org
                 </div>
                 <div className='text1'>
                     <h6 >Chandana R</h6>
-                    Chair,WIE IEEE SIT SB<br />
+                    Chair, WIE IEEE SIT SB<br />
                     📞+91 79757 20929<br />
                     ✉️ rchandana1711@gmail.com
                 </div>
                 <div className='text1'>
                     <h6 >Nanditha B U</h6>
-                    Vicechair,WIE IEEE SIT SB<br />
+                    Vicechair, WIE IEEE SIT SB<br />
                     📞+91 95916 19331<br />
                     ✉️ nandithabu53@gmail.com
                 </div>
@@ -297,7 +298,7 @@ function ContactUs() {
             {/* Render image details */}
 
             {/* </div> */}
-
+                <Footer/>
         </div>
     )
 }
