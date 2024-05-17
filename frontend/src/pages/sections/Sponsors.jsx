@@ -11,10 +11,16 @@ import sponsor4 from '../../assets/images/sponsorsNew/1.png';
 import sponsor5 from '../../assets/images/sponsorsNew/2.png';
 import sponsor6 from '../../assets/images/sponsorsNew/3.png';
 import sponsor7 from '../../assets/images/sponsorsNew/tvs.png';
+import sponsor8 from '../../assets/images/sponsorsNew/5.png';
+
 
 
 function Sponsors() {
     const sponsorsList = [
+        {
+            title:"IEEE Young Professionals ",
+            image:sponsor8
+        },
         {
             title:"Computer Society of India",
             image:sponsor1
