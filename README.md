@@ -1,4 +1,4 @@
-# ideeeas2k24
+# ideeeas2k24 https://ieee-2k24.netlify.app/
 Welcome to the official GitHub repository for the IdEEEas 2k24 symposium website! This platform was developed for the national-level technical symposium organized by IEEE SIT SB, offering registration and event information for the Day of Ideas.
 
 # About the Project
